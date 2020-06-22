@@ -22,8 +22,9 @@
       <img src="images/logo/logo_white_sm.png" alt="logo" class="img-fluid">
     </a>
 
-    <button class="pl-0 btn side-menu-btn d-lg-none d-block" onclick="openNav()">
-      <img src="images/home/user_profile_pic.png" alt="profile-image" class="img-fluid">
+    <button class="btn side-menu-btn d-lg-none d-block"  onclick="openNav()">
+      <i class="fas fa-bars"></i>
+      <!-- <img src="images/home/user_profile_pic.png" alt="profile-image" class="img-fluid"> -->
     </button>
 
     <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -166,8 +167,499 @@
 <!-- ===//end of header section === -->
 
 
+<!-- === top-action section start === -->
+<section class="top-action text-nowrap my-40">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6  text-sm-left text-center mb-sm-0 mb-30">
+        <h1>Welcome, Daniel </h1>
+        <p>Checkout stories from your followings</p>
+      </div>
+      <div class="col-sm-6">
+        <form>
+          <div class="d-flex align-items-center justify-content-sm-end justify-content-center">
+            <div class="search myShadow">
+              <input type="text" class="search__input" aria-label="search" placeholder="enter your search">
+              <button class="search__btn" aria-label="submit search"><i class="fas fa-search" ></i></button>
+            </div>
+            <div class="action ml-3">
+              <button class="btn pr-1 active grid-btn"  onclick="gridView()" data-toggle="tooltip" data-placement="bottom" title="Grid View"><i class="fas fa-th-large grid"></i></button>
+              <button class="btn pl-0 list-btn" onclick="listView()" data-toggle="tooltip" data-placement="bottom" title="List View"><i class="fas fa-bars list"></i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===//end of top-action section === -->
+
+<!-- === live-streaming section start === -->
+<section class="live-streaming mb-30">
+  <div class="container">
+    <div class="card">
+      <h2 class="card-header">Live Streaming</h2>
+      <div class="card-body">
+        <div class="row streaming-slide text-center text-nowrap pr-3">
+          <div class="col-12">
+            <a href="#">
+              <div class="img"><img src="images/home/you_live.png" alt="you-live" class="img-fluid my-live"></div>
+              <p class="text">You</p>
+            </a>
+          </div>
+          <div class="col-12">
+            <a href="#">
+              <div class="img"><img src="images/home/live_2.png" alt="live image" class="img-fluid"></div>
+              <p class="text">Viena Gold</p>
+            </a>
+          </div>
+          <div class="col-12">
+            <a href="#">
+              <div class="img"><img src="images/home/live_3.png" alt="live image" class="img-fluid"></div>
+              <p class="text">Amanda Tik...</p>
+            </a>
+          </div>
+          <div class="col-12">
+            <a href="#">
+              <div class="img"><img src="images/home/live_4.png" alt="live image" class="img-fluid"></div>
+              <p class="text">Megrin Malk..</p>
+            </a>
+          </div>
+          <div class="col-12">
+            <a href="#">
+              <div class="img"><img src="images/home/live_5.png" alt="live image" class="img-fluid"></div>
+              <p class="text">Helen Cran</p>
+            </a>
+          </div>
+          <div class="col-12">
+            <a href="#">
+              <div class="img"><img src="images/home/live_2.png" alt="live image" class="img-fluid"></div>
+              <p class="text">Viena Gold</p>
+            </a>
+          </div>
+          <div class="col-12">
+            <a href="#">
+              <div class="img"><img src="images/home/live_3.png" alt="live image" class="img-fluid"></div>
+              <p class="text">Amanda Tik...</p>
+            </a>
+          </div>
+          <div class="col-12">
+            <a href="#">
+              <div class="img"><img src="images/home/live_4.png" alt="live image" class="img-fluid"></div>
+              <p class="text">Megrin Malk..</p>
+            </a>
+          </div>
+          <div class="col-12">
+            <a href="#">
+              <div class="img"><img src="images/home/live_5.png" alt="live image" class="img-fluid"></div>
+              <p class="text">Helen Cran</p>
+            </a>
+          </div>
+          <div class="col-12">
+            <a href="#">
+              <div class="img"><img src="images/home/live_2.png" alt="live image" class="img-fluid"></div>
+              <p class="text">Viena Gold</p>
+            </a>
+          </div>
+          <div class="col-12">
+            <a href="#">
+              <div class="img"><img src="images/home/live_3.png" alt="live image" class="img-fluid"></div>
+              <p class="text">Amanda Tik...</p>
+            </a>
+          </div>
+          <div class="col-12">
+            <a href="#">
+              <div class="img"><img src="images/home/live_4.png" alt="live image" class="img-fluid"></div>
+              <p class="text">Megrin Malk..</p>
+            </a>
+          </div>
+          <div class="col-12">
+            <a href="#">
+              <div class="img"><img src="images/home/live_5.png" alt="live image" class="img-fluid"></div>
+              <p class="text">Helen Cran</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===//end of live-streaming section === -->
+
+<!-- === suggestion section start === -->
+<section class="suggestion mb-30">
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <div class="d-sm-flex justify-content-between align-items-center card-header-inner">
+          <h2 class="text-sm-left text-center mb-sm-0 mb-20">ALL SUGGESTIONS</h2>
+          <div class="action">
+            <div class="d-flex justify-content-center">
+              <div class="suggestion-btn-group text-nowrap">
+                <a href="#" class="btn active">GENERAL</a>
+                <a href="#" class="btn ">EXCLUSIVE</a>
+              </div>
+              <div class="reload border-right">
+                <button class="btn reload-btn"><i class="far fa-sync-alt"></i></button>
+              </div>
+              <div class="slide-arrow pr-5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="row suggestion-slide">
+          <div class="col-12">
+            <div class="suggestion-card pb-30">
+              <div class="suggestion-card-inner">
+                <div class="card-image cover-img">
+                  <a href="#"> <img src="images/home/suggestion_2.png" alt="suggestion" class="w-100"></a>
+                  <div class="dropdown-box">
+                    <div class="dropdown">
+                      <div class="dropdown-bg"></div>
+                      <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy Link</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="profile-image"> <img src="images/home/suggestion_profile_2.png" alt="suggestion" class="img-fluid"></div>
+                  <h5 class="user-name">Lexy Tailor<i class="fas fa-check-circle"></i></h5>
+                  <span class="user-sub-name">@official_lexytailor</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="suggestion-card pb-30">
+              <div class="suggestion-card-inner">
+                <div class="card-image cover-img">
+                  <a href="#"> <img src="images/home/suggestion_1.png" alt="suggestion" class="w-100"></a>
+                  <div class="dropdown-box">
+                    <div class="dropdown">
+                      <div class="dropdown-bg"></div>
+                      <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy Link</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="profile-image"> <img src="images/home/suggestion_profile_3.png" alt="suggestion" class="img-fluid"></div>
+                  <h5 class="user-name">Lexy Tailor<i class="fas fa-check-circle"></i></h5>
+                  <span class="user-sub-name">@official_lexytailor</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="suggestion-card pb-30">
+              <div class="suggestion-card-inner">
+                <div class="card-image cover-img">
+                  <a href="#"> <img src="images/home/suggestion_1.png" alt="suggestion" class="w-100"></a>
+                  <div class="dropdown-box">
+                    <div class="dropdown">
+                      <div class="dropdown-bg"></div>
+                      <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy Link</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="profile-image"> <img src="images/home/suggestion_profile_1.png" alt="suggestion" class="img-fluid"></div>
+                  <h5 class="user-name">Lexy Tailor<i class="fas fa-check-circle"></i></h5>
+                  <span class="user-sub-name">@official_lexytailor</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="suggestion-card pb-30">
+              <div class="suggestion-card-inner">
+                <div class="card-image cover-img">
+                  <a href="#"> <img src="images/home/suggestion_2.png" alt="suggestion" class="w-100"></a>
+                  <div class="dropdown-box">
+                    <div class="dropdown">
+                      <div class="dropdown-bg"></div>
+                      <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy Link</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="profile-image"> <img src="images/home/suggestion_profile_2.png" alt="suggestion" class="img-fluid"></div>
+                  <h5 class="user-name">Lexy Tailor<i class="fas fa-check-circle"></i></h5>
+                  <span class="user-sub-name">@official_lexytailor</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="suggestion-card pb-30">
+              <div class="suggestion-card-inner">
+                <div class="card-image cover-img">
+                  <a href="#"> <img src="images/home/suggestion_1.png" alt="suggestion" class="w-100"></a>
+                  <div class="dropdown-box">
+                    <div class="dropdown">
+                      <div class="dropdown-bg"></div>
+                      <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy Link</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="profile-image"> <img src="images/home/suggestion_profile_3.png" alt="suggestion" class="img-fluid"></div>
+                  <h5 class="user-name">Lexy Tailor<i class="fas fa-check-circle"></i></h5>
+                  <span class="user-sub-name">@official_lexytailor</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="suggestion-card pb-30">
+              <div class="suggestion-card-inner">
+                <div class="card-image cover-img">
+                  <a href="#"> <img src="images/home/suggestion_1.png" alt="suggestion" class="w-100"></a>
+                  <div class="dropdown-box">
+                    <div class="dropdown">
+                      <div class="dropdown-bg"></div>
+                      <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy Link</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="profile-image"> <img src="images/home/suggestion_profile_1.png" alt="suggestion" class="img-fluid"></div>
+                  <h5 class="user-name">Lexy Tailor<i class="fas fa-check-circle"></i></h5>
+                  <span class="user-sub-name">@official_lexytailor</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===//end of suggestion section === -->
+
+<!-- === post-card section start === -->
+<section class="post-card-section">
+  <div class="container">
+    <div class="row grid-list-view">
+      <div class="col-md-6 mb-30 grid-list-col">
+        <div class="card post-card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="profile d-flex">
+                <div class="profile-img-box position-relative">
+                  <a href="#">
+                    <img src="images/home/post-profile-image.png" alt="profile image" class="img-fluid">
+                    <i class="fas fa-circle online"></i>
+                  </a>
+                </div>
+                <div class="text">
+                  <a href="#" class="profile-name"><h5>Natalia Raikova</h5></a>
+                  <span class="profile-sub-name">@natalia_raikova</span>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy link of this post</a>
+                  <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="post-image">
+            <a href="#"> <img src="images/home/post_image_2.png" alt="post-image" class="w-100"></a>
+            </div>
+            <div class="date-time">Post on 17 May, 2020</div>
+            <h3 class="post-title">My photos were published in ABC and  CBA magazines and I was part of LOCABA <a href="#">campaign@company.com</a> .</h3>
+
+            <div class="d-flex justify-content-between align-items-center post-footer">
+              <div class="meta-data d-flex">
+                <div class="love"><a href="#"><i class="fas fa-heart"></i> <span> 2.2K </span></a></div>
+                <div class="comment"><a href="#"><i class="far fa-comment-alt-dots"></i><span>678</span></a></div>
+              </div>
+              <a href="#" class="bookmark marked"> <i class="fas fa-bookmark"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-30 grid-list-col">
+        <div class="card post-card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="profile d-flex">
+                <div class="profile-img-box position-relative">
+                  <a href="#">
+                    <img src="images/home/post-profile-image.png" alt="profile image" class="img-fluid">
+                    <i class="fas fa-circle online"></i>
+                  </a>
+                </div>
+                <div class="text">
+                  <a href="#" class="profile-name"><h5>Natalia Raikova</h5></a>
+                  <span class="profile-sub-name">@natalia_raikova</span>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy link of this post</a>
+                  <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="post-image">
+            <a href="#"> <img src="images/home/post_image_1_sm.png" alt="post-image" class="w-100"></a>
+            </div>
+            <div class="date-time">Post on 17 May, 2020</div>
+            <h3 class="post-title">My photos were published in ABC and  CBA magazines and I was part of LOCABA <a href="#">campaign@company.com</a> .</h3>
+
+            <div class="d-flex justify-content-between align-items-center post-footer">
+              <div class="meta-data d-flex">
+                <div class="love"><a href="#"><i class="fas fa-heart"></i> <span> 2.2K </span></a></div>
+                <div class="comment"><a href="#"><i class="far fa-comment-alt-dots"></i><span>678</span></a></div>
+              </div>
+              <a href="#" class="bookmark"> <i class="fal fa-bookmark"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-30 grid-list-col">
+        <div class="card post-card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="profile d-flex">
+                <div class="profile-img-box position-relative">
+                  <a href="#">
+                    <img src="images/home/post-profile-image.png" alt="profile image" class="img-fluid">
+                    <!-- <i class="fas fa-circle online"></i> -->
+                  </a>
+                </div>
+                <div class="text">
+                  <a href="#" class="profile-name"><h5>Natalia Raikova</h5></a>
+                  <span class="profile-sub-name">@natalia_raikova</span>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy link of this post</a>
+                  <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="post-image">
+            <a href="#"> <img src="images/home/post_image_1_sm.png" alt="post-image" class="w-100"></a>
+            </div>
+            <div class="date-time">Post on 17 May, 2020</div>
+            <h3 class="post-title">My photos were published in ABC and  CBA magazines and I was part of LOCABA <a href="#">campaign@company.com</a> .</h3>
+
+            <div class="d-flex justify-content-between align-items-center post-footer">
+              <div class="meta-data d-flex">
+                <div class="love"><a href="#"><i class="fas fa-heart"></i> <span> 2.2K </span></a></div>
+                <div class="comment"><a href="#"><i class="far fa-comment-alt-dots"></i><span>678</span></a></div>
+              </div>
+              <a href="#" class="bookmark"> <i class="fal fa-bookmark"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-30 grid-list-col">
+        <div class="card post-card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="profile d-flex">
+                <div class="profile-img-box position-relative">
+                  <a href="#">
+                    <img src="images/home/post-profile-image.png" alt="profile image" class="img-fluid">
+                    <i class="fas fa-circle online"></i>
+                  </a>
+                </div>
+                <div class="text">
+                  <a href="#" class="profile-name"><h5>Natalia Raikova</h5></a>
+                  <span class="profile-sub-name">@natalia_raikova</span>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy link of this post</a>
+                  <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="post-image">
+            <a href="#"> <img src="images/home/post_image_2.png" alt="post-image" class="w-100"></a>
+            </div>
+            <div class="date-time">Post on 17 May, 2020</div>
+            <h3 class="post-title">My photos were published in ABC and  CBA magazines and I was part of LOCABA <a href="#">campaign@company.com</a> .</h3>
+
+            <div class="d-flex justify-content-between align-items-center post-footer">
+              <div class="meta-data d-flex">
+                <div class="love"><a href="#"><i class="fas fa-heart"></i> <span> 2.2K </span></a></div>
+                <div class="comment"><a href="#"><i class="far fa-comment-alt-dots"></i><span>678</span></a></div>
+              </div>
+              <a href="#" class="bookmark marked"> <i class="fas fa-bookmark"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===//end of post-card section === -->
+
 <!-- === ? section start === -->
-<section>
+<section class="?">
 
 </section>
 <!-- ===//end of ? section === -->

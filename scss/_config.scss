@@ -12,16 +12,25 @@ body {
   font-family: $font-stack;
   background-color: #f7faff;
   font-weight: 500;
-  transition: all 0.3s linear;
+  // transition: all 0.3s linear;
 }
 
 body.overlay {
   background-color: rgba(0,0,0,0.4);
 }
 
-.container {
-  max-width: 991px;
+@media(min-width: 992px) {
+  body.overlay {
+    height: 100vh;
+    overflow: hidden;
+    margin-right: 17px;
+  }
+
+  // .container {
+  //   max-width: 991px;
+  // }
 }
+
 
 // primary gradient
 .bg-py {
