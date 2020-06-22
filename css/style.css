@@ -527,7 +527,7 @@ a, a:hover {
       .full-nav .navbar {
         height: 100px; } }
   .full-nav .navbar-dark .navbar-nav .nav-link {
-    color: white;
+    color: #fff;
     border: 1px solid #fff;
     border-radius: 15px;
     width: 60px;
@@ -535,7 +535,7 @@ a, a:hover {
     text-align: center;
     margin: 10px;
     font-size: 27px; }
-    .full-nav .navbar-dark .navbar-nav .nav-link:hover {
+    .full-nav .navbar-dark .navbar-nav .nav-link.active, .full-nav .navbar-dark .navbar-nav .nav-link:hover {
       color: #db3364;
       background: #fff; }
   .full-nav .navbar .side-menu-btn i {
