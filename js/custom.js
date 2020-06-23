@@ -121,6 +121,7 @@ function gridView(){
   $(".grid-list-col").addClass("col-md-6");
   $(".grid-btn").addClass("active");
   $(".list-btn").removeClass("active");
+  return false;
 }
 
 // list view div 
@@ -129,4 +130,5 @@ function listView(){
   $(".grid-list-col").addClass("col-md-12");
   $(".list-btn").addClass("active");
   $(".grid-btn").removeClass("active");
+  return false;
 }

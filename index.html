@@ -43,7 +43,7 @@
           <a class="nav-link" href="#"><i class="fas fa-plus-square"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+          <a class="nav-link" href="notifications.html"><i class="fas fa-bell"></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"><i class="fas fa-wallet"></i></a>
@@ -180,11 +180,11 @@
           <div class="d-flex align-items-center justify-content-sm-end justify-content-center">
             <div class="search myShadow">
               <input type="text" class="search__input" aria-label="search" placeholder="enter your search">
-              <button class="search__btn" aria-label="submit search"><i class="fas fa-search" ></i></button>
+              <button type="submit" class="search__btn" aria-label="submit search"><i class="fas fa-search" ></i></button>
             </div>
             <div class="action ml-3">
-              <button class="btn pr-1 active grid-btn"  onclick="gridView()" return false; data-toggle="tooltip" data-placement="bottom" title="Grid View"><i class="fas fa-th-large grid"></i></button>
-              <button class="btn pl-0 list-btn" onclick="listView()" return false; data-toggle="tooltip" data-placement="bottom" title="List View"><i class="fas fa-bars list"></i></button>
+              <button type="button" class="btn pr-1 active grid-btn"  onclick="gridView()" data-toggle="tooltip" data-placement="bottom" title="Grid View"><i class="fas fa-th-large grid"></i></button>
+              <button type="button" class="btn pl-0 list-btn" onclick="listView()" data-toggle="tooltip" data-placement="bottom" title="List View"><i class="fas fa-bars list"></i></button>
             </div>
           </div>
         </form>

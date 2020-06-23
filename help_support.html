@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wavey | Help & Support</title>
+  <link rel='shortcut icon' href='images/logo.png' type='image/x-icon'>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="fonts/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body id="help_and_support">
+
+<!-- === header section start === -->
+<header class="full-nav">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-py">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo/logo_white_sm.png" alt="logo" class="img-fluid">
+    </a>
+
+    <button class="btn side-menu-btn d-lg-none d-block"  onclick="openNav()">
+      <i class="fas fa-bars"></i>
+      <!-- <img src="images/home/user_profile_pic.png" alt="profile-image" class="img-fluid"> -->
+    </button>
+
+    <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-lg-auto mt-lg-0 mt-5">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-home-lg-alt"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-comments"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-plus-square"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-wallet"></i></a>
+        </li>
+      </ul>
+      <div>
+        <button class="pl-0 btn side-menu-btn" onclick="openNav()">
+          <img src="images/home/user_profile_pic.png" alt="profile-image" class="img-fluid">
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="side-nav">
+    <div class="top-bg"></div>
+    <div class="side-nav-inner">
+      <div class="heading">
+        <div class="d-flex justify-content-between align-items-center border-bottom p-2">
+          <div class="d-flex profile">
+            <div class="profile-image-box">
+              <img src="images/home/user_profile_pic.png" alt="profile-image" class="img-fluid profile-image">
+            </div>
+            <div>
+              <h5 class="user-name">Daniel James</h5>
+              <span class="user-sub-name">@daniel_James</span>
+            </div>
+          </div>
+
+          <div class="close-btn-box">
+            <button class="btn close-btn" onclick="closeNav()"><i class="fal fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <div class="statistics-full">
+          <div class="text-center">
+            <button class="btn static-btn" type="button" data-toggle="collapse" data-target="#statistics" aria-expanded="false" aria-controls="statistics">
+              Profile Statistics <span class="pl-1"><i class="fal fa-chevron-down"></i></span>
+            </button>
+          </div>
+
+          <div class="collapse show" id="statistics">
+            <div class="data-card m-2 text-nowrap text-center">
+              <div class="row fan-follow mx-0">
+                <div class="col-6 w-50 border-right">
+                  <div class="fan">
+                    <h5>987</h5>
+                    <span>Fans</span>
+                  </div>
+                </div>
+                <div class="col-6 w-50">
+                  <div class="following">
+                    <h5>87</h5>
+                    <span>Following</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row meta-data mx-0">
+                <div class="col-4 border-right">
+                  <h3>37.3k</h3>
+                  <span>Likes</span>
+                </div>
+                <div class="col-4 border-right">
+                  <h3>33</h3>
+                  <span>Photos</span>
+                </div>
+                <div class="col-4">
+                  <h3>87</h3>
+                  <span>Posts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="main-nav mt-3">
+        <ul>
+          <li>
+            <a href="#"><i class="fal fa-user-circle"></i> <span>My Profile</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fal fa-bookmark"></i> <span>Bookmarks</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fal fa-star"></i> <span>My Selection</span></a>
+          </li>
+          <li class="border-bottom">
+            <a href="#"><i class="fal fa-cog"></i> <span>Settings</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fal fa-credit-card"></i> <span>Card Details</span></a>
+          </li>
+          <li class="border-bottom">
+            <a href="#"><i class="fal fa-briefcase"></i> <span>Add Bank Details</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fal fa-phone-alt"></i> <span>Help & Support</span></a>
+          </li>
+          <li class="border-bottom">
+            <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fal fa-globe"></i> <span>Language (English)</span> <i class="fal fa-chevron-down arrow-icon"></i>
+                </button>
+                
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#"><i class="fal fa-paste"></i> <span>Logout</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- ===//end of header section === -->
+
+
+<!-- === help-support section start === -->
+<section class="help-support my-40">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <aside class="aside-widget aside-widget-default mb-4">
+          <h1 class="widget-header">Help & Support</h1>
+          <nav class="widget-body">
+            <ul>
+              <li>
+                <a href="#" class="active"><i class="far fa-exclamation-circle"></i> <span>General Questions</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="far fa-user"></i> <span>Subscribing</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="far fa-file-alt"></i> <span> Posting</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="far fa-wallet"></i> <span>Wallet</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="far fa-usd-circle"></i> <span>Earning</span></a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+
+
+      <div class="col-md-8 main-content">
+        <div class="card border-radius-20">
+
+          <div class="card-header myShadow">
+            <h2 class="sec-heading">General Questions</h2>
+          </div>
+
+          <div class="card-body p-20">
+            <div id="accordion">
+              <div class="card text-left mb-20">
+                <div class="card-body p-20">
+                  <button class="btn d-flex align-items-center justify-content-between btn-block px-0" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true" aria-controls="collapse_1">
+                    <span>How do I build a resume?</span> <i class="far fa-chevron-up"></i>
+                  </button>
+                  <div id="collapse_1" class="collapse show" data-parent="#accordion">
+                    <p>Upon clicking a button to build or create your resume, simply pick your template; follow the prompts to answer a few questions; then edit and view your results.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card text-left mb-20">
+                <div class="card-body p-20">
+                  <button class="btn d-flex align-items-center justify-content-between collapsed btn-block px-0" data-toggle="collapse" data-target="#collapse_12" aria-expanded="true" aria-controls="collapse_12">
+                    <span>How do I build a resume?</span> <i class="far fa-chevron-up"></i>
+                  </button>
+                  <div id="collapse_12" class="collapse" data-parent="#accordion">
+                    <p>Upon clicking a button to build or create your resume, simply pick your template; follow the prompts to answer a few questions; then edit and view your results.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card text-left mb-20">
+                <div class="card-body p-20">
+                  <button class="btn d-flex align-items-center justify-content-between collapsed btn-block px-0" data-toggle="collapse" data-target="#collapse_13" aria-expanded="true" aria-controls="collapse_13">
+                    <span>How do I build a resume?</span> <i class="far fa-chevron-up"></i>
+                  </button>
+                  <div id="collapse_13" class="collapse" data-parent="#accordion">
+                    <p>Upon clicking a button to build or create your resume, simply pick your template; follow the prompts to answer a few questions; then edit and view your results.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card text-left mb-20">
+                <div class="card-body p-20">
+                  <button class="btn d-flex align-items-center justify-content-between collapsed btn-block px-0" data-toggle="collapse" data-target="#collapse_4" aria-expanded="true" aria-controls="collapse_4">
+                    <span>How do I build a resume?</span> <i class="far fa-chevron-up"></i>
+                  </button>
+                  <div id="collapse_4" class="collapse" data-parent="#accordion">
+                    <p>Upon clicking a button to build or create your resume, simply pick your template; follow the prompts to answer a few questions; then edit and view your results.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card text-left mb-20">
+                <div class="card-body p-20">
+                  <button class="btn d-flex align-items-center justify-content-between collapsed btn-block px-0" data-toggle="collapse" data-target="#collapse_5" aria-expanded="true" aria-controls="collapse_5">
+                    <span>How do I build a resume?</span> <i class="far fa-chevron-up"></i>
+                  </button>
+                  <div id="collapse_5" class="collapse" data-parent="#accordion">
+                    <p>Upon clicking a button to build or create your resume, simply pick your template; follow the prompts to answer a few questions; then edit and view your results.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card text-left mb-20">
+                <div class="card-body p-20">
+                  <button class="btn d-flex align-items-center justify-content-between collapsed btn-block px-0" data-toggle="collapse" data-target="#collapse_6" aria-expanded="true" aria-controls="collapse_6">
+                    <span>How do I build a resume?</span> <i class="far fa-chevron-up"></i>
+                  </button>
+                  <div id="collapse_6" class="collapse" data-parent="#accordion">
+                    <p>Upon clicking a button to build or create your resume, simply pick your template; follow the prompts to answer a few questions; then edit and view your results.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card text-left mb-20">
+                <div class="card-body p-20">
+                  <button class="btn d-flex align-items-center justify-content-between collapsed btn-block px-0" data-toggle="collapse" data-target="#collapse_7" aria-expanded="true" aria-controls="collapse_7">
+                    <span>How do I build a resume?</span> <i class="far fa-chevron-up"></i>
+                  </button>
+                  <div id="collapse_7" class="collapse" data-parent="#accordion">
+                    <p>Upon clicking a button to build or create your resume, simply pick your template; follow the prompts to answer a few questions; then edit and view your results.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card text-left mb-20">
+                <div class="card-body p-20">
+                  <button class="btn d-flex align-items-center justify-content-between collapsed btn-block px-0" data-toggle="collapse" data-target="#collapse_8" aria-expanded="true" aria-controls="collapse_8">
+                    <span>How do I build a resume?</span> <i class="far fa-chevron-up"></i>
+                  </button>
+                  <div id="collapse_8" class="collapse" data-parent="#accordion">
+                    <p>Upon clicking a button to build or create your resume, simply pick your template; follow the prompts to answer a few questions; then edit and view your results.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="d-flex border">
+              <div class="icon"><i class="far fa-question-circle"></i></div>
+              <div class="text">
+                <h5>DIDN'T FIND THE ANSWER?</h5>
+                <p>For assistance please <a href="#"> Contact support </a></p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===//end of help-support section === -->
+
+
+<!-- === ? section start === -->
+<section>
+
+</section>
+<!-- ===//end of ? section === -->
+
+
+<!-- === footer section start === -->
+<footer>
+
+</footer>
+<!-- ===//end of footer section === -->
+
+
+ 
+
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

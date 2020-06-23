@@ -1,0 +1,90 @@
+#notifications .main-content {
+  .card-header {
+    padding-top: 33px;
+    padding-bottom: 33px;
+    -webkit-box-shadow: 0px 0px 22px 0px rgba(231, 233, 242, 1);
+    -moz-box-shadow: 0px 0px 22px 0px rgba(231, 233, 242, 1);
+    -ms-box-shadow: 0px 0px 22px 0px rgba(231, 233, 242, 1);
+    -o-box-shadow: 0px 0px 22px 0px rgba(231, 233, 242, 1);
+    box-shadow: 0px 0px 22px 0px rgba(231, 233, 242, 1);
+  }
+
+  .card-body {
+    ul {
+      li {
+        margin: 0 -20px;
+        &:hover {
+          color: $primary-color;
+          background-image: -moz-linear-gradient( 0deg, rgb(255,240,244) 0%, rgba(246,245,250,0) 100%);
+          background-image: -webkit-linear-gradient( 0deg, rgb(255,240,244) 0%, rgba(246,245,250,0) 100%);
+          background-image: -ms-linear-gradient( 0deg, rgb(255,240,244) 0%, rgba(246,245,250,0) 100%);
+        }
+         a{
+
+          padding: 20px 10px;
+          margin: 0 10px;
+          .img-box {
+            position: relative;
+            height: 55px;
+            width: 55px;
+            margin-right: 15px;
+            img {
+              width: 55px;
+              height: 100%;
+              border-radius: 10px;
+            }
+        
+            i {
+              width: 20px;
+              height: 20px;
+              background: #fff;
+              border: .7px solid #e5e5e5;
+              border-radius: 5px;
+              font-size: 12px;
+              text-align: center;
+              line-height: 20px;
+              color: $primary-color;
+              position: absolute;
+              right: -5px;
+              bottom: -5px;
+            }
+          }
+        
+          .text {
+            h4 {
+              font-size: 14px;
+              font-weight: 500;
+              color: #33394e;
+              margin: 10px 0 5px 0;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+        
+              span {
+                font-weight: 600;
+              }
+            }
+        
+            p.date-time {
+              font-size: 14px;
+              font-weight: 500;
+              color: #a2a2a2;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .card-footer {
+    border-top: none;
+    .load-more-btn {
+      font-size: 14px;
+      font-weight: 700;
+      color: $primary-color;
+    }
+  }
+
+}
