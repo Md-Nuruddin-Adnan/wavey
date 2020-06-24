@@ -226,7 +226,7 @@ a, a:hover {
   -o-box-shadow: 0px 11px 22px 0px #e7e9f2;
   box-shadow: 0px 11px 22px 0px #e7e9f2; }
 
-.myTransition, .btn-rounded, .aside-widget-default .widget-body a {
+.myTransition, .btn-rounded, .btn-rounded-outline, .aside-widget-default .widget-body a {
   transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
@@ -373,6 +373,36 @@ a, a:hover {
   .btn-rounded:hover {
     color: #fff;
     background-image: linear-gradient(180deg, #e12a5f, #eb4072); }
+
+.btn-rounded-outline {
+  border-radius: 25px;
+  background: #fff;
+  text-align: center;
+  color: #db3364;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid #eb4072; }
+  .btn-rounded-outline:hover {
+    color: #fff;
+    background-image: linear-gradient(180deg, #bd1b4a, #eb4072); }
+
+.my-btn-group {
+  border-radius: 10px;
+  background-color: white;
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  padding: 3.5px;
+  box-shadow: 0px 11px 22px 0px #e7e9f2;
+  height: max-content;
+  display: inline-block; }
+  .my-btn-group .btn {
+    background: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(51, 51, 51, 0.8); }
+  .my-btn-group .btn:hover,
+  .my-btn-group .btn.active {
+    background-image: linear-gradient(-180deg, #bd1b4a, #eb4072);
+    color: #fff; }
 
 .top-action .action {
   border-radius: 50px;
@@ -1119,7 +1149,7 @@ a, a:hover {
     color: #db3364; }
 
 /* ===//end of notifications css === */
-/* === _add-card-details css start === */
+/* === add-card-details css start === */
 #add-card-details .container {
   max-width: 860px; }
   #add-card-details .container .card-header h2 {
@@ -1134,7 +1164,206 @@ a, a:hover {
     display: block;
     margin-top: 5px; }
 
-/* ===//end of _add-card-details css === */
+/* ===//end of add-card-details css === */
+/* === setting-my-account-acc css start === */
+#setting-my-account-acc .card-header {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  -webkit-box-shadow: 0px 0px 22px 0px #e7e9f2;
+  -moz-box-shadow: 0px 0px 22px 0px #e7e9f2;
+  -ms-box-shadow: 0px 0px 22px 0px #e7e9f2;
+  -o-box-shadow: 0px 0px 22px 0px #e7e9f2;
+  box-shadow: 0px 0px 22px 0px #e7e9f2; }
+#setting-my-account-acc .form-control {
+  font-size: 16px; }
+  #setting-my-account-acc .form-control::placeholder {
+    font-size: 16px; }
+#setting-my-account-acc .border-bottom.form-default {
+  margin: 0 -20px;
+  padding: 10px 20px; }
+#setting-my-account-acc .password-form {
+  margin: 0 -20px;
+  padding: 30px 20px 10px 20px;
+  box-shadow: 0px 35px 22px 0px #e7e9f245; }
+  #setting-my-account-acc .password-form .form-control {
+    font-weight: 700; }
+    #setting-my-account-acc .password-form .form-control::placeholder {
+      font-size: 20px; }
+  #setting-my-account-acc .password-form .forgot-password a {
+    font-size: 13px;
+    font-weight: 700;
+    color: #db3364;
+    display: block;
+    line-height: 0.5; }
+    @media (min-width: 768px) {
+      #setting-my-account-acc .password-form .forgot-password a {
+        padding-top: 45px; } }
+  #setting-my-account-acc .password-form .forgot-password span {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 0.5); }
+#setting-my-account-acc .account-delete-form {
+  padding: 30px 0 10px 0; }
+  #setting-my-account-acc .account-delete-form .btn-delete {
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background: #db3364;
+    white-space: nowrap; }
+    #setting-my-account-acc .account-delete-form .btn-delete.disabled, #setting-my-account-acc .account-delete-form .btn-delete:disabled {
+      background: #dcdcdc;
+      opacity: 1; }
+
+/* ===//end of setting-my-account-acc css === */
+/* === settings-my-account-profile css start === */
+#settings-my-account-profile .card-header {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  box-shadow: none; }
+#settings-my-account-profile .image-part {
+  box-shadow: 0px 35px 22px 0px #e7e9f2a8;
+  margin: 0 -20px 20px -20px;
+  padding: 0 20px 30px 20px;
+  border-bottom: 1px solid #eaedf3; }
+  #settings-my-account-profile .image-part small {
+    font-size: 13px;
+    font-weight: 500;
+    color: #a2a2a2;
+    display: block;
+    margin-bottom: 1rem; }
+  #settings-my-account-profile .image-part input[type="file"] {
+    display: none; }
+  #settings-my-account-profile .image-part .cover-img-box label i,
+  #settings-my-account-profile .image-part .profile-img-box label i {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    color: #db3364;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    transition: all 0.2s linear; }
+    #settings-my-account-profile .image-part .cover-img-box label i:hover,
+    #settings-my-account-profile .image-part .profile-img-box label i:hover {
+      background: #db3364;
+      color: #fff;
+      border: 1px solid #db3364; }
+  #settings-my-account-profile .image-part .cover-img-box img {
+    border-radius: 10px; }
+  #settings-my-account-profile .image-part .cover-img-box label {
+    position: absolute;
+    bottom: 3px;
+    right: 15px;
+    cursor: pointer; }
+  #settings-my-account-profile .image-part .profile-img-box {
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: 20px; }
+    #settings-my-account-profile .image-part .profile-img-box img {
+      width: 100%;
+      border-radius: 20px;
+      border: 3px solid #fff; }
+    #settings-my-account-profile .image-part .profile-img-box label {
+      position: absolute;
+      bottom: -15px;
+      right: -10px;
+      cursor: pointer; }
+#settings-my-account-profile label .text-gray {
+  color: #969696;
+  font-weight: 500; }
+
+/* ===//end of settings-my-account-profile css === */
+/* === settings-my-account-security css start === */
+#settings-my-account-security .main-content .card-header {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  box-shadow: 0px 35px 22px 0px #e7e9f2a8; }
+#settings-my-account-security .main-content .card-body .sec-heading {
+  font-size: 14px;
+  font-weight: 600;
+  color: #929292;
+  text-transform: uppercase;
+  margin-bottom: 20px; }
+#settings-my-account-security .main-content .card-body p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3c4768; }
+#settings-my-account-security .main-content .card-body .profile-privacy {
+  margin: 0 -20px;
+  padding: 10px 20px;
+  box-shadow: 0px 35px 22px 0px #e7e9f257; }
+  #settings-my-account-security .main-content .card-body .profile-privacy ul li {
+    padding: 10px 0; }
+    #settings-my-account-security .main-content .card-body .profile-privacy ul li span {
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(60, 71, 104, 0.7);
+      display: block; }
+    #settings-my-account-security .main-content .card-body .profile-privacy ul li .custom-control-input:checked ~ .custom-control-label::before {
+      color: #fff;
+      border-color: #db3364;
+      background-color: #db3364; }
+#settings-my-account-security .main-content .card-body .two-factor {
+  padding: 30px 0 10px 0; }
+  #settings-my-account-security .main-content .card-body .two-factor ul li {
+    padding: 10px 0; }
+    #settings-my-account-security .main-content .card-body .two-factor ul li .steps-heading {
+      font-size: 12px;
+      font-weight: 600;
+      color: #db3364;
+      line-height: 20px; }
+    #settings-my-account-security .main-content .card-body .two-factor ul li p.steps-description {
+      font-weight: 500; }
+      #settings-my-account-security .main-content .card-body .two-factor ul li p.steps-description a {
+        color: #db3364; }
+    #settings-my-account-security .main-content .card-body .two-factor ul li .qr-code {
+      border: 1.5px solid rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 5px;
+      background: #fff;
+      box-shadow: 0px 11px 22px 0px rgba(231, 233, 242, 0.4);
+      margin-right: 20px;
+      min-width: 80px; }
+    #settings-my-account-security .main-content .card-body .two-factor ul li .key-generate .main-key {
+      font-size: 14px;
+      font-weight: 600;
+      color: #db3364; }
+    #settings-my-account-security .main-content .card-body .two-factor ul li .key-generate .key-generate-btn {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #b8c9de;
+      border-radius: 50%;
+      background: #fff;
+      color: #5c6f84;
+      font-size: 12px;
+      text-align: center;
+      line-height: 30px;
+      padding: 0;
+      margin-left: 10px; }
+      #settings-my-account-security .main-content .card-body .two-factor ul li .key-generate .key-generate-btn:hover {
+        background: #db3364;
+        color: #fff;
+        border: 1px solid #db3364; }
+    #settings-my-account-security .main-content .card-body .two-factor ul li .form-control {
+      font-size: 14px;
+      font-weight: 600;
+      color: #3c4768;
+      background: #f7fafe;
+      border: 1px solid #dcdee2;
+      border-radius: 8px;
+      padding: 25px 15px;
+      margin: 20px 0;
+      max-width: 200px; }
+      #settings-my-account-security .main-content .card-body .two-factor ul li .form-control::placeholder {
+        font-size: 16px;
+        font-weight: 600;
+        color: #3c4768; }
+
+/* ===//end of settings-my-account-security css === */
 /*// end of common css */
 /* main css start */
 /* === header section start === */

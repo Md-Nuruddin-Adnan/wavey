@@ -1,0 +1,128 @@
+#settings-my-account-security {
+
+  .main-content {
+    .card-header {
+      padding-top: 33px;
+      padding-bottom: 33px;
+      box-shadow: 0px 35px 22px 0px #e7e9f2a8;
+    }
+
+    .card-body {
+      .sec-heading {
+        font-size: 14px;
+        font-weight: 600;
+        color: #929292;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        color: #3c4768;
+      }
+
+      .profile-privacy {
+        margin: 0 -20px;
+        padding: 10px 20px;
+        box-shadow: 0px 35px 22px 0px #e7e9f257;
+
+        ul li {
+          padding: 10px 0;
+
+          span {
+            font-size: 14px;
+            font-weight: 500;
+            color: rgba(60, 71, 104, 0.7);
+            display: block;
+          }
+
+          .custom-control-input:checked~.custom-control-label::before {
+            color: #fff;
+            border-color: $primary-color;
+            background-color: $primary-color;
+        }
+
+        }
+      }
+
+      .two-factor {
+        padding: 30px 0 10px 0;
+        ul li {
+          padding: 10px 0;
+
+          .steps-heading {
+            font-size: 12px;
+            font-weight: 600;
+            color: $primary-color;
+            line-height: 20px;
+          }
+
+          p.steps-description {
+            font-weight: 500;
+
+            a {
+              color: $primary-color;
+            }
+          }
+
+          .qr-code {
+            border: 1.5px solid rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 5px;
+            background: #fff;
+            box-shadow: 0px 11px 22px 0px rgba(231, 233, 242, 0.4);
+            margin-right: 20px;
+            min-width: 80px;
+          }
+
+          .key-generate {
+            .main-key {
+              font-size: 14px;
+              font-weight: 600;
+              color: $primary-color;
+            }
+
+            .key-generate-btn {
+              width: 30px;
+              height: 30px;
+              border: 1px solid #b8c9de;
+              border-radius: 50%;
+              background: #fff;
+              color: #5c6f84;
+              font-size: 12px;
+              text-align: center;
+              line-height: 30px;
+              padding: 0;
+              margin-left: 10px;
+
+              &:hover {
+                background: $primary-color;
+                color: #fff;
+                border: 1px solid $primary-color;
+              }
+            }
+          }
+
+          .form-control {
+            font-size: 14px;
+            font-weight: 600;
+            color: #3c4768;
+            background: #f7fafe;
+            border: 1px solid #dcdee2;
+            border-radius: 8px;
+            padding: 25px 15px;
+            margin: 20px 0;
+            max-width: 200px;
+        
+            &::placeholder {
+              font-size: 16px;
+              font-weight: 600;
+              color: #3c4768;
+            }
+          }
+        }
+      }
+    }
+  }
+}
