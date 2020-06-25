@@ -48,12 +48,10 @@
 @import 'settings-my-account-security';
 /* ===//end of settings-my-account-security css === */
 
+/* === wallet css start === */
+@import 'wallet';
+/* ===//end of wallet css === */
 
-/*// end of common css */
-/* main css start */
-/* === header section start === */
-/* ===//end of header section === */
-/* === ? section start === */
-/* ===//end of ? section === */
-/* === footer section start === */
-/* ===//end of footer section === */
+/* === profile-single css start === */
+@import 'profile-single';
+/* ===//end of profile-single css === */

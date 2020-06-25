@@ -214,13 +214,22 @@
 }
 
 // button
-.circle-btn-white {
+.circle-btn-white i{
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0px 11px 22px 0px rgba(231, 233, 242, 1);
   text-align: center;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  color: $primary-color;
+  @extend .myTransition;
+
+  &:hover {
+    color: #fff;
+    background: $primary-color;
+  }
 }
 
 .btn-rounded {
@@ -488,11 +497,13 @@
     border-radius: 50%;
   }
 
-  .custom-control-input:checked~.custom-control-label::before {
-    color: #fff;
-    border-color: $primary-color;
-    background-color: $primary-color;
-  }
+}
+
+// Custom toggle button
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  border-color: $primary-color;
+  background-color: $primary-color;
 }
 
 

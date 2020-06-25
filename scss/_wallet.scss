@@ -1,0 +1,173 @@
+#wallet {
+  .aside-widget {
+    .widget-body {
+      padding: 40px 0;
+      i {
+        font-size: 50px;
+        color: $primary-color;
+      }
+      .balance {
+        font-size: 30px;
+        font-weight: 700;
+        color: $primary-color;
+        padding-top: 25px;
+        padding-bottom: 5px;
+
+        span {
+          font-size: 20px;
+        }
+      }
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        color: #3c4768;
+      }
+    }
+
+    .widget-footer {
+      padding: 30px 0;
+      .btn {
+        padding: 12px 15px;
+      }
+    }
+  }
+
+  .main-content {
+    .card-header {
+      padding-top: 33px;
+      padding-bottom: 33px;
+      -webkit-box-shadow: 0px 0px 22px 0px rgba(231, 233, 242, 1);
+      -moz-box-shadow: 0px 0px 22px 0px rgba(231, 233, 242, 1);
+      -ms-box-shadow: 0px 0px 22px 0px rgba(231, 233, 242, 1);
+      -o-box-shadow: 0px 0px 22px 0px rgba(231, 233, 242, 1);
+      box-shadow: 0px 0px 22px 0px rgba(231, 233, 242, 1);
+    }
+
+    .card-body {
+      .statistics {
+        padding: 20px 0 30px 0;
+        margin: 0 -20px;
+        h4 {
+          font-size: 16px;
+          font-weight: 700;
+          color: #405669;
+        }
+        p {
+          font-size: 13px;
+          font-weight: 600;
+          color: rgba(69, 69, 69, 0.7);
+        }
+      }
+
+      .tab-full {
+        .nav-pills {
+          box-shadow: 0px 25px 50px 0px #e7e9f2a6;
+          margin: 0 -20px;
+          padding: 0 20px;
+          overflow: hidden;
+
+           .nav-link {
+            font-size: 13px;
+            font-weight: 700;
+            color: #000;
+            opacity: 0.6;
+            position: relative;
+            display: block;
+            padding: 1.2rem 1rem;
+
+            &::before {
+              content: '';
+              width: 100px;
+              height: 8px;
+              border-radius: 10px;
+              background: transparent;
+              position: absolute;
+              bottom: -4px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+
+            &.active::before {
+              background: $primary-color;
+            }
+  
+            &.active {
+              opacity: 1;
+              background: transparent;
+            }
+          }
+        }
+
+        .tab-content {
+          ul {
+            margin: 0 -20px;
+            padding: 0 10px;
+            li {
+              padding: 0 10px;
+              border-bottom: 1px solid #eaedf3;
+              border-radius: 5px;
+              &:hover {
+                background-image: -webkit-linear-gradient(0deg, #fff0f4 0%, rgba(246, 245, 250, 0) 100%);
+              }
+
+              &:last-child {
+                border-bottom: none;
+              }
+              a {
+                padding: 20px 0;
+                display: block;
+                i {
+                  width: 40px;
+                  height: 40px;
+                  border: 1px solid #e5e5e5;
+                  border-radius: 10px;
+                  color: #9c9c9c;
+                  text-align: center;
+                  font-size: 15px;
+                  line-height: 40px;
+                }
+
+                .text {
+                  margin-left: 15px;
+                  h4 {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #33394e;
+                    margin: 0;
+
+                    span {
+                      font-weight: 600;
+                    }
+                  }
+
+                  p.date-time {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #a2a2a2;
+                  }
+                }
+
+                .amount {
+                  font-size: 13px;
+                  font-weight: 700;
+                  color: #545454;
+                }
+
+                &.unread {
+                  i {
+                    color: $primary-color;
+                    -webkit-transform: scaleX(-1);
+                    transform: scaleX(-1);
+                  }
+                  .amount {
+                    color: $primary-color;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

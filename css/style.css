@@ -226,7 +226,7 @@ a, a:hover {
   -o-box-shadow: 0px 11px 22px 0px #e7e9f2;
   box-shadow: 0px 11px 22px 0px #e7e9f2; }
 
-.myTransition, .btn-rounded, .btn-rounded-outline, .aside-widget-default .widget-body a {
+.myTransition, .circle-btn-white i, .btn-rounded, .btn-rounded-outline, .aside-widget-default .widget-body a {
   transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
@@ -354,13 +354,19 @@ a, a:hover {
 .post-card .post-footer .bookmark.marked i {
   color: rgba(51, 51, 51, 0.8); }
 
-.circle-btn-white {
+.circle-btn-white i {
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0px 11px 22px 0px #e7e9f2;
   text-align: center;
-  width: 50px;
-  height: 50px; }
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  color: #db3364; }
+  .circle-btn-white i:hover {
+    color: #fff;
+    background: #db3364; }
 
 .btn-rounded {
   border-radius: 25px;
@@ -537,7 +543,8 @@ a, a:hover {
   border: 1px solid #dcdee2; }
 .form-default .custom-checkbox .custom-control-label::before {
   border-radius: 50%; }
-.form-default .custom-control-input:checked ~ .custom-control-label::before {
+
+.custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
   border-color: #db3364;
   background-color: #db3364; }
@@ -1303,10 +1310,6 @@ a, a:hover {
       font-weight: 500;
       color: rgba(60, 71, 104, 0.7);
       display: block; }
-    #settings-my-account-security .main-content .card-body .profile-privacy ul li .custom-control-input:checked ~ .custom-control-label::before {
-      color: #fff;
-      border-color: #db3364;
-      background-color: #db3364; }
 #settings-my-account-security .main-content .card-body .two-factor {
   padding: 30px 0 10px 0; }
   #settings-my-account-security .main-content .card-body .two-factor ul li {
@@ -1364,11 +1367,247 @@ a, a:hover {
         color: #3c4768; }
 
 /* ===//end of settings-my-account-security css === */
-/*// end of common css */
-/* main css start */
-/* === header section start === */
-/* ===//end of header section === */
-/* === ? section start === */
-/* ===//end of ? section === */
-/* === footer section start === */
-/* ===//end of footer section === */
+/* === wallet css start === */
+#wallet .aside-widget .widget-body {
+  padding: 40px 0; }
+  #wallet .aside-widget .widget-body i {
+    font-size: 50px;
+    color: #db3364; }
+  #wallet .aside-widget .widget-body .balance {
+    font-size: 30px;
+    font-weight: 700;
+    color: #db3364;
+    padding-top: 25px;
+    padding-bottom: 5px; }
+    #wallet .aside-widget .widget-body .balance span {
+      font-size: 20px; }
+  #wallet .aside-widget .widget-body p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #3c4768; }
+#wallet .aside-widget .widget-footer {
+  padding: 30px 0; }
+  #wallet .aside-widget .widget-footer .btn {
+    padding: 12px 15px; }
+#wallet .main-content .card-header {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  -webkit-box-shadow: 0px 0px 22px 0px #e7e9f2;
+  -moz-box-shadow: 0px 0px 22px 0px #e7e9f2;
+  -ms-box-shadow: 0px 0px 22px 0px #e7e9f2;
+  -o-box-shadow: 0px 0px 22px 0px #e7e9f2;
+  box-shadow: 0px 0px 22px 0px #e7e9f2; }
+#wallet .main-content .card-body .statistics {
+  padding: 20px 0 30px 0;
+  margin: 0 -20px; }
+  #wallet .main-content .card-body .statistics h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #405669; }
+  #wallet .main-content .card-body .statistics p {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(69, 69, 69, 0.7); }
+#wallet .main-content .card-body .tab-full .nav-pills {
+  box-shadow: 0px 25px 50px 0px #e7e9f2a6;
+  margin: 0 -20px;
+  padding: 0 20px;
+  overflow: hidden; }
+  #wallet .main-content .card-body .tab-full .nav-pills .nav-link {
+    font-size: 13px;
+    font-weight: 700;
+    color: #000;
+    opacity: 0.6;
+    position: relative;
+    display: block;
+    padding: 1.2rem 1rem; }
+    #wallet .main-content .card-body .tab-full .nav-pills .nav-link::before {
+      content: '';
+      width: 100px;
+      height: 8px;
+      border-radius: 10px;
+      background: transparent;
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      transform: translateX(-50%); }
+    #wallet .main-content .card-body .tab-full .nav-pills .nav-link.active::before {
+      background: #db3364; }
+    #wallet .main-content .card-body .tab-full .nav-pills .nav-link.active {
+      opacity: 1;
+      background: transparent; }
+#wallet .main-content .card-body .tab-full .tab-content ul {
+  margin: 0 -20px;
+  padding: 0 10px; }
+  #wallet .main-content .card-body .tab-full .tab-content ul li {
+    padding: 0 10px;
+    border-bottom: 1px solid #eaedf3;
+    border-radius: 5px; }
+    #wallet .main-content .card-body .tab-full .tab-content ul li:hover {
+      background-image: -webkit-linear-gradient(0deg, #fff0f4 0%, rgba(246, 245, 250, 0) 100%); }
+    #wallet .main-content .card-body .tab-full .tab-content ul li:last-child {
+      border-bottom: none; }
+    #wallet .main-content .card-body .tab-full .tab-content ul li a {
+      padding: 20px 0;
+      display: block; }
+      #wallet .main-content .card-body .tab-full .tab-content ul li a i {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #e5e5e5;
+        border-radius: 10px;
+        color: #9c9c9c;
+        text-align: center;
+        font-size: 15px;
+        line-height: 40px; }
+      #wallet .main-content .card-body .tab-full .tab-content ul li a .text {
+        margin-left: 15px; }
+        #wallet .main-content .card-body .tab-full .tab-content ul li a .text h4 {
+          font-size: 14px;
+          font-weight: 500;
+          color: #33394e;
+          margin: 0; }
+          #wallet .main-content .card-body .tab-full .tab-content ul li a .text h4 span {
+            font-weight: 600; }
+        #wallet .main-content .card-body .tab-full .tab-content ul li a .text p.date-time {
+          font-size: 14px;
+          font-weight: 500;
+          color: #a2a2a2; }
+      #wallet .main-content .card-body .tab-full .tab-content ul li a .amount {
+        font-size: 13px;
+        font-weight: 700;
+        color: #545454; }
+      #wallet .main-content .card-body .tab-full .tab-content ul li a.unread i {
+        color: #db3364;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1); }
+      #wallet .main-content .card-body .tab-full .tab-content ul li a.unread .amount {
+        color: #db3364; }
+
+/* ===//end of wallet css === */
+/* === profile-single css start === */
+#profile-single .profile-transition, #profile-single .profile-top .right .top-link i {
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear; }
+#profile-single .profile-top .cover-photo {
+  width: 100%;
+  height: calc(100vw / 3.5 - 1px);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: url(../images/profile/my_cover.png) no-repeat center center/cover;
+  overflow: hidden;
+  margin-top: calc(-7vw + 40px); }
+  @media (max-width: 991px) {
+    #profile-single .profile-top .cover-photo {
+      margin-top: -30px; } }
+  @media (max-width: 767px) {
+    #profile-single .profile-top .cover-photo {
+      height: 200px; } }
+#profile-single .profile-top .profile-photo {
+  margin-top: -50px;
+  margin-right: 20px; }
+  @media (max-width: 767px) {
+    #profile-single .profile-top .profile-photo {
+      margin-top: -40px; } }
+  #profile-single .profile-top .profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+    border: 5px solid #fff; }
+    @media (max-width: 767px) {
+      #profile-single .profile-top .profile-photo img {
+        width: 100px;
+        height: 100px; } }
+#profile-single .profile-top .profile-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #3e4a6b; }
+#profile-single .profile-top .profile-sub-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #db3364;
+  display: block; }
+#profile-single .profile-top .right p.label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #3c4a6e;
+  margin: 0 15px 0 0; }
+#profile-single .profile-top .right .top-link i {
+  width: 35px;
+  height: 35px;
+  color: #50657b;
+  border-radius: 50%;
+  border: 1.5px solid #b8c9de;
+  background: #fff;
+  text-align: center;
+  line-height: 35px;
+  font-size: 14px; }
+  #profile-single .profile-top .right .top-link i:hover {
+    border: 1.5px solid #db3364;
+    background: #db3364;
+    color: #fff; }
+#profile-single .checkout {
+  padding: 15px 0; }
+  #profile-single .checkout .dropdown .btn {
+    font-size: 13px;
+    font-weight: 700;
+    color: #3c4a6e; }
+  #profile-single .checkout .dropdown .dropdown-item {
+    font-size: 13px;
+    font-weight: 700;
+    color: #3c4a6e; }
+  #profile-single .checkout .right .btn-rounded-outline {
+    font-size: 13px;
+    font-weight: 700;
+    color: #3b566b;
+    border-color: #b8c9de; }
+    #profile-single .checkout .right .btn-rounded-outline:hover {
+      color: #fff; }
+#profile-single .profile-statistics {
+  box-shadow: 0px 25px 50px 0px #e7e9f2a6;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: #fff;
+  background-image: linear-gradient(-180deg, #f3f9ff 10%, #fff); }
+  #profile-single .profile-statistics .nav-pills {
+    margin: 0 -20px;
+    padding: 0 20px;
+    overflow: hidden; }
+    #profile-single .profile-statistics .nav-pills .nav-link {
+      position: relative;
+      display: block;
+      padding: 1.2rem 1rem;
+      white-space: nowrap; }
+      #profile-single .profile-statistics .nav-pills .nav-link::before {
+        content: '';
+        width: 100px;
+        height: 8px;
+        border-radius: 10px;
+        background: transparent;
+        position: absolute;
+        bottom: -4px;
+        left: 50%;
+        transform: translateX(-50%); }
+      #profile-single .profile-statistics .nav-pills .nav-link.active::before {
+        background: #db3364; }
+      #profile-single .profile-statistics .nav-pills .nav-link h5 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #405669; }
+      #profile-single .profile-statistics .nav-pills .nav-link span {
+        font-size: 13px;
+        font-weight: 600;
+        color: rgba(69, 69, 69, 0.7); }
+      #profile-single .profile-statistics .nav-pills .nav-link.active {
+        background: transparent; }
+        #profile-single .profile-statistics .nav-pills .nav-link.active h5 {
+          color: #db3364; }
+#profile-single .top-action h1 {
+  font-size: 16px;
+  color: #3e4a6b;
+  font-weight: 700;
+  padding-top: 20px; }
+
+/* ===//end of profile-single css === */
