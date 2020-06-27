@@ -24,6 +24,9 @@ body.overlay {
   background-image: -moz-linear-gradient(to right, #bd1b4a, #eb4072);
   background-image: -ms-linear-gradient(to right, #bd1b4a, #eb4072); }
 
+.text-brand {
+  color: #db3364; }
+
 /* ===//end of configaration === */
 * {
   margin: 0;
@@ -1611,3 +1614,227 @@ a, a:hover {
   padding-top: 20px; }
 
 /* ===//end of profile-single css === */
+/* === my-profile-my-fans css start === */
+#my-profile-my-fans .main-content .card .card-header {
+  padding: 11px 20px; }
+  @media (max-width: 575px) {
+    #my-profile-my-fans .main-content .card .card-header {
+      padding: 20px 10px; } }
+#my-profile-my-fans .main-content .card .card-body ul li {
+  padding: 15px 0;
+  border-bottom: 1px solid #eaedf3; }
+  #my-profile-my-fans .main-content .card .card-body ul li .img-box {
+    position: relative;
+    height: 55px;
+    width: 55px;
+    margin-right: 15px; }
+    #my-profile-my-fans .main-content .card .card-body ul li .img-box img {
+      width: 55px;
+      height: 100%;
+      border-radius: 10px; }
+  #my-profile-my-fans .main-content .card .card-body ul li .text h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #33394e;
+    margin: 10px 0 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; }
+    #my-profile-my-fans .main-content .card .card-body ul li .text h4 span {
+      font-weight: 600; }
+  #my-profile-my-fans .main-content .card .card-body ul li .text p.date-time {
+    font-size: 14px;
+    font-weight: 500;
+    color: #a2a2a2; }
+  #my-profile-my-fans .main-content .card .card-body ul li .action .dropdown .btn {
+    font-size: 16px;
+    color: #bcbcbc;
+    position: relative; }
+  #my-profile-my-fans .main-content .card .card-body ul li .action .dropdown .dropdown-menu {
+    margin: -5px 0px 0 0;
+    border: 1px solid #bcbcbc;
+    border-radius: 10px;
+    margin: 0; }
+    #my-profile-my-fans .main-content .card .card-body ul li .action .dropdown .dropdown-menu .dropdown-item {
+      font-size: 14px;
+      color: #322e46;
+      font-weight: 600;
+      padding: .25rem 1rem; }
+      #my-profile-my-fans .main-content .card .card-body ul li .action .dropdown .dropdown-menu .dropdown-item i {
+        color: #5c5c5c; }
+
+/* ===//end of my-profile-my-fans css === */
+/* === new-post css start === */
+#new-post .creat-post .card-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  padding: 15px 0; }
+#new-post .creat-post .card-body {
+  padding-bottom: 0; }
+  #new-post .creat-post .card-body .uploads {
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 4.95px 4.95px 10px 0px rgba(231, 233, 242, 0.55);
+    background: #fff; }
+    #new-post .creat-post .card-body .uploads .img-box {
+      border-bottom: 1px solid #e5e5e5;
+      box-shadow: 4.95px 4.95px 10px 0px rgba(231, 233, 242, 0.55);
+      position: relative; }
+      #new-post .creat-post .card-body .uploads .img-box a.btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0;
+        border: none; }
+        #new-post .creat-post .card-body .uploads .img-box a.btn i {
+          font-size: 16px;
+          color: #fff;
+          line-height: 50px;
+          background-color: rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 13px 13px rgba(0, 0, 0, 0.3);
+          width: 30px;
+          height: 50px;
+          border-bottom-left-radius: 10px;
+          text-align: center;
+          display: block; }
+          @media (max-wdith: 575px) {
+            #new-post .creat-post .card-body .uploads .img-box a.btn i {
+              line-height: 36px;
+              width: 20px;
+              height: 36px; } }
+    #new-post .creat-post .card-body .uploads .upload-footer i {
+      font-size: 16px;
+      color: #333;
+      padding: 10px 0; }
+  #new-post .creat-post .card-body .upload-button-section .upload-image-label i {
+    width: 60px;
+    height: 60px;
+    background: #fff5f5;
+    border: 1px solid #ffdede;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #db3364;
+    line-height: 60px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer; }
+  #new-post .creat-post .card-body textarea.form-control {
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #353535; }
+  #new-post .creat-post .card-body .btn.emoji {
+    position: absolute;
+    bottom: 0px;
+    right: 30px; }
+#new-post .creat-post .card-footer {
+  border-top: none;
+  padding-top: 0; }
+  #new-post .creat-post .card-footer .action .btn {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #db3364;
+    background: #fff;
+    border-radius: 50%;
+    color: #db3364;
+    text-align: center;
+    padding: 0;
+    font-size: 16px;
+    line-height: 45px;
+    margin: 5px; }
+    #new-post .creat-post .card-footer .action .btn:hover {
+      color: #fff;
+      background: #db3364; }
+
+/* ===//end of new-post css === */
+/* === my-contacts-chat css start === */
+#my-contacts-chat .all-contacts .card-header h1 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #333; }
+#my-contacts-chat .all-contacts .card-header .btn {
+  font-size: 20px; }
+#my-contacts-chat .all-contacts .card-body ul li {
+  margin: 0 -25px;
+  padding: 15px;
+  border-bottom: 1px solid #d8e4f5; }
+  #my-contacts-chat .all-contacts .card-body ul li:last-child {
+    border-bottom: none; }
+  #my-contacts-chat .all-contacts .card-body ul li a .img-box {
+    width: 45px;
+    position: relative; }
+    #my-contacts-chat .all-contacts .card-body ul li a .img-box img {
+      width: 45px;
+      height: 45px;
+      border: 3px solid #fff;
+      border-radius: 10px;
+      box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2); }
+    #my-contacts-chat .all-contacts .card-body ul li a .img-box .online-status {
+      width: 12px;
+      height: 12px;
+      border: 1.2px solid #fff;
+      background: #7ed321;
+      border-radius: 50%;
+      position: absolute;
+      top: -2px;
+      right: -2px; }
+  #my-contacts-chat .all-contacts .card-body ul li a .text {
+    width: 75%;
+    padding-left: 10px; }
+    #my-contacts-chat .all-contacts .card-body ul li a .text .user-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: #333; }
+    #my-contacts-chat .all-contacts .card-body ul li a .text p {
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(51, 51, 51, 0.6);
+      font-weight: 500;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      margin: 3px 0 0 0;
+      line-height: 14px; }
+  #my-contacts-chat .all-contacts .card-body ul li a .right-status .time {
+    font-size: 13px;
+    font-weight: 500;
+    color: #8d97a5;
+    margin-bottom: 5px; }
+  #my-contacts-chat .all-contacts .card-body ul li a .right-status span {
+    width: 20px;
+    height: 20px;
+    display: block;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    background-image: linear-gradient(90deg, #bd1b4a, #eb4072); }
+  #my-contacts-chat .all-contacts .card-body ul li a .right-status span.curency-symble {
+    position: relative;
+    margin-right: -4px;
+    z-index: 1; }
+  #my-contacts-chat .all-contacts .card-body ul li a .right-status span.curency-symble.success {
+    background-image: -moz-linear-gradient(-90deg, #b4ec51 0%, #429321 100%);
+    background-image: -webkit-linear-gradient(-90deg, #b4ec51 0%, #429321 100%);
+    background-image: -ms-linear-gradient(-90deg, #b4ec51 0%, #429321 100%); }
+  #my-contacts-chat .all-contacts .card-body ul li a .right-status span.curency-symble.info {
+    background-image: -moz-linear-gradient(-90deg, #3023ae 0%, #53a0fd 0%, #8b9eff 100%);
+    background-image: -webkit-linear-gradient(-90deg, #3023ae 0%, #53a0fd 0%, #8b9eff 100%);
+    background-image: -ms-linear-gradient(-90deg, #3023ae 0%, #53a0fd 0%, #8b9eff 100%); }
+  #my-contacts-chat .all-contacts .card-body ul li a .right-status span.curency-symble.warning {
+    background-image: -moz-linear-gradient(-90deg, #f5a051 0%, #ff3737 100%);
+    background-image: -webkit-linear-gradient(-90deg, #f5a051 0%, #ff3737 100%);
+    background-image: -ms-linear-gradient(-90deg, #f5a051 0%, #ff3737 100%); }
+
+/* ===//end of my-contacts-chat css === */

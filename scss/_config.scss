@@ -45,3 +45,8 @@ body.overlay {
   background-image: -moz-linear-gradient(to right, $primary-color-dark  , $primary-color-light);
   background-image: -ms-linear-gradient(to right, $primary-color-dark  , $primary-color-light);
 }
+
+// text color 
+.text-brand {
+  color: $primary-color;
+}
