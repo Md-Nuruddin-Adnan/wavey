@@ -1755,86 +1755,470 @@ a, a:hover {
 
 /* ===//end of new-post css === */
 /* === my-contacts-chat css start === */
-#my-contacts-chat .all-contacts .card-header h1 {
-  font-size: 20px;
-  font-weight: 800;
-  color: #333; }
-#my-contacts-chat .all-contacts .card-header .btn {
-  font-size: 20px; }
-#my-contacts-chat .all-contacts .card-body ul li {
-  margin: 0 -25px;
-  padding: 15px;
-  border-bottom: 1px solid #d8e4f5; }
-  #my-contacts-chat .all-contacts .card-body ul li:last-child {
-    border-bottom: none; }
-  #my-contacts-chat .all-contacts .card-body ul li a .img-box {
-    width: 45px;
-    position: relative; }
-    #my-contacts-chat .all-contacts .card-body ul li a .img-box img {
-      width: 45px;
-      height: 45px;
-      border: 3px solid #fff;
-      border-radius: 10px;
-      box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2); }
-    #my-contacts-chat .all-contacts .card-body ul li a .img-box .online-status {
-      width: 12px;
-      height: 12px;
-      border: 1.2px solid #fff;
-      background: #7ed321;
-      border-radius: 50%;
-      position: absolute;
-      top: -2px;
-      right: -2px; }
-  #my-contacts-chat .all-contacts .card-body ul li a .text {
-    width: 75%;
-    padding-left: 10px; }
-    #my-contacts-chat .all-contacts .card-body ul li a .text .user-name {
-      font-size: 14px;
-      font-weight: 700;
+#my-contacts-chat .all-contacts {
+  margin-right: -50px;
+  position: relative;
+  z-index: 2; }
+  @media (max-width: 991px) {
+    #my-contacts-chat .all-contacts {
+      margin-right: 0; } }
+  #my-contacts-chat .all-contacts .card-header {
+    box-shadow: 3px 0px 15px 0px #e7e9f2;
+    position: relative;
+    z-index: 2; }
+    #my-contacts-chat .all-contacts .card-header h1 {
+      font-size: 20px;
+      font-weight: 800;
       color: #333; }
-    #my-contacts-chat .all-contacts .card-body ul li a .text p {
+    #my-contacts-chat .all-contacts .card-header .btn {
+      font-size: 20px; }
+  #my-contacts-chat .all-contacts .card-body ul li {
+    margin: 0 -1.25rem;
+    padding: 15px .75rem;
+    border-bottom: 1px solid #d8e4f5; }
+    #my-contacts-chat .all-contacts .card-body ul li:last-child {
+      border-bottom: none; }
+    #my-contacts-chat .all-contacts .card-body ul li:hover {
+      background: #fff6f9; }
+    #my-contacts-chat .all-contacts .card-body ul li a .img-box {
+      width: 45px;
+      position: relative; }
+      #my-contacts-chat .all-contacts .card-body ul li a .img-box img {
+        width: 45px;
+        height: 45px;
+        border: 3px solid #fff;
+        border-radius: 10px;
+        box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2); }
+      #my-contacts-chat .all-contacts .card-body ul li a .img-box .online-status {
+        width: 12px;
+        height: 12px;
+        border: 1.2px solid #fff;
+        background: #7ed321;
+        border-radius: 50%;
+        position: absolute;
+        top: -2px;
+        right: -2px; }
+    #my-contacts-chat .all-contacts .card-body ul li a .text {
+      width: 75%;
+      padding-left: 10px; }
+      #my-contacts-chat .all-contacts .card-body ul li a .text .user-name {
+        font-size: 14px;
+        font-weight: 700;
+        color: #333; }
+      #my-contacts-chat .all-contacts .card-body ul li a .text p {
+        font-size: 13px;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 0.6);
+        font-weight: 500;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        margin: 3px 0 0 0;
+        line-height: 14px; }
+    #my-contacts-chat .all-contacts .card-body ul li a .right-status .time {
       font-size: 13px;
       font-weight: 500;
-      color: rgba(51, 51, 51, 0.6);
-      font-weight: 500;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      margin: 3px 0 0 0;
-      line-height: 14px; }
-  #my-contacts-chat .all-contacts .card-body ul li a .right-status .time {
-    font-size: 13px;
-    font-weight: 500;
-    color: #8d97a5;
-    margin-bottom: 5px; }
-  #my-contacts-chat .all-contacts .card-body ul li a .right-status span {
-    width: 20px;
-    height: 20px;
-    display: block;
-    text-align: center;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    font-size: 12px;
-    line-height: 20px;
-    color: #fff;
-    background-image: linear-gradient(90deg, #bd1b4a, #eb4072); }
-  #my-contacts-chat .all-contacts .card-body ul li a .right-status span.curency-symble {
+      color: #8d97a5;
+      margin-bottom: 5px; }
+    #my-contacts-chat .all-contacts .card-body ul li a .right-status span {
+      width: 20px;
+      height: 20px;
+      display: block;
+      text-align: center;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      font-size: 12px;
+      line-height: 20px;
+      color: #fff;
+      background-image: linear-gradient(90deg, #bd1b4a, #eb4072); }
+    #my-contacts-chat .all-contacts .card-body ul li a .right-status span.curency-symble {
+      position: relative;
+      margin-right: -4px;
+      z-index: 1; }
+      #my-contacts-chat .all-contacts .card-body ul li a .right-status span.curency-symble.success {
+        background-image: -moz-linear-gradient(-90deg, #b4ec51 0%, #429321 100%);
+        background-image: -webkit-linear-gradient(-90deg, #b4ec51 0%, #429321 100%);
+        background-image: -ms-linear-gradient(-90deg, #b4ec51 0%, #429321 100%);
+        background-image: linear-gradient(-90deg, #b4ec51 0%, #429321 100%); }
+      #my-contacts-chat .all-contacts .card-body ul li a .right-status span.curency-symble.info {
+        background-image: -moz-linear-gradient(-90deg, #3023ae 0%, #53a0fd 0%, #8b9eff 100%);
+        background-image: -webkit-linear-gradient(-90deg, #3023ae 0%, #53a0fd 0%, #8b9eff 100%);
+        background-image: linear-gradient(-90deg, #3023ae 0%, #53a0fd 0%, #8b9eff 100%); }
+      #my-contacts-chat .all-contacts .card-body ul li a .right-status span.curency-symble.warning {
+        background-image: -moz-linear-gradient(-90deg, #f5a051 0%, #ff3737 100%);
+        background-image: -webkit-linear-gradient(-90deg, #f5a051 0%, #ff3737 100%);
+        background-image: -ms-linear-gradient(-90deg, #f5a051 0%, #ff3737 100%);
+        background-image: linear-gradient(-90deg, #f5a051 0%, #ff3737 100%); }
+#my-contacts-chat .chat-box {
+  position: relative;
+  height: 100%; }
+  #my-contacts-chat .chat-box .card-header {
     position: relative;
-    margin-right: -4px;
-    z-index: 1; }
-  #my-contacts-chat .all-contacts .card-body ul li a .right-status span.curency-symble.success {
-    background-image: -moz-linear-gradient(-90deg, #b4ec51 0%, #429321 100%);
-    background-image: -webkit-linear-gradient(-90deg, #b4ec51 0%, #429321 100%);
-    background-image: -ms-linear-gradient(-90deg, #b4ec51 0%, #429321 100%); }
-  #my-contacts-chat .all-contacts .card-body ul li a .right-status span.curency-symble.info {
-    background-image: -moz-linear-gradient(-90deg, #3023ae 0%, #53a0fd 0%, #8b9eff 100%);
-    background-image: -webkit-linear-gradient(-90deg, #3023ae 0%, #53a0fd 0%, #8b9eff 100%);
-    background-image: -ms-linear-gradient(-90deg, #3023ae 0%, #53a0fd 0%, #8b9eff 100%); }
-  #my-contacts-chat .all-contacts .card-body ul li a .right-status span.curency-symble.warning {
-    background-image: -moz-linear-gradient(-90deg, #f5a051 0%, #ff3737 100%);
-    background-image: -webkit-linear-gradient(-90deg, #f5a051 0%, #ff3737 100%);
-    background-image: -ms-linear-gradient(-90deg, #f5a051 0%, #ff3737 100%); }
+    z-index: 1;
+    background-color: white;
+    box-shadow: -10px 0px 22px 0px rgba(231, 233, 242, 0.004);
+    padding: 16px 20px; }
+    #my-contacts-chat .chat-box .card-header .img-box {
+      width: 45px;
+      position: relative; }
+      #my-contacts-chat .chat-box .card-header .img-box img {
+        width: 45px;
+        height: 45px;
+        border: 3px solid #fff;
+        border-radius: 10px;
+        box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2); }
+      #my-contacts-chat .chat-box .card-header .img-box .online-status {
+        width: 12px;
+        height: 12px;
+        border: 1.2px solid #fff;
+        background: #7ed321;
+        border-radius: 50%;
+        position: absolute;
+        top: -2px;
+        right: -2px; }
+    #my-contacts-chat .chat-box .card-header .text {
+      width: 75%;
+      padding-left: 10px; }
+      #my-contacts-chat .chat-box .card-header .text .user-name {
+        font-size: 14px;
+        font-weight: 700;
+        color: #333;
+        margin-top: 5px;
+        display: block; }
+      #my-contacts-chat .chat-box .card-header .text p {
+        font-size: 13px;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 0.6);
+        font-weight: 500;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-height: 14px; }
+    #my-contacts-chat .chat-box .card-header .dropdown .btn {
+      font-size: 16px;
+      color: #bcbcbc;
+      position: relative; }
+    #my-contacts-chat .chat-box .card-header .dropdown .dropdown-menu {
+      margin: -5px 0px 0 0;
+      border: 1px solid #bcbcbc;
+      border-radius: 10px;
+      margin: 0; }
+      #my-contacts-chat .chat-box .card-header .dropdown .dropdown-menu .dropdown-item {
+        font-size: 14px;
+        color: #322e46;
+        font-weight: 600;
+        padding: .25rem 1rem; }
+        #my-contacts-chat .chat-box .card-header .dropdown .dropdown-menu .dropdown-item i {
+          color: #5c5c5c; }
+  #my-contacts-chat .chat-box .card-body {
+    max-height: calc(100% - 156px);
+    overflow: auto;
+    position: relative;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */ }
+    #my-contacts-chat .chat-box .card-body::-webkit-scrollbar {
+      width: 4px; }
+    #my-contacts-chat .chat-box .card-body::-webkit-scrollbar-track {
+      background: #ffffff; }
+    #my-contacts-chat .chat-box .card-body::-webkit-scrollbar-thumb {
+      background: #d8d8d8;
+      border-radius: 10px; }
+    #my-contacts-chat .chat-box .card-body .card-body-inner {
+      position: absolute;
+      padding-right: 10px;
+      height: 100%;
+      bottom: 0; }
+      #my-contacts-chat .chat-box .card-body .card-body-inner .incoming {
+        max-width: 80%; }
+        @media (max-width: 767px) {
+          #my-contacts-chat .chat-box .card-body .card-body-inner .incoming {
+            max-width: 90%; } }
+        #my-contacts-chat .chat-box .card-body .card-body-inner .incoming .img-box {
+          margin-bottom: 15px; }
+          #my-contacts-chat .chat-box .card-body .card-body-inner .incoming .img-box img {
+            width: 25px;
+            height: 25px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            display: block;
+            box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2); }
+          #my-contacts-chat .chat-box .card-body .card-body-inner .incoming .img-box .user-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+            margin-left: 8px;
+            margin-top: 8px; }
+        #my-contacts-chat .chat-box .card-body .card-body-inner .incoming .date-time {
+          font-size: 12px;
+          font-weight: 500;
+          color: #8d97a5; }
+        #my-contacts-chat .chat-box .card-body .card-body-inner .incoming p.messages {
+          font-size: 13px;
+          font-weight: 500;
+          color: #1f2224;
+          line-height: 20px;
+          margin-bottom: 10px;
+          padding: 10px 15px;
+          border-radius: 8px;
+          background-image: -moz-linear-gradient(-90deg, #f2f7ff 0%, #f6f8ff 100%);
+          background-image: -webkit-linear-gradient(-90deg, #f2f7ff 0%, #f6f8ff 100%);
+          background-image: -ms-linear-gradient(-90deg, #f2f7ff 0%, #f6f8ff 100%);
+          background-image: linear-gradient(-90deg, #f2f7ff 0%, #f6f8ff 100%);
+          display: inline-block; }
+        #my-contacts-chat .chat-box .card-body .card-body-inner .incoming .notice-box {
+          border: 1px solid #db3364;
+          border-radius: 8px;
+          padding: 10px;
+          display: inline-block;
+          margin-bottom: 10px; }
+          #my-contacts-chat .chat-box .card-body .card-body-inner .incoming .notice-box .img {
+            width: 35px; }
+            #my-contacts-chat .chat-box .card-body .card-body-inner .incoming .notice-box .img img {
+              width: 100%;
+              border: 1px solid #fff;
+              border-radius: 5px; }
+          #my-contacts-chat .chat-box .card-body .card-body-inner .incoming .notice-box .text p {
+            font-size: 12px;
+            font-weight: 500;
+            color: #343a4c;
+            padding: 0 5px;
+            line-height: 17px; }
+            #my-contacts-chat .chat-box .card-body .card-body-inner .incoming .notice-box .text p.border-right {
+              border-right: 1px solid #ffcfe5 !important; }
+            #my-contacts-chat .chat-box .card-body .card-body-inner .incoming .notice-box .text p span {
+              font-weight: 600;
+              color: #db3364; }
+          #my-contacts-chat .chat-box .card-body .card-body-inner .incoming .notice-box .text .date-time {
+            color: #db3364;
+            display: block;
+            font-size: 11px;
+            margin-top: 5px; }
+          #my-contacts-chat .chat-box .card-body .card-body-inner .incoming .notice-box .right {
+            padding-left: 10px; }
+            #my-contacts-chat .chat-box .card-body .card-body-inner .incoming .notice-box .right .amount {
+              font-size: 12px;
+              font-weight: 700;
+              color: #db3364;
+              position: relative; }
+              #my-contacts-chat .chat-box .card-body .card-body-inner .incoming .notice-box .right .amount::before {
+                content: '';
+                width: 8px;
+                height: 8px;
+                background: #53a0fd;
+                border-radius: 50%;
+                position: absolute;
+                top: 40px;
+                left: 50%;
+                transform: translateX(-50%); }
+      #my-contacts-chat .chat-box .card-body .card-body-inner .outgoing {
+        max-width: 80%; }
+        @media (max-width: 767px) {
+          #my-contacts-chat .chat-box .card-body .card-body-inner .outgoing {
+            max-width: 90%; } }
+        #my-contacts-chat .chat-box .card-body .card-body-inner .outgoing .date-time {
+          font-size: 12px;
+          font-weight: 500;
+          color: #8d97a5;
+          margin-bottom: 10px; }
+        #my-contacts-chat .chat-box .card-body .card-body-inner .outgoing p.messages {
+          font-size: 13px;
+          font-weight: 500;
+          color: #fff;
+          line-height: 20px;
+          margin-bottom: 10px;
+          padding: 10px 15px;
+          border-radius: 8px;
+          background-image: -moz-linear-gradient(-90deg, #bd1b4a 0%, #eb4072 100%);
+          background-image: -webkit-linear-gradient(-90deg, #bd1b4a 0%, #eb4072 100%);
+          background-image: -ms-linear-gradient(-90deg, #bd1b4a 0%, #eb4072 100%);
+          background-image: linear-gradient(-90deg, #bd1b4a 0%, #eb4072 100%);
+          display: table;
+          margin-left: auto; }
+        #my-contacts-chat .chat-box .card-body .card-body-inner .outgoing .notice-box {
+          border: 1px solid #db3364;
+          border-radius: 8px;
+          padding: 10px;
+          display: table;
+          margin-bottom: 10px;
+          margin-left: auto; }
+          #my-contacts-chat .chat-box .card-body .card-body-inner .outgoing .notice-box p {
+            font-size: 12px;
+            font-weight: 500;
+            color: #343a4c; }
+            #my-contacts-chat .chat-box .card-body .card-body-inner .outgoing .notice-box p span {
+              color: #db3364;
+              font-weight: 700; }
+  #my-contacts-chat .chat-box .card-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    #my-contacts-chat .chat-box .card-footer input.form-control {
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+      border: none; }
+      #my-contacts-chat .chat-box .card-footer input.form-control::placeholder {
+        font-size: 14px;
+        font-weight: 500;
+        color: #9ba4b0; }
+    #my-contacts-chat .chat-box .card-footer .action .btn i {
+      color: #bdc9da;
+      font-size: 20px; }
+      #my-contacts-chat .chat-box .card-footer .action .btn i.currency {
+        font-size: 11px;
+        width: 20px;
+        height: 20px;
+        border: 1.5px solid #bdc9da;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 15px; }
 
 /* ===//end of my-contacts-chat css === */
+/* === live-streaming-modal css start === */
+.live-streaming-modal .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1; }
+@media (min-width: 991px) {
+  .live-streaming-modal .main-live .card {
+    height: 100%; } }
+.live-streaming-modal .main-live .card .live-header {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1; }
+  .live-streaming-modal .main-live .card .live-header .img {
+    width: 45px;
+    margin-right: 5px; }
+    .live-streaming-modal .main-live .card .live-header .img img {
+      width: 45px;
+      border-radius: 8px;
+      border: 3px solid #fff; }
+  .live-streaming-modal .main-live .card .live-header .text .user-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    line-height: 1; }
+  .live-streaming-modal .main-live .card .live-header .text .live-button {
+    background-image: linear-gradient(to bottom, #bd1b4a, #eb4072);
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600; }
+  .live-streaming-modal .main-live .card .live-header .text .watching {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600; }
+@media (min-width: 991px) {
+  .live-streaming-modal .main-live .card .embed-responsive {
+    height: 100%; } }
+.live-streaming-modal .live-comments .card {
+  position: relative;
+  height: 100%; }
+  .live-streaming-modal .live-comments .card .card-header h2 {
+    color: #3e4a6b !important;
+    padding: 15px 0; }
+  .live-streaming-modal .live-comments .card .card-body {
+    background-image: -moz-linear-gradient(-90deg, #f5faff 0%, white 100%);
+    background-image: -webkit-linear-gradient(-90deg, #f5faff 0%, white 100%);
+    background-image: -ms-linear-gradient(-90deg, #f5faff 0%, white 100%);
+    background-image: linear-gradient(-90deg, #f5faff 0%, white 100%);
+    padding: 0; }
+    .live-streaming-modal .live-comments .card .card-body ul {
+      display: flex;
+      flex-direction: column;
+      height: calc(100% - 80px);
+      overflow: auto;
+      padding: 20px;
+      /* width */
+      /* Track */
+      /* Handle */ }
+      .live-streaming-modal .live-comments .card .card-body ul::-webkit-scrollbar {
+        width: 4px; }
+      .live-streaming-modal .live-comments .card .card-body ul::-webkit-scrollbar-track {
+        background: #ffffff; }
+      .live-streaming-modal .live-comments .card .card-body ul::-webkit-scrollbar-thumb {
+        background: #d8d8d8;
+        border-radius: 10px; }
+      .live-streaming-modal .live-comments .card .card-body ul li {
+        padding: 10px 0; }
+        .live-streaming-modal .live-comments .card .card-body ul li .left .img {
+          width: 30px;
+          margin-right: 8px; }
+          .live-streaming-modal .live-comments .card .card-body ul li .left .img img {
+            width: 30px; }
+        .live-streaming-modal .live-comments .card .card-body ul li .left .text {
+          width: 100%; }
+          .live-streaming-modal .live-comments .card .card-body ul li .left .text h6.user-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: #343a4c; }
+          .live-streaming-modal .live-comments .card .card-body ul li .left .text p.message {
+            font-size: 12px;
+            font-weight: 500;
+            color: rgba(52, 58, 76, 0.8); }
+        .live-streaming-modal .live-comments .card .card-body ul li .right a i {
+          font-size: 18px;
+          color: #bebebe; }
+        .live-streaming-modal .live-comments .card .card-body ul li .right a.love i {
+          color: #db3364; }
+        .live-streaming-modal .live-comments .card .card-body ul li.request {
+          border: 1px solid #eb4072;
+          padding: 10px;
+          border-radius: 10px; }
+          .live-streaming-modal .live-comments .card .card-body ul li.request .border-right {
+            border-right: 1px solid #ffcfe5 !important; }
+          .live-streaming-modal .live-comments .card .card-body ul li.request .text p {
+            font-size: 12px;
+            font-weight: 500;
+            color: #343a4c;
+            line-height: 13px;
+            padding-top: 3px; }
+            .live-streaming-modal .live-comments .card .card-body ul li.request .text p span {
+              font-weight: 600;
+              color: #db3364; }
+          .live-streaming-modal .live-comments .card .card-body ul li.request .right .btn {
+            padding: 0;
+            padding-left: 10px;
+            font-size: 11px;
+            font-weight: 600; }
+  .live-streaming-modal .live-comments .card .card-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    .live-streaming-modal .live-comments .card .card-footer input.form-control {
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+      border: none; }
+      .live-streaming-modal .live-comments .card .card-footer input.form-control::placeholder {
+        font-size: 14px;
+        font-weight: 500;
+        color: #9ba4b0; }
+    .live-streaming-modal .live-comments .card .card-footer .action .btn i {
+      color: #bdc9da;
+      font-size: 20px; }
+      .live-streaming-modal .live-comments .card .card-footer .action .btn i.currency {
+        font-size: 11px;
+        width: 20px;
+        height: 20px;
+        border: 1.5px solid #bdc9da;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 15px; }
+
+/* ===//end of live-streaming-modal css === */
