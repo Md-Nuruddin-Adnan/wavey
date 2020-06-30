@@ -227,7 +227,7 @@
       max-height: calc(100% - 156px);
       overflow: auto;
       position: relative;
-
+      min-height: 350px;
 
       /* width */
       &::-webkit-scrollbar {

@@ -115,6 +115,7 @@ $('.suggestion-slide').slick({
 }); 
 
 
+
 // grid view div 
 function gridView(){
   $(".grid-list-col").removeClass("col-md-12");
@@ -132,3 +133,12 @@ function listView(){
   $(".grid-btn").removeClass("active");
   return false;
 }
+
+// venobox pop up image
+$('.venobox').venobox({
+  infinigall: false,
+  spinner: "rotating-plane",
+  spinColor: "#bd1b4a",
+  arrowsColor: "white"
+
+}); 

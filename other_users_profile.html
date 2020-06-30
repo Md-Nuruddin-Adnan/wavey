@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Wavey | Others profile</title>
+  <title>Wavey | Other users profile</title>
   <link rel='shortcut icon' href='images/logo.png' type='image/x-icon'>
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="fonts/simple-line-icons/css/simple-line-icons.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/venobox.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body id="profile-single">
@@ -206,14 +207,63 @@
         </div>
       </div>
 
-      <div class="right">
+      <div class="right text-nowrap">
         <a href="#" class="btn btn-rounded"> <i class="far fa-user-plus"></i> Subscribe for $9.99 </a>
-        <a href="#" class="btn btn-rounded-outline"><i class="far fa-usd-square mr-1"></i> Packages <i class="far fa-chevron-down"></i></a>
+        <a href="#" class="btn btn-rounded-outline" data-toggle="modal" data-target=".subscribe-modal"><i class="far fa-usd-square mr-1"></i> Packages <i class="far fa-chevron-down"></i></a>
       </div>
     </div>
   </div>
 </section>
 <!-- ===//end of Checkout section === -->
+
+<!--  === subscribe modal start === -->
+<!-- Large modal -->
+<div class="modal fade subscribe-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="cover-img-box"><img src="images/profile/cover-image-modal.png" alt="cover image" class="w-100"></div>
+      <div class="profile text-center">
+        <div class="profle-image"><img src="images/profile/other-profile-pic.png" alt="profile-image" class="img-fluid"></div>
+        <h5 class="profile-name">Judith Williamson</h5>
+        <h6 class="user-name">@judith.williamson</h6>
+        <a href="#" class="btn btn-rounded"> <i class="far fa-user-plus"></i> Subscribe for $9.99 </a>
+      </div>
+
+      <div class="subscription-benefits">
+        <div class="subscription-benefits-inner">
+          <h3 class="heading">SUBSCRIPTION BENEFITS</h3>
+          <ul>
+            <li>
+              <i class="far fa-check-square"></i>
+              <p>Full Access to All Content</p>
+            </li>
+            <li>
+              <i class="far fa-paper-plane"></i>
+              <p>Direct Message to User</p>
+            </li>
+            <li>
+              <i class="far fa-play-circle"></i>
+              <p>Live Streaming Available</p>
+            </li>
+            <li>
+              <i class="fas fa-quote-left"></i>
+              <p>Posts Tagging Feature</p>
+            </li>
+            <li>
+              <i class="far fa-shield-check"></i>
+              <p>Encrypted Way Security</p>
+            </li>
+            <li>
+              <i class="far fa-unlock"></i>
+              <p>Unsubscribe anytime</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  ===// end of subscribe modal === -->
 
 
 <!-- ===//profile-statistics section === -->
@@ -286,10 +336,12 @@
 </section>
 <!-- ===//end of top-action section === -->
 
+
 <!-- === post-card section start === -->
 <section class="post-card-section">
   <div class="container">
     <div class="row grid-list-view">
+
       <div class="col-md-12 mb-30 grid-list-col">
         <div class="card post-card">
           <div class="card-body">
@@ -318,10 +370,10 @@
             </div>
 
             <div class="post-image">
-            <a href="#"> <img src="images/profile/post_image_3.png" alt="post-image" class="w-100"></a>
+            <a href="images/profile/post_image_3.png" class="venobox" data-gall="myGallery" data-overlay="#000"> <img src="images/profile/post_image_3.png" alt="post-image" class="w-100"></a>
             </div>
             <div class="date-time">Post on 17 May, 2020</div>
-            <h3 class="post-title">‘I am Natalia Raikova, for last 6 years I worked as a photo model. I passionate about acting and I love being in front of camera</h3>
+            <div class="post-title" data-toggle="modal" data-target=".post-modal">My photos were published in ABC and  CBA magazines and I was part of LOCABA <a href="#">campaign@company.com</a> .</div>
 
             <div class="d-flex justify-content-between align-items-center post-footer">
               <div class="meta-data d-flex">
@@ -330,7 +382,6 @@
               </div>
               <a href="#" class="bookmark marked"> <i class="fas fa-bookmark"></i></a>
             </div>
-
           </div>
         </div>
       </div>
@@ -362,19 +413,18 @@
             </div>
 
             <div class="post-image">
-            <a href="#"> <img src="images/profile/post_image_4.png" alt="post-image" class="w-100"></a>
+            <a href="images/profile/post_image_4.png" class="venobox" data-gall="myGallery" data-overlay="#000"> <img src="images/profile/post_image_4.png" alt="post-image" class="w-100"></a>
             </div>
             <div class="date-time">Post on 17 May, 2020</div>
-            <h3 class="post-title">My photos were published in ABC and  CBA magazines and I was part of LOCABA <a href="#">campaign@company.com</a> .</h3>
+            <div class="post-title" data-toggle="modal" data-target=".post-modal">My photos were published in ABC and  CBA magazines and I was part of LOCABA <a href="#">campaign@company.com</a> .</div>
 
             <div class="d-flex justify-content-between align-items-center post-footer">
               <div class="meta-data d-flex">
                 <div class="love"><a href="#"><i class="fas fa-heart"></i> <span> 2.2K </span></a></div>
                 <div class="comment"><a href="#"><i class="far fa-comment-alt-dots"></i><span>678</span></a></div>
               </div>
-              <a href="#" class="bookmark"> <i class="fal fa-bookmark"></i></a>
+              <a href="#" class="bookmark marked"> <i class="fas fa-bookmark"></i></a>
             </div>
-
           </div>
         </div>
       </div>
@@ -383,20 +433,141 @@
 </section>
 <!-- ===//end of post-card section === -->
 
-<!-- === footer section start === -->
-<footer>
+<!-- === post-modal section start === -->
+<div class="modal fade post-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="post-image ">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="images/home/post-modal.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/home/post-modal.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/home/post-modal.png" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="px-20 myShadow">
+        <div class="date-time">Post on 17 May, 2020</div>
+        <div class="post-title">My photos were published in ABC and  CBA magazines and I was part of LOCABA <a href="#">campaign@company.com</a> .</div>
 
-</footer>
-<!-- ===//end of footer section === -->
+        <div class="d-flex justify-content-between align-items-center post-footer">
+          <div class="meta-data d-flex">
+            <div class="love"><a href="#"><i class="fas fa-heart"></i> <span> 2.2K </span></a></div>
+            <div class="comment"><a href="#"><i class="far fa-comment-alt-dots"></i><span>678</span></a></div>
+          </div>
+          <a href="#" class="bookmark marked"> <i class="fas fa-bookmark"></i></a>
+        </div>
+      </div>
+      <div class="card overflow-hidden shadow-none modal-comments">
+        <div class="card-header">
+          <h2>COMMENTS</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li class="message-box">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="left d-flex">
+                  <div class="img"><img src="images/home/suggestion_profile_1.png" alt="profile-image" class="img-fluid"></div>
+                  <div class="text">
+                    <h6 class="user-name">Alen Palm</h6>
+                    <p class="message">Biggest fan of your yoga classes ma'am!</p>
+                    <button class="btn pl-0 reply-btn">Reply</button>
+                  </div>
+                </div>
+                <div class="right">
+                  <a href="#" class="love"><i class="fas fa-heart"></i></a>
+                </div>
+              </div>
+              <div class="reply-message">
+                <div class="left d-flex">
+                  <div class="img"><img src="images/home/suggestion_profile_1.png" alt="profile-image" class="img-fluid"></div>
+                  <div class="text">
+                    <h6 class="user-name">Alen Palm</h6>
+                    <p class="message">Biggest fan of your yoga classes ma'am!</p>
+
+                    <button class="btn pl-0 reply-btn">Reply</button>
+                    <button class="btn pl-0 reply-btn">Delete</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="message-box">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="left d-flex">
+                  <div class="img"><img src="images/home/suggestion_profile_2.png" alt="profile-image" class="img-fluid"></div>
+                  <div class="text">
+                    <h6 class="user-name">Johnathan Caterman</h6>
+                    <p class="message">Great Job!</p>
+                  </div>
+                </div>
+                <div class="right">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="message-box">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="left d-flex">
+                  <div class="img"><img src="images/home/suggestion_profile_3.png" alt="profile-image" class="img-fluid"></div>
+                  <div class="text">
+                    <h6 class="user-name">Alicia Patnoy</h6>
+                    <p class="message">I’m impressed!</p>
+                  </div>
+                </div>
+                <div class="right">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card-footer">
+          <div class="d-flex justify-content-between align-items-center">
+            <input type="text" class="form-control" placeholder="Type a message...">
+            <div class="action d-flex">
+              <button class="btn btn-sm"><i class="far fa-heart"></i></button>
+              <button class="btn btn-sm"><i class="far fa-smile-beam"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ===//end of post-modal section === -->
+
+
 
 
  
 
 
-<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/venobox.min.js"></script>
 <script src="js/custom.js"></script>
 </body>
 </html>
