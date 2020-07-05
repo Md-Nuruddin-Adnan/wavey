@@ -225,3 +225,153 @@
     }
   }
 }
+
+
+
+
+
+
+//********** Dark mode css **********//
+//#####################################
+.dark-mode {
+  .live-streaming-modal{
+    .close {
+      color: $white-color;
+    }
+   .modal-content {
+     background: $card-bg-dark;
+    .main-live {
+      
+      .card {
+        .live-header {
+  
+          .img {
+            img {
+              border: 3px solid #fff;
+            }
+          }
+  
+          .text {
+            .user-name {
+              color: #fff;
+            }
+  
+            .live-button {
+              background-image: linear-gradient(to bottom, $primary-color-dark, $primary-color-light);
+              color: #fff;
+            }
+  
+            .watching {
+              background: rgba(0, 0, 0, 0.5);
+              color: #fff;
+            }
+          }
+        }
+       
+      }
+    }
+  
+    .live-comments {
+      .card {
+  
+        .card-header {
+          h2 {
+            color: #fff!important;
+          }
+        }
+  
+        .card-body {
+          background-image: -moz-linear-gradient( -90deg, $card-bg-dark 0%, $card-bg-dark 100%);
+          background-image: -webkit-linear-gradient( -90deg, $card-bg-dark 0%, $card-bg-dark 100%);
+          background-image: -ms-linear-gradient( -90deg, $card-bg-dark 0%, $card-bg-dark 100%);
+          background-image: linear-gradient( -90deg, $card-bg-dark 0%, $card-bg-dark 100%);
+  
+          ul {
+  
+  
+            /* Track */
+            &::-webkit-scrollbar-track {
+              background: #ffffff;
+            }
+  
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+              background: #d8d8d8;
+            }
+  
+            li {
+              padding: 10px 0;
+              .left {
+  
+                .text {
+                  h6.user-name {
+                    color: $white-color;
+                  }
+                  p.message {
+                    color: $white-color;
+                    opacity: 0.8;
+                  }
+                }
+              }
+  
+              .right {
+                a {
+                  i {
+                    color: #bebebe;
+                  }
+  
+                  &.love i{
+                    color: $primary-color;
+                  }
+                }
+              }
+  
+              &.request {
+                border: 1px solid $primary-color-light;
+  
+                .border-right {
+                  border-right: 1px solid #ffcfe5 !important;
+                }
+  
+                .text {
+                  p {
+                    color: $white-color;
+  
+                    span {
+                      color: $primary-color;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+  
+        .card-footer {
+    
+          input.form-control {
+            color: $white-color;
+            background-color: transparent;
+    
+            &::placeholder {
+              color: $white-color;
+            }
+          }
+    
+          .action {
+            .btn {
+              i {
+                color: #bdc9da;
+    
+                &.currency {
+                  border: 1.5px solid #bdc9da;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+   }
+  }
+}

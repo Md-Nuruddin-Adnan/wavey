@@ -24,3 +24,17 @@
   }
 }
 }
+
+
+
+//********** Dark mode css **********//
+//#####################################
+#add-card-details.dark-mode {
+.container {
+  .card-header {
+      h2 {
+        color: $white-color;
+      }
+    }
+  }
+}

@@ -74,3 +74,65 @@
     }
   }
 }
+
+
+
+
+
+
+//********** Dark mode css **********//
+//#####################################
+#help_and_support.dark-mode .main-content {
+  .card-header {
+    -webkit-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+    -moz-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+    -ms-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+    -o-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+    box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+  }
+
+  #accordion {
+    .card {
+      border: 1px solid $border-color-dark;
+
+      .btn {
+        color: $primary-color;
+
+
+        &.collapsed {
+          color: $white-color;
+          font-weight: 600;
+        }
+      }
+      p {
+        color: rgba($white-color, 0.8);
+        font-weight: 500;
+      }
+    }
+  }
+  
+  .card-footer {
+    .border {
+      border: 1px solid #f8cdde;
+
+      .icon {
+        color: #db3364;
+      }
+
+      .text {
+        h5 {
+          color: $white-color;
+        }
+
+        p {
+          color: rgba($white-color, 0.8);
+          font-weight: 500;
+
+          a {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}

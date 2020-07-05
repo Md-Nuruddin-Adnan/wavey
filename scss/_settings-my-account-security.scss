@@ -120,3 +120,101 @@
     }
   }
 }
+
+
+
+
+
+
+//********** Dark mode css **********//
+//#####################################
+#settings-my-account-security.dark-mode {
+
+  .main-content {
+    .card-header {
+      -webkit-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+      -moz-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+      -ms-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+      -o-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+      box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+    }
+
+    .card-body {
+      .sec-heading {
+        color: $white-color;
+      }
+
+      p {
+        color: rgba($white-color, 0.8);
+      }
+
+      .profile-privacy {
+        box-shadow: none;
+
+        ul li {
+
+          span {
+            color: rgba(60, 71, 104, 0.7);
+          }
+
+        }
+      }
+
+      .two-factor {
+        ul li {
+
+          .steps-heading {
+            color: $primary-color;
+          }
+
+          p.steps-description {
+            color: rgba($white-color, 0.8);
+
+            a {
+              color: $primary-color;
+            }
+          }
+
+          .qr-code {
+            border: 1.5px solid rgba(0, 0, 0, 0.1);
+            background: #fff;
+            -webkit-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+            -moz-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+            -ms-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+            -o-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+            box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+          }
+
+          .key-generate {
+            .main-key {
+              color: $primary-color;
+            }
+
+            .key-generate-btn {
+              border: 1px solid #b8c9de;
+              background: #fff;
+              color: #5c6f84;
+
+              &:hover {
+                background: $primary-color;
+                color: #fff;
+                border: 1px solid $primary-color;
+              }
+            }
+          }
+
+          .form-control {
+            color: #3c4768;
+            background: #f7fafe;
+            border: 1px solid #dcdee2;
+            max-width: 200px;
+        
+            &::placeholder {
+              color: #3c4768;
+            }
+          }
+        }
+      }
+    }
+  }
+}

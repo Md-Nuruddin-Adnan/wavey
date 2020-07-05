@@ -88,3 +88,66 @@
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+//********** Dark mode css **********//
+//#####################################
+#notifications.dark-mode .main-content {
+  .card-header {
+    -webkit-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+    -moz-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+    -ms-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+    -o-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+    box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
+  }
+
+  .card-body {
+    ul {
+      li {
+        &:hover {
+          color: $primary-color;
+          background-image: -moz-linear-gradient( 0deg, rgb(255,240,244) 0%, rgba(246,245,250,0) 100%);
+          background-image: -webkit-linear-gradient( 0deg, rgb(255,240,244) 0%, rgba(246,245,250,0) 100%);
+          background-image: -ms-linear-gradient( 0deg, rgb(255,240,244) 0%, rgba(246,245,250,0) 100%);
+        }
+         a{
+          .img-box {
+        
+            i {
+              background: #fff;
+              border: .7px solid #e5e5e5;
+              color: $primary-color;
+            }
+          }
+        
+          .text {
+            h4 {
+              color: $white-color;
+        
+            }
+        
+            p.date-time {
+              color: #a2a2a2;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .card-footer {
+    .load-more-btn {
+      color: $primary-color;
+    }
+  }
+
+}

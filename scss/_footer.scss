@@ -1,0 +1,72 @@
+.page-footer {
+  background: #fff;
+  .footer-nav {
+    @media(max-width: 991px){
+      padding: 20px 0;
+    }
+  ul {
+      li {
+        padding: 12px 10px;
+
+        @media(max-width: 991px){
+          padding: 0px 10px;
+        }
+        a {
+          font-size:12px;
+          font-weight: 600;
+          color: #879bb7;
+          text-transform: uppercase;
+          transition: all 0.2s linear;
+          -webkit-transition: all 0.2s linear;
+          -moz-transition: all 0.2s linear;
+          -ms-transition: all 0.2s linear;
+          -o-transition: all 0.2s linear;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  p.copyright {
+    font-size:12px;
+    font-weight: 600;
+    color: #879bb7;
+    text-transform: uppercase;
+
+    @media(max-width: 991px){
+      padding-bottom: 20px;
+    }
+  }
+}
+
+
+
+
+
+//********** Dark mode css **********//
+//#####################################
+.dark-mode {
+  .page-footer {
+    background: $card-bg-dark;
+    .footer-nav {
+    ul {
+        li {
+          a {
+            color: #b4c2d4;
+  
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  
+    p.copyright {
+      color: #b4c2d4;
+    }
+  }
+}

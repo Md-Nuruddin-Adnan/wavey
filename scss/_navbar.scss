@@ -11,9 +11,22 @@
   border-bottom-right-radius: 30px;
   overflow: hidden;
 
+
+
   .navbar {
     position: relative;
     z-index: 999;
+
+    .navbar-brand {
+      .color-logo {
+        display: none;
+      }
+    }
+
+    background-image: linear-gradient(to bottom, $primary-color-dark  , $primary-color-light);
+    background-image: -webkit-linear-gradient(to bottom, $primary-color-dark  , $primary-color-light);
+    background-image: -moz-linear-gradient(to bottom, $primary-color-dark  , $primary-color-light);
+    background-image: -ms-linear-gradient(to bottom, $primary-color-dark  , $primary-color-light);
 
     @media(min-width: 991px){
       height: 100px;
@@ -247,6 +260,164 @@
           font-size: 12px;
           padding: 5px 10px;
 
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+    
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+//********** Dark mode css **********//
+//#####################################
+.dark-mode .full-nav {
+
+  .navbar {
+    background-image: linear-gradient(to bottom, $card-bg-dark  , $card-bg-dark);
+    background-image: -webkit-linear-gradient(to bottom, $card-bg-dark  , $card-bg-dark);
+    background-image: -moz-linear-gradient(to bottom, $card-bg-dark  , $card-bg-dark);
+    background-image: -ms-linear-gradient(to bottom, $card-bg-dark  , $card-bg-dark);
+
+
+    .navbar-brand {
+      .color-logo {
+        display: block;
+      }
+      .white-logo {
+        display: none;
+      }
+    }
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: #fcfcfc;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    &.active,
+    &:hover {
+      color: $primary-color;
+      background: #282e40;
+      border: 1px solid #282e40;
+    }
+  }
+
+  .navbar {
+    .side-menu-btn {
+      i {
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        color: #fff;
+      }
+    }
+  }
+
+  .side-nav {
+    background-color: $card-bg-dark;
+    box-shadow: 4px 0px 30px 0px black;
+
+
+    .top-bg {
+      background: $card-bg-dark;
+    }
+
+
+    .heading {
+      border: 1px solid rgba(237, 237, 237, 0);
+      background-color: darken($card-bg-dark, 5);
+      box-shadow: -3px 0px 15px 0px rgba(0, 0, 0, .4);
+
+      .user-name {
+        color: $white-color;
+      }
+      .user-sub-name {
+        color: $white-color;
+        opacity: 0.5;
+      }
+
+      .close-btn {
+        color: $white-color;
+        opacity: 0.5;
+
+        &:hover {
+          color: $primary-color;
+          opacity: 1;
+        }
+      }
+
+      .statistics-full {
+        .static-btn {
+          color: $primary-color;
+        }
+
+        .data-card {
+          border: 1px solid #c2e7ff;
+
+          .fan-follow {
+            border: 1px solid #c2e7ff;
+            background: transparent;
+
+            h5 {
+              color: $primary-color;
+            }
+
+            span {
+              color: $white-color;
+            }
+          }
+
+          .meta-data {
+            padding: 15px 0;
+
+            h3 {
+              color: $white-color;
+            }
+            span {
+              color: rgba($white-color, 0.6); 
+            }
+          }
+        }
+      }
+
+
+
+    }
+
+    .main-nav {
+
+      li:hover button,
+      li:hover button i,
+      li:hover button > a,
+      li:hover > a,
+      li:hover > a i{
+        color: $primary-color;
+      }
+
+      button,
+      a {
+        color: $white-color;
+        font-weight: 600;
+
+        i {
+          color: darken($white-color, 0.5);
+        }
+
+      }
+
+      .dropdown-menu {
+
+        .dropdown-item {
+          color: #333;
           &:hover {
             color: $primary-color;
           }

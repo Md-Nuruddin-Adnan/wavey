@@ -441,9 +441,11 @@
       &:hover,
       &.active {
         color: $primary-color;
-        background-image: -moz-linear-gradient( 0deg, rgb(255,240,244) 0%, rgba(246,245,250,0) 100%);
-        background-image: -webkit-linear-gradient( 0deg, rgb(255,240,244) 0%, rgba(246,245,250,0) 100%);
-        background-image: -ms-linear-gradient( 0deg, rgb(255,240,244) 0%, rgba(246,245,250,0) 100%);
+        background-image: linear-gradient( 90deg, rgb(255,240,244) 0%, rgba(246,245,250,0) 100%);
+        background-image: -moz-linear-gradient( 90deg, rgb(255,240,244) 0%, rgba(246,245,250,0) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(255,240,244) 0%, rgba(246,245,250,0) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(255,240,244) 0%, rgba(246,245,250,0) 100%);
+        background-image: -o-linear-gradient( 90deg, rgb(255,240,244) 0%, rgba(246,245,250,0) 100%);
         
         i {
           color: $primary-color;
@@ -507,4 +509,373 @@
   background-color: $primary-color;
 }
 
+.dark-mode-toggle.btn {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  color: #333;
+  z-index: 999;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  border: 1.5px solid #333;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 35px;
+  padding: 0;
 
+  &:hover {
+    color: #333;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//********** Dark mode css **********//
+//#####################################
+
+.dark-mode {
+
+  
+// shadow 
+.myShadow {
+  -webkit-box-shadow: 0px 11px 22px 0px rgba(42, 42, 42, 1);
+  -moz-box-shadow: 0px 11px 22px 0px rgba(42, 42, 42, 1);
+  -ms-box-shadow: 0px 11px 22px 0px rgba(42, 42, 42, 1);
+  -o-box-shadow: 0px 11px 22px 0px rgba(42, 42, 42, 1);
+  box-shadow: 0px 11px 22px 0px rgba(42, 42, 42, 1);
+}
+
+
+
+// section heading
+.sec-heading {
+  color: $white-color;
+}
+
+.myborder-bottom {
+  border-bottom: 1px solid $border-color-dark;
+}
+
+.myborder-top {
+  border-top: 1px solid $border-color-dark;
+}
+
+
+// card
+.card {
+  background-color: $card-bg-dark;
+  box-shadow: 0px 11px 22px 0px rgba(42, 42, 42, 1);
+}
+
+.card-header {
+  border-bottom: 1px solid $border-color-dark;
+}
+
+.card-footer {
+  border-top: 1px solid $border-color-dark;
+}
+
+.post-card {
+  .profile {
+
+    .profile-name h5 {
+      color: $white-color;
+    }
+
+    .profile-sub-name{
+      color: rgba($white-color, 0.8);
+      font-weight: 500;
+    }
+  }
+
+  .dropdown {
+    .btn {
+      color: #bcbcbc;
+    }
+
+    .dropdown-menu {
+      border: 1px solid #bcbcbc;
+
+      .dropdown-item {
+        color: #322e46;
+
+        i {
+          color: #5c5c5c;
+        }
+      }
+    
+    }
+  }
+
+  .date-time {
+    color: rgba($white-color, 0.8);
+  }
+
+  .post-title {
+    color: $white-color;
+    font-weight: 500;
+
+    a {
+      color: $primary-color;
+    }
+  }
+
+  .post-footer {
+    a {
+      color: rgba($white-color, 0.8);
+    }
+
+    .love i {
+      color: #df4545; 
+    }
+    .comment i {
+      color: #bbc9dc;
+    }
+   
+    .bookmark i {
+      color: #bbc9dc;
+
+      &:hover {
+        color: #686868;
+      }
+    }
+
+    .bookmark.marked i {
+      color: #bbc9dc;
+    }
+  }
+}
+
+// button
+.circle-btn-white i{
+  background-color: $card-bg-dark;
+  box-shadow: 0px 11px 22px 0px rgba(42, 42, 42, 1);
+  color: $primary-color;
+
+  &:hover {
+    color: #fff;
+    background: $primary-color;
+  }
+}
+
+.btn-rounded {
+  background-image: linear-gradient(180deg, $primary-color-dark, $primary-color-light);
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+    background-image: linear-gradient(180deg, lighten($primary-color-dark, 10), $primary-color-light);
+  }
+}
+
+.btn-rounded-outline {
+  background:$primary-color;
+  color: #fff;
+  border: 1px solid $primary-color-light;
+
+  &:hover {
+    color: #fff;
+    background-image: linear-gradient(180deg, $primary-color-dark, $primary-color-light);
+  }
+}
+
+.my-btn-group {
+  background-color: #282e40;
+  border: 1.5px solid #4c4c4c;
+  box-shadow: 0px 11px 22px 0px rgba(42,42,42, 1);
+
+  .btn {
+    background: transparent;
+    color: $white-color;
+  }
+  
+  .btn:hover,
+  .btn.active {
+    background-image: linear-gradient(-180deg, $primary-color-dark  , $primary-color-light);
+    color: #fff;
+  }
+}
+
+// top actoin 
+.top-action {
+  .action {
+    background: $card-bg-dark;
+    @extend .myShadow;
+    
+    .btn {
+      color: #bbc9dc;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  
+    .btn.active {
+      color: $primary-color;
+    }
+  }
+}
+
+
+
+// search
+.search {
+  border: 1px solid transparent;
+  background: $card-bg-dark;
+
+  .search__btn i{
+    color: $primary-color;
+  }
+
+  &__input {
+    background: $card-bg-dark;
+    color: $white-color;
+  }
+
+  &__btn {
+    background: $card-bg-dark;
+    transition: background 150ms ease-in-out;
+  }
+
+  &:focus-within {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    .search__input {
+      opacity: 1;
+    }
+
+    .search__btn {
+      background: #fff;
+      color: $primary-color;
+
+      &:hover,
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+}
+
+
+// aside-widget-default css
+.aside-widget-default {
+  background-color: $card-bg-dark;
+  @extend .myShadow;
+
+  .widget-header {
+    color: $white-color;
+    @extend .myborder-bottom;
+  }
+
+  .widget-body {
+    a {
+      color: $white-color;
+      font-weight: 500;
+
+      &::before {
+        background: transparent;
+      }
+
+      &:hover::before,
+      &.active::before {
+        background: $primary-color;
+      }
+
+      i {
+        text-align: center;
+        color: #969696;
+      }
+
+      &:hover,
+      &.active {
+        color: $primary-color;
+        background-image: linear-gradient( 90deg, $body-bg-dark 0%, $card-bg-dark 100%);
+        background-image: -moz-linear-gradient(  90deg, $body-bg-dark 0%, $card-bg-dark 100%);
+        background-image: -webkit-linear-gradient(  90deg, $body-bg-dark 0%, $card-bg-dark 100%);
+        background-image: -ms-linear-gradient(  90deg, $body-bg-dark 0%, $card-bg-dark 100%);
+        background-image: -o-linear-gradient(  90deg, $body-bg-dark 0%, $card-bg-dark 100%);
+        
+        i {
+          color: $primary-color;
+        }
+      }
+
+      
+    }
+  }
+}
+
+
+// form-default css
+.form-default {
+  .form-heading {
+    color: $white-color;
+  }
+
+  label {
+    color: rgba($white-color, 0.8);
+    font-weight: 500;
+  }
+
+  .form-control {
+    color: #3c4768;
+    background: #f7fafe;
+    border: 1px solid #dcdee2;
+
+    &::placeholder {
+      color: #3c4768;
+    }
+  }
+
+  .custom-select {
+    color: #3c4768;
+    background-color: #f7fafe;
+    border: 1px solid #dcdee2;
+  }
+
+}
+
+// Custom toggle button
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  border-color: $primary-color;
+  background-color: $primary-color;
+}
+
+
+// Dark mode toggle button css
+.dark-mode-toggle.btn {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  color: $white-color;
+  z-index: 999;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  border: 1.5px solid $white-color;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 35px;
+  padding: 0;
+
+  &:hover {
+    color: $white-color;
+  }
+}
+
+
+}

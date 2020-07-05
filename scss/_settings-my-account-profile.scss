@@ -82,3 +82,47 @@
     font-weight: 500;
   }
 }
+
+
+
+
+
+
+
+//********** Dark mode css **********//
+//#####################################
+#settings-my-account-profile.dark-mode {
+
+  .image-part {
+    box-shadow: none;
+    border-bottom: 1px solid $border-color-dark;
+    small {
+      color: #a2a2a2;
+    }
+
+    .cover-img-box,
+    .profile-img-box {
+      label i{
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        color: $primary-color;
+
+        &:hover {
+          background: $primary-color;
+          color: #fff;
+          border: 1px solid $primary-color;
+        }
+      }
+    }
+
+    .profile-img-box {
+      img {
+        border: 3px solid #fff;
+      }
+    }
+  }
+
+  label .text-gray {
+    color: #969696;
+  }
+}

@@ -1,5 +1,7 @@
 "use strict";
 
+
+
 // tol tip activation
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()

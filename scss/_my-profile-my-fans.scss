@@ -13,6 +13,10 @@
           li {
             padding: 15px 0;
             border-bottom: 1px solid #eaedf3;
+
+            &:last-child {
+              border-bottom: none;
+            }
             .img-box {
               position: relative;
               height: 55px;
@@ -68,6 +72,66 @@
                     color: #322e46;
                     font-weight: 600;
                     padding: .25rem 1rem;
+            
+                    i {
+                      color: #5c5c5c;
+                    }
+                  }
+                
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+//********** Dark mode css **********//
+//#####################################
+.dark-mode #my-profile-my-fans {
+  .main-content {
+    .card {
+
+      .card-body {
+        ul {
+          li {
+            border-bottom: 1px solid $border-color-dark;
+
+            &:last-child {
+              border-bottom: none;
+            }
+
+            .text {
+              h4 {
+                color: $white-color;
+                font-weight: 500;
+              }
+          
+              p.date-time {
+                color: #a2a2a2;
+              }
+            }
+
+            .action {
+              .dropdown {
+                .btn {
+                  color: #bcbcbc;
+                }
+            
+                .dropdown-menu {
+                  border: 1px solid #bcbcbc;
+            
+                  .dropdown-item {
+                    color: #322e46;
             
                     i {
                       color: #5c5c5c;
