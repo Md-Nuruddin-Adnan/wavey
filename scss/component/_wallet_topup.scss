@@ -1,0 +1,214 @@
+.wallet_topup {
+    .sec-heading {
+        a {
+            color: inherit;
+        }
+    }
+
+    .amount {
+        text-align: center;
+        padding-bottom: 40px;
+        .input-field {
+            color: $primary-color;
+            span{
+                font-size: 28px;
+            }
+            input::placeholder,
+            input {
+                border: none;
+                text-align: center;
+                font-size: 50px;
+                width: 200px;
+                color: $primary-color;
+                font-weight: 500;
+            }
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #3C4768;
+            padding: 15px 0 10px 0;
+        }
+        p {
+            font-size: 14px;
+            color: #3C4768;
+            span {
+                color: $primary-color; 
+                font-weight: 600;
+            }
+        }
+    }
+
+    .choose-bank {
+        .heading{
+            .title {
+                font-size: 14px;
+                font-weight: 600;
+                color: #929292;
+                text-transform: uppercase;
+            }
+            .sub-title {
+                font-size: 13px;
+                font-weight: 400;
+                color: #A2A2A2;
+                padding: 20px 0;
+
+                a {
+                    font-weight: 600;
+                    color: $primary-color;
+                }
+            }
+        }
+
+        ul {
+            li {
+                padding: 20px;
+                &.active {
+                    background-color: #FFF6F9;
+                }
+                .custom-control-input ~ .custom-control-label::before {
+                    border-radius: 50%;
+                }
+
+                .img {
+                    width: 95px;
+                    height: 60px;
+                    border-radius: 4px;
+                    padding: 10px;
+                    background-color: #FFFFFF;
+                    box-shadow: 2px 2px 11px 0 rgba(0,0,0,0.1);
+                    display: grid;
+                    place-items: center;
+                    margin-right: 20px;
+
+                    img {
+                        max-height: 40px;
+                        object-fit: cover;
+                    }
+                }
+
+                .text {
+                    color: #000;
+                    h3{
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                    h4{
+                        font-size: 13px;
+                        padding: 5px 0;
+                        font-weight: 400;
+                    }
+                    p{
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+                }
+
+                em {
+                    font-size: 12px;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .confirm-top-up {
+        .confirm-top-up-row {
+            .derection-arrow {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: 1;
+                transform: translate(-50%, -50%);
+                width: 40px;
+                height: 40px;
+                background: #fff;
+                color: $primary-color;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 40px;
+
+                @media(max-width: 767px){
+                    top: 55%;
+                    transform: translate(-50%, -50%) rotate(90deg);
+                }
+            }
+           .card {
+               height: 100%;
+               width: 100%;
+               padding: 35px 20px;
+
+                h4 {
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding: 10px 0;
+                }
+                p {
+                    font-size: 14px;
+                }
+
+                &.bank-info {
+                    color: #000;
+                    img {
+                        width: 40px;
+                        margin: 20px auto;
+                    }
+                    h3 {
+                        font-size: 22px;
+                        font-weight: 600;
+                    }
+                }
+
+                &.wallet-info {
+                    padding-top: 50px;
+                    i {
+                        font-size: 40px;
+                        color: $primary-color;
+                    }
+                }
+           }
+        }
+
+        .card-footer {
+            p {
+                font-size: 13px;
+                color: #A2A2A2;
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+    .fooer-btn-group .btn {
+        padding: 12px 15px;
+    }
+
+    .success-failure {
+        height: 100%;
+        text-align: center;
+        display: grid;
+        place-items: center;
+        i {
+            font-size: 55px;
+            color: $primary-color;
+        }
+        .title {
+            font-size: 24px;
+            color: #000;
+            white-space: pre-line;
+        }
+        p {
+            font-size: 13px;
+            color: #333333;
+            line-height: 20px;
+
+            a {
+                font-weight: 600;
+                color: $primary-color;
+            }
+        }
+        .btn {
+            padding: 10px 15px;
+        }
+    }
+}

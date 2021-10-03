@@ -21,6 +21,13 @@
   -o-box-shadow: 0px 11px 22px 0px rgba(231, 233, 242, 1);
   box-shadow: 0px 11px 22px 0px rgba(231, 233, 242, 1);
 }
+.myShadow-sm {
+  -webkit-box-shadow: 0px 11px 22px 0px rgba(231, 233, 242, 0.5);
+  -moz-box-shadow: 0px 11px 22px 0px rgba(231, 233, 242, 0.5);
+  -ms-box-shadow: 0px 11px 22px 0px rgba(231, 233, 242, 0.5);
+  -o-box-shadow: 0px 11px 22px 0px rgba(231, 233, 242, 0.5);
+  box-shadow: 0px 11px 22px 0px rgba(231, 233, 242, 0.5);
+}
 
 // myTransition
 .myTransition {

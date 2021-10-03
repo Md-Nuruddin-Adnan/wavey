@@ -1,86 +1,91 @@
+// ########### base ###########
 @import 'config';
-/* ===//end of configaration === */
-
 @import 'global';
-/* ===//end of global css === */
-
-/* === utility css start === */
 @import 'utility';
-/* ===//end of utility css === */
+// ########### base end ###########
 
 
 /* === All common css start === */
 @import 'common';
 /* ===//end of All common css === */
 
-/* ===login-register css start === */
-@import 'login-register';
-/* ===//end oflogin-register css === */
 
-/* === navbar css start === */
+/* === component css start === */
 @import 'navbar';
-/* ===//end of navbar css === */
-
-/* === home css start === */
-@import 'home';
-/* ===//end of home css === */
-
-/* === help&support css start === */
-@import 'helpSupport';
-/* ===//end of help&support css === */
-
-/* === notifications css start === */
-@import 'notifications';
-/* ===//end of notifications css === */
-
-/* === add-card-details css start === */
-@import 'add-card-details';
-/* ===//end of add-card-details css === */
-
-/* === setting-my-account-acc css start === */
-@import 'settings-my-account-acc';
-/* ===//end of setting-my-account-acc css === */
-
-/* === settings-my-account-profile css start === */
-@import 'settings-my-account-profile';
-/* ===//end of settings-my-account-profile css === */
-
-/* === settings-my-account-security css start === */
-@import 'settings-my-account-security';
-/* ===//end of settings-my-account-security css === */
-
-/* === wallet css start === */
-@import 'wallet';
-/* ===//end of wallet css === */
-
-/* === profile-single css start === */
-@import 'profile-single';
-/* ===//end of profile-single css === */
-
-/* === my-profile-my-fans css start === */
-@import 'my-profile-my-fans';
-/* ===//end of my-profile-my-fans css === */
-
-/* === new-post css start === */
-@import 'new-post';
-/* ===//end of new-post css === */
-
-/* === my-contacts-chat css start === */
-@import 'my-contacts-chat';
-/* ===//end of my-contacts-chat css === */
-
-/* === live-streaming-modal css start === */
-@import 'live-streaming-modal';
-/* ===//end of live-streaming-modal css === */
-
-/* === modal css start === */
-@import 'modal';
-/* ===//end ofmodal css === */
-
-/* === coming-soon css start === */
-@import 'coming-soon';
-/* ===//end ofcoming-soon css === */
-
-/* === footer css start === */
 @import 'footer';
-/* ===//end offooter css === */
+@import 'component/wallet_topup';
+/* ===//end of component css === */
+
+/* === pages css start === */
+@import 'login-register';
+@import 'wallet';
+/* ===//end of pages css === */
+
+
+
+
+
+
+// /* === home css start === */
+// @import 'home';
+// /* ===//end of home css === */
+
+// /* === help&support css start === */
+// @import 'helpSupport';
+// /* ===//end of help&support css === */
+
+// /* === notifications css start === */
+// @import 'notifications';
+// /* ===//end of notifications css === */
+
+// /* === add-card-details css start === */
+// @import 'add-card-details';
+// /* ===//end of add-card-details css === */
+
+// /* === setting-my-account-acc css start === */
+// @import 'settings-my-account-acc';
+// /* ===//end of setting-my-account-acc css === */
+
+// /* === settings-my-account-profile css start === */
+// @import 'settings-my-account-profile';
+// /* ===//end of settings-my-account-profile css === */
+
+// /* === settings-my-account-security css start === */
+// @import 'settings-my-account-security';
+// /* ===//end of settings-my-account-security css === */
+
+// /* === wallet css start === */
+// @import 'wallet';
+// /* ===//end of wallet css === */
+
+// /* === profile-single css start === */
+// @import 'profile-single';
+// /* ===//end of profile-single css === */
+
+// /* === my-profile-my-fans css start === */
+// @import 'my-profile-my-fans';
+// /* ===//end of my-profile-my-fans css === */
+
+// /* === new-post css start === */
+// @import 'new-post';
+// /* ===//end of new-post css === */
+
+// /* === my-contacts-chat css start === */
+// @import 'my-contacts-chat';
+// /* ===//end of my-contacts-chat css === */
+
+// /* === live-streaming-modal css start === */
+// @import 'live-streaming-modal';
+// /* ===//end of live-streaming-modal css === */
+
+// /* === modal css start === */
+// @import 'modal';
+// /* ===//end ofmodal css === */
+
+// /* === coming-soon css start === */
+// @import 'coming-soon';
+// /* ===//end ofcoming-soon css === */
+
+// /* === footer css start === */
+// @import 'footer';
+// /* ===//end offooter css === */
