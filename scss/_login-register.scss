@@ -85,10 +85,23 @@
   .login .slide-2 {
     background: url(../images/login-reg/login_bg_2.png) no-repeat left center/cover;
   }
-  .signup .slide-1 {
+  .login .slide-3 {
     background: url(../images/login-reg/signup_bg_1.png) no-repeat left center/cover;
   }
+  .login .slide-4 {
+    background: url(../images/login-reg/signup_bg_2.png) no-repeat left center/cover;
+  }
+
+  .signup .slide-1 {
+    background: url(../images/login-reg/login_bg_1.png) no-repeat left center/cover;
+  }
   .signup .slide-2 {
+    background: url(../images/login-reg/login_bg_2.png) no-repeat left center/cover;
+  }
+  .signup .slide-3 {
+    background: url(../images/login-reg/signup_bg_1.png) no-repeat left center/cover;
+  }
+  .signup .slide-4 {
     background: url(../images/login-reg/signup_bg_2.png) no-repeat left center/cover;
   }
 
@@ -130,6 +143,7 @@
       font-weight: 600;
       color: #3e4a6b;
       white-space: pre-line;
+      line-height: 36px;
 
       span {
         color: $primary-color;
@@ -200,6 +214,12 @@
     .login-option {
       li {
         padding: 0 7px;
+
+        a {
+          width: 50px;
+          height: 50px;
+          display: block;
+        }
 
         img {
           @extend .shadow-custom;
