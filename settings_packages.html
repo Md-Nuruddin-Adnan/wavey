@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Wavey | Setting my account security</title>
+  <title>Wavey | settings packages</title>
   <link rel='shortcut icon' href='images/logo.png' type='image/x-icon'>
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="fonts/simple-line-icons/css/simple-line-icons.css">
@@ -12,9 +12,8 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/venobox.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body id="settings-my-account-security">
+<body id="settings_packages">
 
 <!-- === dark-mode start === -->
 <button id="dark-mode-toggle" class="dark-mode-toggle btn">
@@ -179,8 +178,8 @@
 
 
 
-<!-- === settings-my-account-security section start === -->
-<section class="settings-my-account-security my-40">
+<!-- === settings_packages section start === -->
+<section class="settings_packages my-40">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
@@ -189,16 +188,19 @@
           <nav class="widget-body">
             <ul>
               <li>
-                <a href="#"><i class="far fa-user"></i> <span>My Profile</span></a>
+                <a href="settings_my_profile.html"><i class="far fa-user"></i> <span>My Profile</span></a>
               </li>
               <li>
-                <a href="#" ><i class="far fa-briefcase"></i> <span>Account</span></a>
+                <a href="settings_my_account.html"><i class="far fa-briefcase"></i> <span>Account</span></a>
+              </li>
+              <li>
+                <a href="settings_packages.html" class="active"><i class="far fa-file-invoice-dollar"></i></i> <span>Packages</span></a>
               </li>
               <li>
                 <a href="#"><i class="far fa-bell"></i> <span>Notifications</span></a>
               </li>
               <li>
-                <a href="#" class="active"><i class="far fa-shield-check"></i> <span>Security</span></a>
+                <a href="settings_account_security.html"><i class="far fa-shield-check"></i> <span>Security</span></a>
               </li>
               <li>
                 <a href="#"><i class="far fa-wallet"></i> <span>Wallet</span></a>
@@ -214,93 +216,23 @@
 
       <div class="col-md-8 main-content">
         <div class="card border-radius-20">
-
           <div class="card-header myShadow">
-            <h2 class="sec-heading">Security Settings</h2>
+            <h2 class="sec-heading">Packages</h2>
           </div>
-
           <div class="card-body p-20">
-            <div class="profile-privacy border-bottom">
-              <h3 class="sec-heading">PROFILE PRIVACY</h3>
-              <ul>
-                <li class="d-flex align-items-center justify-content-between border-bottom">
-                  <p>Show Subscription Offers</p>
-                  <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
-                    <label class="custom-control-label" for="customSwitch1"></label>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center justify-content-between border-bottom">
-                  <p>Show Promotional Messages</p>
-                  <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                    <label class="custom-control-label" for="customSwitch2"></label>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center justify-content-between">
-                  <div>
-                    <p>Allow Co-Streaming Requests</p>
-                    <span>Current selection “Exclusive Members”</span>
-                  </div>
-                  <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="customSwitch3" checked>
-                    <label class="custom-control-label" for="customSwitch3"></label>
-                  </div>
-                </li>
-                <li>
-                  <div class="my-btn-group text-nowrap">
-                    <a href="#" class="btn active">GENERAL</a>
-                    <a href="#" class="btn ">EXCLUSIVE</a>
-                  </div>
-                </li>
-              </ul>
+            <div class="package-intro text-center p-md-5 py-5">
+              <img src="images/settings/packages/packages_wavey.png" alt="packages" class="img-fluid">
+              <h3>Create packages & Start Earning</h3>
+              <p>Show the world your potential and start make money showing your creativity & talent.</p>
+              <a href="settings_packages_2.html" class="btn btn-rounded">Create Now</a>
             </div>
-
-            <div class="two-factor">
-              <h3 class="sec-heading">Two Factor Authentication</h3>
-              <ul class="steps">
-                <li>
-                  <h6 class="steps-heading">Step-1</h6>
-                  <p class="steps-description">Download and install Microsoft or Google Authenticator app 
-                    from <a href="#"> Google Play</a> or<a href="#"> App Store </a></p>
-                </li>
-                <li>
-                  <h6 class="steps-heading">Step-2</h6>
-                  <p class="steps-description">In Microsoft or Google Authenticator app open “Settings“ and select “Set up account“</p>
-                </li>
-                <li>
-                  <h6 class="steps-heading">Step-3</h6>
-                  <p class="steps-description">Select “Scan a barcode“ or “Enter provided key“</p>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div class="qr-code">
-                    <img src="images/settings/qr_code.png" alt="qr-code" class="img-fluid">
-                  </div>
-                  <div class="key-generate">
-                    <p>Auto-Generated Key</p>
-                    <div class="d-flex align-items-center">
-                      <span class="main-key">U7SZYM33THFUJVKX</span>
-                      <button class="btn key-generate-btn"><i class="far fa-clone"></i></button>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <h6 class="steps-heading">Step-4</h6>
-                  <p class="steps-description">Enter code from your Microsoft or Google Authenticator</p>
-                  <input type="text" class="form-control" placeholder="•••••••••••">
-                  <button class="btn btn-rounded-outline px-4">Turn On</button>
-                </li>
-              </ul>
-            </div>
-
           </div>
-
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- ===//end of settings-my-account-security section === -->
+<!-- ===//end of settings_packages section === -->
 
 
  <!-- === footer start === -->

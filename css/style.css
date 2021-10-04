@@ -508,6 +508,7 @@ a, a:hover {
   font-size: 14px;
   font-weight: 700;
   border: none;
+  min-height: 40px;
 }
 
 .btn-rounded:hover {
@@ -524,6 +525,7 @@ a, a:hover {
   font-size: 14px;
   font-weight: 700;
   border: 1px solid #eb4072;
+  min-height: 40px;
 }
 
 .btn-rounded-outline:hover {
@@ -733,7 +735,9 @@ a, a:hover {
   color: #3c4768;
   background: #f7fafe;
   border: 1px solid #dcdee2;
+  border-radius: 8px;
   padding: 20px 15px;
+  min-height: calc(1.5em + 1.5rem + 2px);
 }
 
 .form-default .form-control::-webkit-input-placeholder {
@@ -1808,6 +1812,420 @@ a, a:hover {
 
 .wallet_topup .success-failure .btn {
   padding: 10px 15px;
+}
+
+#settings_my_profile .card-header {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#settings_my_profile .top-heading {
+  margin: 0 -20px 20px -20px;
+  padding: 0 20px 10px 20px;
+}
+
+#settings_my_profile .top-heading small {
+  font-size: 13px;
+  font-weight: 500;
+  color: #a2a2a2;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#settings_my_profile label .text-gray {
+  color: #969696;
+  font-weight: 500;
+}
+
+#settings_my_profile.dark-mode label .text-gray {
+  color: #969696;
+}
+
+#settings_my_account .card-header {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  -webkit-box-shadow: 0px 0px 22px 0px #e7e9f2;
+  -ms-box-shadow: 0px 0px 22px 0px #e7e9f2;
+  -o-box-shadow: 0px 0px 22px 0px #e7e9f2;
+  box-shadow: 0px 0px 22px 0px #e7e9f2;
+}
+
+#settings_my_account .form-control {
+  font-size: 16px;
+}
+
+#settings_my_account .form-control::-webkit-input-placeholder {
+  font-size: 16px;
+}
+
+#settings_my_account .form-control:-ms-input-placeholder {
+  font-size: 16px;
+}
+
+#settings_my_account .form-control::-ms-input-placeholder {
+  font-size: 16px;
+}
+
+#settings_my_account .form-control::placeholder {
+  font-size: 16px;
+}
+
+#settings_my_account .border-bottom.form-default {
+  margin: 0 -20px;
+  padding: 10px 20px;
+}
+
+#settings_my_account .password-form {
+  margin: 0 -20px;
+  padding: 30px 20px 10px 20px;
+  -webkit-box-shadow: 0px 35px 22px 0px #e7e9f245;
+          box-shadow: 0px 35px 22px 0px #e7e9f245;
+}
+
+#settings_my_account .password-form .form-control {
+  font-weight: 700;
+}
+
+#settings_my_account .password-form .form-control::-webkit-input-placeholder {
+  font-size: 20px;
+}
+
+#settings_my_account .password-form .form-control:-ms-input-placeholder {
+  font-size: 20px;
+}
+
+#settings_my_account .password-form .form-control::-ms-input-placeholder {
+  font-size: 20px;
+}
+
+#settings_my_account .password-form .form-control::placeholder {
+  font-size: 20px;
+}
+
+#settings_my_account .password-form .forgot-password a {
+  font-size: 13px;
+  font-weight: 700;
+  color: #db3364;
+  display: block;
+  line-height: 0.5;
+}
+
+@media (min-width: 768px) {
+  #settings_my_account .password-form .forgot-password a {
+    padding-top: 45px;
+  }
+}
+
+#settings_my_account .password-form .forgot-password span {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+#settings_my_account .account-delete-form {
+  padding: 30px 0 10px 0;
+}
+
+#settings_my_account .account-delete-form .btn-delete {
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  background: #db3364;
+  white-space: nowrap;
+}
+
+#settings_my_account .account-delete-form .btn-delete.disabled, #settings_my_account .account-delete-form .btn-delete:disabled {
+  background: #dcdcdc;
+  opacity: 1;
+}
+
+#settings_my_account.dark-mode .card-header {
+  -webkit-box-shadow: 0px 0px 22px 0px #2a2a2a;
+  -ms-box-shadow: 0px 0px 22px 0px #2a2a2a;
+  -o-box-shadow: 0px 0px 22px 0px #2a2a2a;
+  box-shadow: 0px 0px 22px 0px #2a2a2a;
+}
+
+#settings_my_account.dark-mode .password-form {
+  -webkit-box-shadow: 0px 35px 22px 0px #25252545;
+          box-shadow: 0px 35px 22px 0px #25252545;
+}
+
+#settings_my_account.dark-mode .password-form .forgot-password a {
+  color: #db3364;
+}
+
+#settings_my_account.dark-mode .password-form .forgot-password span {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+#settings_my_account.dark-mode .account-delete-form .btn-delete {
+  color: #fff;
+  background: #db3364;
+}
+
+#settings_my_account.dark-mode .account-delete-form .btn-delete.disabled, #settings_my_account.dark-mode .account-delete-form .btn-delete:disabled {
+  background: #dcdcdc;
+  opacity: 1;
+}
+
+#settings_account_security .main-content .card-header {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  -webkit-box-shadow: 0px 35px 22px 0px #e7e9f2a8;
+          box-shadow: 0px 35px 22px 0px #e7e9f2a8;
+}
+
+#settings_account_security .main-content .card-body .sec-heading {
+  font-size: 14px;
+  font-weight: 600;
+  color: #929292;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#settings_account_security .main-content .card-body p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3c4768;
+}
+
+#settings_account_security .main-content .card-body .profile-privacy {
+  margin: 0 -20px;
+  padding: 10px 20px;
+  -webkit-box-shadow: 0px 35px 22px 0px #e7e9f257;
+          box-shadow: 0px 35px 22px 0px #e7e9f257;
+}
+
+#settings_account_security .main-content .card-body .profile-privacy ul li {
+  padding: 10px 0;
+}
+
+#settings_account_security .main-content .card-body .profile-privacy ul li span {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(60, 71, 104, 0.7);
+  display: block;
+}
+
+#settings_account_security .main-content .card-body .two-factor {
+  padding: 30px 0 10px 0;
+}
+
+#settings_account_security .main-content .card-body .two-factor ul li {
+  padding: 10px 0;
+}
+
+#settings_account_security .main-content .card-body .two-factor ul li .steps-heading {
+  font-size: 12px;
+  font-weight: 600;
+  color: #db3364;
+  line-height: 20px;
+}
+
+#settings_account_security .main-content .card-body .two-factor ul li p.steps-description {
+  font-weight: 500;
+}
+
+#settings_account_security .main-content .card-body .two-factor ul li p.steps-description a {
+  color: #db3364;
+}
+
+#settings_account_security .main-content .card-body .two-factor ul li .qr-code {
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 5px;
+  background: #fff;
+  -webkit-box-shadow: 0px 11px 22px 0px rgba(231, 233, 242, 0.4);
+          box-shadow: 0px 11px 22px 0px rgba(231, 233, 242, 0.4);
+  margin-right: 20px;
+  min-width: 80px;
+}
+
+#settings_account_security .main-content .card-body .two-factor ul li .key-generate .main-key {
+  font-size: 14px;
+  font-weight: 600;
+  color: #db3364;
+}
+
+#settings_account_security .main-content .card-body .two-factor ul li .key-generate .key-generate-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #b8c9de;
+  border-radius: 50%;
+  background: #fff;
+  color: #5c6f84;
+  font-size: 12px;
+  text-align: center;
+  line-height: 30px;
+  padding: 0;
+  margin-left: 10px;
+}
+
+#settings_account_security .main-content .card-body .two-factor ul li .key-generate .key-generate-btn:hover {
+  background: #db3364;
+  color: #fff;
+  border: 1px solid #db3364;
+}
+
+#settings_account_security .main-content .card-body .two-factor ul li .form-control {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3c4768;
+  background: #f7fafe;
+  border: 1px solid #dcdee2;
+  border-radius: 8px;
+  padding: 25px 15px;
+  margin: 20px 0;
+  max-width: 200px;
+}
+
+#settings_account_security .main-content .card-body .two-factor ul li .form-control::-webkit-input-placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3c4768;
+}
+
+#settings_account_security .main-content .card-body .two-factor ul li .form-control:-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3c4768;
+}
+
+#settings_account_security .main-content .card-body .two-factor ul li .form-control::-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3c4768;
+}
+
+#settings_account_security .main-content .card-body .two-factor ul li .form-control::placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3c4768;
+}
+
+#settings_account_security.dark-mode .main-content .card-header {
+  -webkit-box-shadow: 0px 0px 22px 0px #2a2a2a;
+  -ms-box-shadow: 0px 0px 22px 0px #2a2a2a;
+  -o-box-shadow: 0px 0px 22px 0px #2a2a2a;
+  box-shadow: 0px 0px 22px 0px #2a2a2a;
+}
+
+#settings_account_security.dark-mode .main-content .card-body .sec-heading {
+  color: #fff;
+}
+
+#settings_account_security.dark-mode .main-content .card-body p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#settings_account_security.dark-mode .main-content .card-body .profile-privacy {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#settings_account_security.dark-mode .main-content .card-body .profile-privacy ul li span {
+  color: rgba(60, 71, 104, 0.7);
+}
+
+#settings_account_security.dark-mode .main-content .card-body .two-factor ul li .steps-heading {
+  color: #db3364;
+}
+
+#settings_account_security.dark-mode .main-content .card-body .two-factor ul li p.steps-description {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#settings_account_security.dark-mode .main-content .card-body .two-factor ul li p.steps-description a {
+  color: #db3364;
+}
+
+#settings_account_security.dark-mode .main-content .card-body .two-factor ul li .qr-code {
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 22px 0px #2a2a2a;
+  -ms-box-shadow: 0px 0px 22px 0px #2a2a2a;
+  -o-box-shadow: 0px 0px 22px 0px #2a2a2a;
+  box-shadow: 0px 0px 22px 0px #2a2a2a;
+}
+
+#settings_account_security.dark-mode .main-content .card-body .two-factor ul li .key-generate .main-key {
+  color: #db3364;
+}
+
+#settings_account_security.dark-mode .main-content .card-body .two-factor ul li .key-generate .key-generate-btn {
+  border: 1px solid #b8c9de;
+  background: #fff;
+  color: #5c6f84;
+}
+
+#settings_account_security.dark-mode .main-content .card-body .two-factor ul li .key-generate .key-generate-btn:hover {
+  background: #db3364;
+  color: #fff;
+  border: 1px solid #db3364;
+}
+
+#settings_account_security.dark-mode .main-content .card-body .two-factor ul li .form-control {
+  color: #3c4768;
+  background: #f7fafe;
+  border: 1px solid #dcdee2;
+  max-width: 200px;
+}
+
+#settings_account_security.dark-mode .main-content .card-body .two-factor ul li .form-control::-webkit-input-placeholder {
+  color: #3c4768;
+}
+
+#settings_account_security.dark-mode .main-content .card-body .two-factor ul li .form-control:-ms-input-placeholder {
+  color: #3c4768;
+}
+
+#settings_account_security.dark-mode .main-content .card-body .two-factor ul li .form-control::-ms-input-placeholder {
+  color: #3c4768;
+}
+
+#settings_account_security.dark-mode .main-content .card-body .two-factor ul li .form-control::placeholder {
+  color: #3c4768;
+}
+
+#settings_packages .main-content .card-header {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  -webkit-box-shadow: 0px 35px 22px 0px #e7e9f2a8;
+          box-shadow: 0px 35px 22px 0px #e7e9f2a8;
+  max-height: 84px;
+}
+
+#settings_packages .main-content .card-header p {
+  font-size: 13px;
+  color: #3C4768;
+}
+
+#settings_packages .main-content .card-header a {
+  font-size: 13px;
+  color: #db3364;
+  font-weight: 600;
+}
+
+#settings_packages .main-content .package-intro h3 {
+  font-size: 18px;
+  color: #000;
+  padding-top: 30px;
+}
+
+#settings_packages .main-content .package-intro p {
+  font-size: 13px;
+  opacity: 0.8;
+  color: #333333;
+  padding: 10px 0 30px 0;
+}
+
+#settings_packages .main-content .btn-rounded-outline,
+#settings_packages .main-content .btn-rounded {
+  line-height: 30px;
 }
 
 /* ===//end of component css === */

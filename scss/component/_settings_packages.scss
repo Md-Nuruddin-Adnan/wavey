@@ -1,0 +1,43 @@
+#settings_packages {
+    .main-content {
+        .card-header {
+            padding-top: 33px;
+            padding-bottom: 33px;
+            box-shadow: 0px 35px 22px 0px #e7e9f2a8;
+            max-height: 84px;
+
+            p {
+                font-size: 13px;
+                color: #3C4768;
+            }
+
+            a {
+                font-size: 13px;
+                color: $primary-color;
+                font-weight: 600;
+            }
+        }
+
+        .package-intro {
+            h3 {
+                font-size: 18px;
+                color: #000;
+                padding-top: 30px;
+            }
+            p {
+                font-size: 13px;
+                opacity: 0.8;
+                color: #333333;
+                padding: 10px 0 30px 0;
+            }
+        }
+
+
+        // package btn
+        .btn-rounded-outline,
+        .btn-rounded {
+            line-height: 30px;
+        }
+      
+    }
+}

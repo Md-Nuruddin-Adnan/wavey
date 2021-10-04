@@ -248,6 +248,7 @@
   font-size: 14px;
   font-weight: 700;
   border: none;
+  min-height: 40px;
   @extend .myTransition;
 
   &:hover {
@@ -264,6 +265,7 @@
   font-size: 14px;
   font-weight: 700;
   border: 1px solid $primary-color-light;
+  min-height: 40px;
   @extend .myTransition;
 
   &:hover {
@@ -486,7 +488,9 @@
     color: #3c4768;
     background: #f7fafe;
     border: 1px solid #dcdee2;
+    border-radius: 8px;
     padding: 20px 15px;
+    min-height: calc(1.5em + 1.5rem + 2px);
 
     &::placeholder {
       font-size: 14px;

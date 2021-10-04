@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Wavey | Setting my profile</title>
+  <title>Wavey | settings packages</title>
   <link rel='shortcut icon' href='images/logo.png' type='image/x-icon'>
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="fonts/simple-line-icons/css/simple-line-icons.css">
@@ -12,10 +12,8 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/venobox.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body id="settings-my-account-profile">
-
+<body id="settings_packages">
 
 <!-- === dark-mode start === -->
 <button id="dark-mode-toggle" class="dark-mode-toggle btn">
@@ -180,9 +178,8 @@
 
 
 
-
-<!-- === settings-my-account-profile section start === -->
-<section class="settings-my-account-profile my-lg-5 my-4">
+<!-- === settings_packages section start === -->
+<section class="settings_packages my-40">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
@@ -191,28 +188,25 @@
           <nav class="widget-body">
             <ul>
               <li>
-                <a href="#" class="active"><i class="far fa-user"></i> <span>My Profile</span></a>
+                <a href="settings_my_profile.html"><i class="far fa-user"></i> <span>My Profile</span></a>
               </li>
               <li>
-                <a href="#" ><i class="far fa-briefcase"></i> <span>Account</span></a>
+                <a href="settings_my_account.html"><i class="far fa-briefcase"></i> <span>Account</span></a>
+              </li>
+              <li>
+                <a href="settings_packages.html" class="active"><i class="far fa-file-invoice-dollar"></i></i> <span>Packages</span></a>
               </li>
               <li>
                 <a href="#"><i class="far fa-bell"></i> <span>Notifications</span></a>
               </li>
               <li>
-                <a href="#"><i class="far fa-comment-alt-dots"></i> <span>Interactions</span></a>
-              </li>
-              <li>
-                <a href="#"><i class="far fa-heart"></i> <span>Liked</span></a>
-              </li>
-              <li>
-                <a href="#"><i class="far fa-usd-circle"></i> <span>Earning</span></a>
+                <a href="settings_account_security.html"><i class="far fa-shield-check"></i> <span>Security</span></a>
               </li>
               <li>
                 <a href="#"><i class="far fa-wallet"></i> <span>Wallet</span></a>
               </li>
               <li>
-                <a href="#"><i class="far fa-globe"></i> <span>Promotions</span></a>
+                <a href="#"><i class="far fa-exclamation-circle"></i> <span>What’s New</span></a>
               </li>
             </ul>
           </nav>
@@ -222,69 +216,27 @@
 
       <div class="col-md-8 main-content">
         <div class="card border-radius-20">
-
-          <div class="card-header myShadow">
-            <h2 class="sec-heading">My Profile Settings</h2>
+          <div class="card-header myShadow d-flex align-items-center justify-content-between">
+            <h2 class="sec-heading">Create Package</h2>
+            <div class="text-right">
+              <p>Need Help creating packages?</p>
+              <a href="#">Know More</a>
+            </div>
           </div>
-
           <div class="card-body p-20">
-            <form class="form-default">
-              <div class="form-group image-part">
-                <label for="" class="mb-0">Chage Profile & Cover Photo</label>
-                <small>Profile images must not containt nudity or explicity material</small>
-                <div class="cover-img-box position-relative">
-                  <img src="images/settings/cover_photo.png" alt="" class="w-100">
-                  <input type="file" id="cover-photo" class="form-control" placeholder="judith.williamson@domain.com">
-                  <label for="cover-photo"><i class="far fa-pencil-alt"></i></label>
-                </div>
-                <div class="profile-img-box position-relative">
-                  <img src="images/settings/profile-photo.png" alt="profile-photo" class="img-fluid">
-                  <input type="file" id="profile-photo">
-                  <label for="profile-photo"><i class="far fa-pencil-alt"></i></label>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="">Username</label>
-                <input type="text" class="form-control" placeholder="Sophile French">
-              </div>
-              <div class="form-group">
-                <label for="">Display Name</label>
-                <input type="text" class="form-control" placeholder="Sophile French">
-              </div>
-              <div class="form-group">
-                <label for="">About Me</label>
-                <textarea class="form-control" rows="4">Lingerie models have helped us break a few stereotypes when it comes to empowering women. </textarea>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="">Subscription Price <span class="text-gray">($ Per Month)</span></label>
-                    <input type="text" class="form-control" placeholder="$ 2.99">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="">Location</label>
-                    <input type="text" class="form-control" placeholder="United States">
-                  </div>
-                </div>
-              </div>
-              
-              <div class="form-group mt-4 text-md-right text-center">
-                <button class="btn px-4 btn-rounded">Save Changes</button>
-              </div>
-            </form>
-
+            <div class="package-intro text-center p-md-5 py-5">
+              <img src="images/settings/packages/packages_wavey.png" alt="packages" class="img-fluid">
+              <h3>Create packages & Start Earning</h3>
+              <p>Show the world your potential and start make money showing your creativity & talent.</p>
+              <a href="#" class="btn btn-rounded">Create Now</a>
+            </div>
           </div>
-
-      
-          
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- ===//end of settings-my-account-profile section === -->
+<!-- ===//end of settings_packages section === -->
 
 
  <!-- === footer start === -->
