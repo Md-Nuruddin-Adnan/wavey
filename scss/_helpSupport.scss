@@ -12,9 +12,10 @@
   #accordion {
     .card {
       border: 1px solid #f2f2f2;
+      box-shadow: 0 11px 22px 0 rgba(231,233,242,0.34);
 
       .btn {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 700;
         color: $primary-color;
 
@@ -31,7 +32,7 @@
         }
       }
       p {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         color: rgba(51, 51, 51, 0.8);
         padding-top: 10px;
@@ -40,8 +41,9 @@
   }
   
   .card-footer {
-    .border {
-      border: 1px solid #f8cdde;
+    .footer-content {
+      border: 1px solid #F8CDDE;
+      box-shadow: 0 11px 22px 0 rgba(231,233,242,0.34);
       border-radius: 10px;
       padding: 15px;
 
