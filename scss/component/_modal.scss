@@ -99,9 +99,36 @@
     border-radius: 15px;
     overflow: hidden;
 
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      z-index: 950;
+      font-size: 30px;
+      text-shadow: 3px 3px 7px rgba(#000, 0.5);
+    }
+
     .post-image {
+      position: relative;
       img {
         display: block;
+      }
+
+      .carousel-item {
+        position: relative;
+
+        .close {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          z-index: 999;
+        }
+      }
+    
+      .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
       }
     }
 
@@ -398,6 +425,12 @@
   }
 }
 
+
+
+// ********** venobox *************
+.vbox-overlay {
+  z-index: 1051 !important;
+}
 
 
 
