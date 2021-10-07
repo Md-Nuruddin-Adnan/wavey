@@ -3129,6 +3129,98 @@ a, a:hover {
   line-height: 15px;
 }
 
+.report-modal .modal-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  white-space: pre-line;
+}
+
+.report-modal .modal-body ul li {
+  padding: 5px 0;
+}
+
+.report-modal .modal-footer .btn {
+  min-width: 100px;
+}
+
+.report-modal .form-default label {
+  font-weight: 500;
+  padding-top: 3px;
+}
+
+.report-modal-success i {
+  font-size: 55px;
+  color: #db3364;
+}
+
+.report-modal-success .title {
+  font-size: 18px;
+  color: #000;
+}
+
+.report-modal-success p {
+  font-size: 13px;
+  opacity: 0.8;
+  color: #333333;
+  line-height: 20px;
+}
+
+.report-modal-success .btn {
+  line-height: 30px;
+  min-width: 100px;
+}
+
+.send-message-modal .modal-header .modal-title {
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+  list-style: 1;
+}
+
+.send-message-modal .modal-header .profile-name {
+  font-size: 12px;
+  color: #db3364;
+  font-weight: 600;
+}
+
+.send-message-modal .modal-header .profile-sub-name {
+  font-size: 12px;
+  color: #333;
+  font-weight: 400;
+}
+
+.send-message-modal .message-box .profile-img-box {
+  width: 60px;
+  margin-right: 15px;
+}
+
+.send-message-modal .message-box .profile-img-box img {
+  width: 60px;
+  border-radius: 10px;
+}
+
+.send-message-modal .message-box .profile-img-box .online {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  font-size: 12px;
+  color: #7ed321;
+}
+
+.send-message-modal .message-box .form-group span {
+  font-size: 12px;
+  color: #333;
+  font-weight: 500;
+}
+
+.send-message-modal .modal-footer .btn-link {
+  font-size: 14px;
+  color: #db3364;
+  font-weight: 600;
+}
+
 .vbox-overlay {
   z-index: 1051 !important;
 }
@@ -3308,6 +3400,26 @@ a, a:hover {
 
 .dark-mode .post-modal .modal-content .modal-comments .card-footer .action .btn i.currency {
   border: 1.5px solid #bdc9da;
+}
+
+.dark-mode .report-modal .modal-content {
+  background: #3a4051;
+}
+
+.dark-mode .report-modal .modal-title {
+  color: #fff;
+}
+
+.dark-mode .report-modal-success .modal-content {
+  background: #3a4051;
+}
+
+.dark-mode .report-modal-success .title {
+  color: #fff;
+}
+
+.dark-mode .report-modal-success p {
+  color: #fff;
 }
 
 /* ===//end of component css === */

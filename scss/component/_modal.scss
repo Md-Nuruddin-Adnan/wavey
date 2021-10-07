@@ -427,6 +427,121 @@
 
 
 
+
+// ********** report-modal *************
+.report-modal {
+  .modal-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    white-space: pre-line;
+  }
+
+  .modal-body {
+    ul {
+      li {
+        padding: 5px 0;
+      }
+    }
+  }
+
+  .modal-footer {
+    .btn {
+      min-width: 100px;
+    }
+  }
+
+  .form-default {
+    label {
+      font-weight: 500;
+      padding-top: 3px;
+    }
+  }
+}
+
+
+  // ********** report-modal-success *************
+  .report-modal-success {
+    i {
+      font-size: 55px;
+      color: #db3364;
+    }
+    .title {
+      font-size: 18px;
+      color: #000;
+    }
+    p {
+      font-size: 13px;
+      opacity: 0.8;
+      color: #333333;
+      line-height: 20px;
+    }
+    .btn {
+      line-height: 30px;
+      min-width: 100px;
+    }
+  }
+
+  
+  // ********** send-message-modal *************
+  .send-message-modal {
+    .modal-header {
+      .modal-title {
+        font-size: 16px;
+        color: #333;
+        font-weight: 700;
+        list-style: 1;
+      }
+      .profile-name {
+        font-size: 12px;
+        color: $primary-color;
+        font-weight: 600;
+      }
+      .profile-sub-name {
+        font-size: 12px;
+        color: #333;
+        font-weight: 400;
+      }
+    }
+
+    .message-box {
+      .profile-img-box {
+        width: 60px;
+        margin-right: 15px;
+        img {
+          width: 60px;
+          border-radius: 10px;
+        }
+        .online {
+          position: absolute;
+          top: -3px;
+          right: -3px;
+          font-size: 12px;
+          color: #7ed321;
+        }
+      }
+
+      .form-group{
+        span{
+          font-size: 12px;
+          color: #333;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .modal-footer {
+      .btn-link {
+        font-size: 14px;
+        color: $primary-color;
+        font-weight: 600;
+      }
+    }
+  }
+
+
+
 // ********** venobox *************
 .vbox-overlay {
   z-index: 1051 !important;
@@ -655,5 +770,33 @@
       }
     }
   }
+
+
+
+  // ********** report-modal *************
+  .report-modal {
+    .modal-content {
+      background: $card-bg-dark;
+    }
+    .modal-title {
+      color: #fff;
+    }
+  }
+
+
+  // ********** report-modal-success *************
+  .report-modal-success {
+    .modal-content {
+      background: $card-bg-dark;
+    }
+    .title {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+
+
 }
 

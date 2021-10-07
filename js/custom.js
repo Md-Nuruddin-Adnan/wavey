@@ -149,5 +149,16 @@ $('.venobox').venobox({
   spinner: "rotating-plane",
   spinColor: "#bd1b4a",
   arrowsColor: "white"
-
 }); 
+
+
+// report-modal input text field show/hide
+let modalMessageInput = $(".report-modal .message-box");
+$('input:radio[name=report]').change(function() {
+  if (this.value == 'other') {
+    modalMessageInput.removeClass('d-none')
+  }
+  else {
+    modalMessageInput.addClass('d-none')
+  }
+});

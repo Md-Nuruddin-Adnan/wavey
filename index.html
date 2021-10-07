@@ -189,7 +189,7 @@
         <form>
           <div class="d-flex align-items-center justify-content-sm-end justify-content-center">
             <div class="search myShadow">
-              <input type="text" class="search__input" aria-label="search" placeholder="enter your search">
+              <input type="text" class="search__input" aria-label="search" placeholder="enter your search" required>
               <button type="submit" class="search__btn" aria-label="submit search"><i class="fas fa-search" ></i></button>
             </div>
             <div class="action ml-3">
@@ -724,8 +724,8 @@
                 </button>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy link of this post</a>
-                  <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
-                  <a class="dropdown-item" href="#"><i class="far fa-paper-plane pr-1"></i>Send a Message</a>
+                  <a class="dropdown-item" href="#" data-toggle="modal" data-target=".report-modal"><i class="far fa-flag pr-1"></i>Report</a>
+                  <a class="dropdown-item" href="#" data-toggle="modal" data-target=".send-message-modal"><i class="far fa-paper-plane pr-1"></i>Send a Message</a>
                 </div>
               </div>
             </div>
@@ -775,7 +775,7 @@
             </div>
 
             <div class="post-image">
-            <a href="#" data-toggle="modal" data-target=".post-modal"> <img src="images/home/post_image_1.png" alt="post-image" class="w-100"></a>
+            <a href="#" data-toggle="modal" data-target=".post-modal"> <img src="images/home/post_image_1_sm.png" alt="post-image" class="w-100"></a>
             </div>
             <div class="date-time">Post on 17 May, 2020</div>
             <h3 class="post-title">My photos were published in ABC and  CBA magazines and I was part of LOCABA <a href="#">campaign@company.com</a> .</h3>
@@ -1028,6 +1028,149 @@
 <!-- ===//end of post-modal section === -->
 
 
+
+<!-- ===// report-modal section === -->
+<div class="modal fade report-modal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-radius-20">
+      <form class="form-default">
+        <div class="modal-header d-block">
+          <h5 class="modal-title">Why you are reporting this post?
+            Please select a reason!</h5>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>
+              <div class="custom-control custom-checkbox">
+                <input type="radio" name="report" class="custom-control-input" id="checkbox-1">
+                <label class="custom-control-label" for="checkbox-1">It’s a Spam</label>
+              </div>
+            </li>
+            <li>
+              <div class="custom-control custom-checkbox">
+                <input type="radio" name="report" class="custom-control-input" id="checkbox-2">
+                <label class="custom-control-label" for="checkbox-2">Sexual Activity</label>
+              </div>
+            </li>
+            <li>
+              <div class="custom-control custom-checkbox">
+                <input type="radio" name="report" class="custom-control-input" id="checkbox-3">
+                <label class="custom-control-label" for="checkbox-3">Hate Speech & Symbols</label>
+              </div>
+            </li>
+            <li>
+              <div class="custom-control custom-checkbox">
+                <input type="radio" name="report" class="custom-control-input" id="checkbox-4" checked>
+                <label class="custom-control-label" for="checkbox-4">Violence or Dangerous</label>
+              </div>
+            </li>
+            <li>
+              <div class="custom-control custom-checkbox">
+                <input type="radio" name="report" class="custom-control-input" id="checkbox-5">
+                <label class="custom-control-label" for="checkbox-5">Illegal Selling</label>
+              </div>
+            </li>
+            <li>
+              <div class="custom-control custom-checkbox">
+                <input type="radio" name="report" class="custom-control-input" id="checkbox-6">
+                <label class="custom-control-label" for="checkbox-6">Bullying or Harassment</label>
+              </div>
+            </li>
+            <li>
+              <div class="custom-control custom-checkbox">
+                <input type="radio" name="report" class="custom-control-input" id="checkbox-7">
+                <label class="custom-control-label" for="checkbox-7">Suicide or Self injury</label>
+              </div>
+            </li>
+            <li>
+              <div class="custom-control custom-checkbox">
+                <input type="radio" name="report" class="custom-control-input" id="checkbox-8">
+                <label class="custom-control-label" for="checkbox-8">It’s a Fraud or Scam</label>
+              </div>
+            </li>
+            <li>
+              <div class="custom-control custom-checkbox">
+                <input type="radio" name="report" class="custom-control-input" id="checkbox-9">
+                <label class="custom-control-label" for="checkbox-9">False Information</label>
+              </div>
+            </li>
+            <li>
+              <div class="custom-control custom-checkbox">
+                <input type="radio" name="report" class="custom-control-input other-radio-box" id="checkbox-10" value="other">
+                <label class="custom-control-label" for="checkbox-10">Other</label>
+              </div>
+            </li>
+            <li class="message-box d-none">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Write the reason here...">
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer d-block text-center">
+          <button type="submit" class="btn btn-rounded" data-toggle="modal" data-target=".report-modal-success" data-dismiss="modal">Report</button>
+          <button type="button" class="btn btn-rounded-outline" data-dismiss="modal">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- report modal success -->
+<div class="modal report-modal-success">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center border-radius-20 py-5">
+      <div class="modal-body">
+        <i class="far fa-check-circle"></i>
+        <h4 class="title pt-4 pb-1">Thanks for reporting this post!</h4>
+        <p class="pb-4">We’ll let the admin know about this report,
+          Thank you for your support!</p>
+        <a href="#" class="btn btn-rounded px-4" data-dismiss="modal">Okay</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ===//end of report-modal section === -->
+
+
+<!-- ===// send-message-modal section === -->
+<div class="modal send-message-modal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-radius-20">
+      <form class="form-default">
+        <div class="modal-header">
+          <div class="text">
+            <h5 class="modal-title">Send direct message</h5>
+            <a href="#" class="profile-name">Natalia Raikova</a>
+            <span class="profile-sub-name">@natalia_raikova</span>
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="message-box d-flex">
+            <div class="profile-img-box position-relative">
+              <a href="#">
+                <img src="images/home/post-profile-image.png" alt="profile image" class="img-fluid">
+                <i class="fas fa-circle online"></i>
+              </a>
+            </div>
+            <div class="form-group mb-0 w-100">
+              <textarea rows="1" class="form-control" placeholder="Write your message here..."></textarea>
+            <span class="d-block text-right">0/200 characters left</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-link">Go to full conversation view</a>
+          <button type="submit" class="btn btn-rounded">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- ===//end of send-message-modal section === -->
 
 <!-- === footer start === -->
 <footer class="page-footer">
