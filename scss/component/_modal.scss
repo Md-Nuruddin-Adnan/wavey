@@ -798,5 +798,29 @@
   }
 
 
+    // ********** send-message-modal *************
+    .send-message-modal {
+      .modal-content {
+        background: $card-bg-dark;
+      }
+      .modal-header {
+        .modal-title {
+          color: #fff;
+        }
+        .profile-sub-name {
+          color: #fff;
+        }
+      }
+  
+      .message-box {
+        .form-group{
+          span{
+            color: #fff;
+          }
+        }
+      }
+    }
+
+
 }
 

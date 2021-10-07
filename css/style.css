@@ -3422,6 +3422,22 @@ a, a:hover {
   color: #fff;
 }
 
+.dark-mode .send-message-modal .modal-content {
+  background: #3a4051;
+}
+
+.dark-mode .send-message-modal .modal-header .modal-title {
+  color: #fff;
+}
+
+.dark-mode .send-message-modal .modal-header .profile-sub-name {
+  color: #fff;
+}
+
+.dark-mode .send-message-modal .message-box .form-group span {
+  color: #fff;
+}
+
 /* ===//end of component css === */
 /* === pages css start === */
 .transition, .full-nav .navbar-dark .navbar-nav .nav-link, .full-nav .side-nav .heading .close-btn, .full-nav .side-nav .heading .statistics-full .static-btn i, .full-nav .side-nav .main-nav button,
@@ -4715,6 +4731,726 @@ a, a:hover {
 #new-post.dark-mode .creat-post .card-footer .action .btn:hover {
   color: #fff;
   background: #db3364;
+}
+
+#my_contacts .all-contacts {
+  margin-right: -50px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 991px) {
+  #my_contacts .all-contacts {
+    margin-right: 0;
+  }
+}
+
+#my_contacts .all-contacts .card-header {
+  -webkit-box-shadow: 3px 0px 15px 0px #e7e9f2;
+          box-shadow: 3px 0px 15px 0px #e7e9f2;
+  position: relative;
+  z-index: 2;
+}
+
+#my_contacts .all-contacts .card-header h1 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #333;
+}
+
+#my_contacts .all-contacts .card-header .btn {
+  font-size: 20px;
+}
+
+#my_contacts .all-contacts .card-body {
+  max-height: 100vh;
+  overflow: auto;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+
+#my_contacts .all-contacts .card-body::-webkit-scrollbar {
+  width: 4px;
+}
+
+#my_contacts .all-contacts .card-body::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+#my_contacts .all-contacts .card-body::-webkit-scrollbar-thumb {
+  background: #d8d8d8;
+  border-radius: 10px;
+}
+
+#my_contacts .all-contacts .card-body ul li {
+  margin: 0 -1.25rem;
+  padding: 15px .75rem;
+  border-bottom: 1px solid #d8e4f5;
+}
+
+#my_contacts .all-contacts .card-body ul li:last-child {
+  border-bottom: none;
+}
+
+#my_contacts .all-contacts .card-body ul li:hover {
+  background: #fff6f9;
+}
+
+#my_contacts .all-contacts .card-body ul li a .img-box {
+  width: 45px;
+  position: relative;
+}
+
+#my_contacts .all-contacts .card-body ul li a .img-box img {
+  width: 45px;
+  height: 45px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2);
+          box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2);
+}
+
+#my_contacts .all-contacts .card-body ul li a .img-box .online-status {
+  width: 12px;
+  height: 12px;
+  border: 1.2px solid #fff;
+  background: #7ed321;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+}
+
+#my_contacts .all-contacts .card-body ul li a .text {
+  width: 75%;
+  padding-left: 10px;
+}
+
+#my_contacts .all-contacts .card-body ul li a .text .user-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+}
+
+#my_contacts .all-contacts .card-body ul li a .text p {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 0.6);
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin: 3px 0 0 0;
+  line-height: 14px;
+}
+
+#my_contacts .all-contacts .card-body ul li a .right-status .time {
+  font-size: 13px;
+  font-weight: 500;
+  color: #8d97a5;
+  margin-bottom: 5px;
+}
+
+#my_contacts .all-contacts .card-body ul li a .right-status span {
+  width: 20px;
+  height: 20px;
+  display: block;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#bd1b4a), to(#eb4072));
+  background-image: linear-gradient(90deg, #bd1b4a, #eb4072);
+}
+
+#my_contacts .all-contacts .card-body ul li a .right-status span.curency-symble {
+  position: relative;
+  margin-right: -4px;
+  z-index: 1;
+}
+
+#my_contacts .all-contacts .card-body ul li a .right-status span.curency-symble.success {
+  background-image: -webkit-gradient(linear, right top, left top, from(#b4ec51), to(#429321));
+  background-image: linear-gradient(-90deg, #b4ec51 0%, #429321 100%);
+}
+
+#my_contacts .all-contacts .card-body ul li a .right-status span.curency-symble.info {
+  background-image: -webkit-gradient(linear, right top, left top, from(#3023ae), color-stop(0%, #53a0fd), to(#8b9eff));
+  background-image: linear-gradient(-90deg, #3023ae 0%, #53a0fd 0%, #8b9eff 100%);
+}
+
+#my_contacts .all-contacts .card-body ul li a .right-status span.curency-symble.warning {
+  background-image: -webkit-gradient(linear, right top, left top, from(#f5a051), to(#ff3737));
+  background-image: linear-gradient(-90deg, #f5a051 0%, #ff3737 100%);
+}
+
+#my_contacts .chat-box {
+  position: relative;
+  height: 100%;
+}
+
+#my_contacts .chat-box .card-header {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  -webkit-box-shadow: -10px 0px 22px 0px rgba(231, 233, 242, 0.004);
+          box-shadow: -10px 0px 22px 0px rgba(231, 233, 242, 0.004);
+  padding: 16px 20px;
+}
+
+#my_contacts .chat-box .card-header .img-box {
+  width: 45px;
+  position: relative;
+}
+
+#my_contacts .chat-box .card-header .img-box img {
+  width: 45px;
+  height: 45px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2);
+          box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2);
+}
+
+#my_contacts .chat-box .card-header .img-box .online-status {
+  width: 12px;
+  height: 12px;
+  border: 1.2px solid #fff;
+  background: #7ed321;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+}
+
+#my_contacts .chat-box .card-header .text {
+  width: 75%;
+  padding-left: 10px;
+}
+
+#my_contacts .chat-box .card-header .text .user-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  margin-top: 5px;
+  display: block;
+}
+
+#my_contacts .chat-box .card-header .text p {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 0.6);
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 14px;
+}
+
+#my_contacts .chat-box .card-header .dropdown .btn {
+  font-size: 16px;
+  color: #bcbcbc;
+  position: relative;
+}
+
+#my_contacts .chat-box .card-header .dropdown .dropdown-menu {
+  margin: -5px 0px 0 0;
+  border: 1px solid #bcbcbc;
+  border-radius: 10px;
+  margin: 0;
+}
+
+#my_contacts .chat-box .card-header .dropdown .dropdown-menu .dropdown-item {
+  font-size: 14px;
+  color: #322e46;
+  font-weight: 600;
+  padding: .25rem 1rem;
+}
+
+#my_contacts .chat-box .card-header .dropdown .dropdown-menu .dropdown-item i {
+  color: #5c5c5c;
+}
+
+#my_contacts .chat-box .card-body {
+  max-height: calc(100% - 156px);
+  overflow: auto;
+  position: relative;
+  min-height: 350px;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+#my_contacts .chat-box .card-body::-webkit-scrollbar {
+  width: 4px;
+}
+
+#my_contacts .chat-box .card-body::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+#my_contacts .chat-box .card-body::-webkit-scrollbar-thumb {
+  background: #d8d8d8;
+  border-radius: 10px;
+}
+
+#my_contacts .chat-box .card-body .card-body-inner {
+  position: absolute;
+  padding-right: 10px;
+  height: 100%;
+  bottom: 0;
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .incoming {
+  max-width: 80%;
+}
+
+@media (max-width: 767px) {
+  #my_contacts .chat-box .card-body .card-body-inner .incoming {
+    max-width: 90%;
+  }
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .incoming .img-box {
+  margin-bottom: 15px;
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .incoming .img-box img {
+  width: 25px;
+  height: 25px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  display: block;
+  -webkit-box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2);
+          box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2);
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .incoming .img-box .user-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .incoming .date-time {
+  font-size: 12px;
+  font-weight: 500;
+  color: #8d97a5;
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .incoming p.messages {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1f2224;
+  line-height: 20px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#f2f7ff), to(#f6f8ff));
+  background-image: linear-gradient(-90deg, #f2f7ff 0%, #f6f8ff 100%);
+  display: inline-block;
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .incoming .notice-box {
+  border: 1px solid #db3364;
+  border-radius: 8px;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .incoming .notice-box .img {
+  width: 35px;
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .incoming .notice-box .img img {
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .incoming .notice-box .text p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #343a4c;
+  padding: 0 5px;
+  line-height: 17px;
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .incoming .notice-box .text p.border-right {
+  border-right: 1px solid #ffcfe5 !important;
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .incoming .notice-box .text p span {
+  font-weight: 600;
+  color: #db3364;
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .incoming .notice-box .text .date-time {
+  color: #db3364;
+  display: block;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .incoming .notice-box .right {
+  padding-left: 10px;
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .incoming .notice-box .right .amount {
+  font-size: 12px;
+  font-weight: 700;
+  color: #db3364;
+  position: relative;
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .incoming .notice-box .right .amount::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #53a0fd;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .outgoing {
+  max-width: 80%;
+}
+
+@media (max-width: 767px) {
+  #my_contacts .chat-box .card-body .card-body-inner .outgoing {
+    max-width: 90%;
+  }
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .outgoing .date-time {
+  font-size: 12px;
+  font-weight: 500;
+  color: #8d97a5;
+  margin-bottom: 10px;
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .outgoing p.messages {
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 20px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#bd1b4a), to(#eb4072));
+  background-image: linear-gradient(-90deg, #bd1b4a 0%, #eb4072 100%);
+  display: table;
+  margin-left: auto;
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .outgoing .notice-box {
+  border: 1px solid #db3364;
+  border-radius: 8px;
+  padding: 10px;
+  display: table;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .outgoing .notice-box p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #343a4c;
+}
+
+#my_contacts .chat-box .card-body .card-body-inner .outgoing .notice-box p span {
+  color: #db3364;
+  font-weight: 700;
+}
+
+#my_contacts .chat-box .card-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#my_contacts .chat-box .card-footer input.form-control {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  border: none;
+}
+
+#my_contacts .chat-box .card-footer input.form-control::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9ba4b0;
+}
+
+#my_contacts .chat-box .card-footer input.form-control:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9ba4b0;
+}
+
+#my_contacts .chat-box .card-footer input.form-control::-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9ba4b0;
+}
+
+#my_contacts .chat-box .card-footer input.form-control::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9ba4b0;
+}
+
+#my_contacts .chat-box .card-footer .action .btn i {
+  color: #bdc9da;
+  font-size: 20px;
+}
+
+#my_contacts .chat-box .card-footer .action .btn i.currency {
+  font-size: 11px;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #bdc9da;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+}
+
+#my_contacts.dark-mode .all-contacts .card-header {
+  -webkit-box-shadow: 3px 0px 15px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 3px 0px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+#my_contacts.dark-mode .all-contacts .card-header h1 {
+  color: #fff;
+}
+
+#my_contacts.dark-mode .all-contacts .card-body ul li {
+  border-bottom: 1px solid rgba(151, 151, 151, 0.3);
+}
+
+#my_contacts.dark-mode .all-contacts .card-body ul li:last-child {
+  border-bottom: none;
+}
+
+#my_contacts.dark-mode .all-contacts .card-body ul li:hover {
+  background: #2f3442;
+}
+
+#my_contacts.dark-mode .all-contacts .card-body ul li a .img-box img {
+  border: 3px solid #fff;
+  -webkit-box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2);
+          box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2);
+}
+
+#my_contacts.dark-mode .all-contacts .card-body ul li a .img-box .online-status {
+  border: 1.2px solid #fff;
+  background: #7ed321;
+}
+
+#my_contacts.dark-mode .all-contacts .card-body ul li a .text .user-name {
+  color: #fff;
+}
+
+#my_contacts.dark-mode .all-contacts .card-body ul li a .text p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#my_contacts.dark-mode .all-contacts .card-body ul li a .right-status .time {
+  color: #8d97a5;
+}
+
+#my_contacts.dark-mode .all-contacts .card-body ul li a .right-status span {
+  border: 1px solid #fff;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#bd1b4a), to(#eb4072));
+  background-image: linear-gradient(90deg, #bd1b4a, #eb4072);
+}
+
+#my_contacts.dark-mode .all-contacts .card-body ul li a .right-status span.curency-symble.success {
+  background-image: -webkit-gradient(linear, right top, left top, from(#b4ec51), to(#429321));
+  background-image: linear-gradient(-90deg, #b4ec51 0%, #429321 100%);
+}
+
+#my_contacts.dark-mode .all-contacts .card-body ul li a .right-status span.curency-symble.info {
+  background-image: -webkit-gradient(linear, right top, left top, from(#3023ae), color-stop(0%, #53a0fd), to(#8b9eff));
+  background-image: linear-gradient(-90deg, #3023ae 0%, #53a0fd 0%, #8b9eff 100%);
+}
+
+#my_contacts.dark-mode .all-contacts .card-body ul li a .right-status span.curency-symble.warning {
+  background-image: -webkit-gradient(linear, right top, left top, from(#f5a051), to(#ff3737));
+  background-image: linear-gradient(-90deg, #f5a051 0%, #ff3737 100%);
+}
+
+#my_contacts.dark-mode .chat-box .card-header {
+  background-color: transparent;
+  -webkit-box-shadow: -10px 0px 22px 0px rgba(231, 233, 242, 0.004);
+          box-shadow: -10px 0px 22px 0px rgba(231, 233, 242, 0.004);
+}
+
+#my_contacts.dark-mode .chat-box .card-header .img-box img {
+  border: 3px solid #fff;
+  -webkit-box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2);
+          box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2);
+}
+
+#my_contacts.dark-mode .chat-box .card-header .img-box .online-status {
+  border: 1.2px solid #fff;
+  background: #7ed321;
+}
+
+#my_contacts.dark-mode .chat-box .card-header .text .user-name {
+  color: #fff;
+}
+
+#my_contacts.dark-mode .chat-box .card-header .text p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#my_contacts.dark-mode .chat-box .card-header .dropdown .btn {
+  color: #bcbcbc;
+}
+
+#my_contacts.dark-mode .chat-box .card-header .dropdown .dropdown-menu {
+  border: 1px solid #bcbcbc;
+}
+
+#my_contacts.dark-mode .chat-box .card-header .dropdown .dropdown-menu .dropdown-item {
+  color: #322e46;
+}
+
+#my_contacts.dark-mode .chat-box .card-header .dropdown .dropdown-menu .dropdown-item i {
+  color: #5c5c5c;
+}
+
+#my_contacts.dark-mode .chat-box .card-body {
+  /* Track */
+  /* Handle */
+}
+
+#my_contacts.dark-mode .chat-box .card-body::-webkit-scrollbar-track {
+  background: #3a4051;
+}
+
+#my_contacts.dark-mode .chat-box .card-body::-webkit-scrollbar-thumb {
+  background: #dadada;
+}
+
+#my_contacts.dark-mode .chat-box .card-body .card-body-inner .incoming .img-box img {
+  border: 2px solid #fff;
+  -webkit-box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2);
+          box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2);
+}
+
+#my_contacts.dark-mode .chat-box .card-body .card-body-inner .incoming .img-box .user-name {
+  color: #fff;
+}
+
+#my_contacts.dark-mode .chat-box .card-body .card-body-inner .incoming .date-time {
+  color: #8d97a5;
+}
+
+#my_contacts.dark-mode .chat-box .card-body .card-body-inner .incoming p.messages {
+  color: #1f2224;
+  background-image: -webkit-gradient(linear, right top, left top, from(#f2f7ff), to(#f6f8ff));
+  background-image: linear-gradient(-90deg, #f2f7ff 0%, #f6f8ff 100%);
+}
+
+#my_contacts.dark-mode .chat-box .card-body .card-body-inner .incoming .notice-box {
+  border: 1px solid #db3364;
+}
+
+#my_contacts.dark-mode .chat-box .card-body .card-body-inner .incoming .notice-box .img img {
+  border: 1px solid #fff;
+}
+
+#my_contacts.dark-mode .chat-box .card-body .card-body-inner .incoming .notice-box .text p {
+  color: #fff;
+}
+
+#my_contacts.dark-mode .chat-box .card-body .card-body-inner .incoming .notice-box .text p.border-right {
+  border-right: 1px solid #ffcfe5 !important;
+}
+
+#my_contacts.dark-mode .chat-box .card-body .card-body-inner .incoming .notice-box .text p span {
+  color: #db3364;
+}
+
+#my_contacts.dark-mode .chat-box .card-body .card-body-inner .incoming .notice-box .text .date-time {
+  color: #db3364;
+}
+
+#my_contacts.dark-mode .chat-box .card-body .card-body-inner .incoming .notice-box .right .amount {
+  color: #db3364;
+}
+
+#my_contacts.dark-mode .chat-box .card-body .card-body-inner .incoming .notice-box .right .amount::before {
+  background: #53a0fd;
+}
+
+#my_contacts.dark-mode .chat-box .card-body .card-body-inner .outgoing .date-time {
+  color: #8d97a5;
+}
+
+#my_contacts.dark-mode .chat-box .card-body .card-body-inner .outgoing p.messages {
+  color: #fff;
+  background-image: -webkit-gradient(linear, right top, left top, from(#bd1b4a), to(#eb4072));
+  background-image: linear-gradient(-90deg, #bd1b4a 0%, #eb4072 100%);
+}
+
+#my_contacts.dark-mode .chat-box .card-body .card-body-inner .outgoing .notice-box {
+  border: 1px solid #db3364;
+}
+
+#my_contacts.dark-mode .chat-box .card-body .card-body-inner .outgoing .notice-box p {
+  color: #fff;
+}
+
+#my_contacts.dark-mode .chat-box .card-body .card-body-inner .outgoing .notice-box p span {
+  color: #db3364;
+}
+
+#my_contacts.dark-mode .chat-box .card-footer input.form-control {
+  color: #fff;
+  background-color: transparent;
+}
+
+#my_contacts.dark-mode .chat-box .card-footer input.form-control::-webkit-input-placeholder {
+  color: #9ba4b0;
+}
+
+#my_contacts.dark-mode .chat-box .card-footer input.form-control:-ms-input-placeholder {
+  color: #9ba4b0;
+}
+
+#my_contacts.dark-mode .chat-box .card-footer input.form-control::-ms-input-placeholder {
+  color: #9ba4b0;
+}
+
+#my_contacts.dark-mode .chat-box .card-footer input.form-control::placeholder {
+  color: #9ba4b0;
+}
+
+#my_contacts.dark-mode .chat-box .card-footer .action .btn i {
+  color: #bdc9da;
+}
+
+#my_contacts.dark-mode .chat-box .card-footer .action .btn i.currency {
+  border: 1.5px solid #bdc9da;
 }
 
 /* ===//end of pages css === */

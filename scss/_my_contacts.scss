@@ -1,4 +1,4 @@
-#my-contacts-chat {
+#my_contacts {
   .all-contacts {
     margin-right: -50px;
     position: relative;
@@ -24,6 +24,26 @@
     }
 
     .card-body {
+      max-height: 100vh;
+      overflow: auto;
+      
+        
+      /* width */
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: #ffffff;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: #d8d8d8;
+        border-radius: 10px;
+      }
+
       ul {
         li {
           margin: 0 -1.25rem;
@@ -475,7 +495,7 @@
 
 //********** Dark mode css **********//
 //#####################################
-#my-contacts-chat.dark-mode {
+#my_contacts.dark-mode {
   .all-contacts {
 
     .card-header {
