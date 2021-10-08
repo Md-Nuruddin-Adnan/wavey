@@ -162,3 +162,10 @@ $('input:radio[name=report]').change(function() {
     modalMessageInput.addClass('d-none')
   }
 });
+
+
+// show search item in my contact page
+function showSearchItem(){
+  $('.my_contacts .after-search-items').removeClass('d-none')
+  $('.my_contacts .my-contacts-empty').addClass('d-none')
+}

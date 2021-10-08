@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Wavey | My Profile</title>
+  <title>Wavey | profile Locked</title>
   <link rel='shortcut icon' href='images/logo.png' type='image/x-icon'>
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="fonts/simple-line-icons/css/simple-line-icons.css">
@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="css/venobox.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body id="profile-single">
+<body id="profile-single" >
+
 
 
 <!-- === dark-mode start === -->
@@ -50,7 +51,7 @@
           <a class="nav-link" href="#"><i class="fas fa-binoculars"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="new_post.html"><i class="fas fa-plus-square"></i></a>
+          <a class="nav-link" href="new-post.html"><i class="fas fa-plus-square"></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="my_contacts.html"><i class="fas fa-comments"></i></a>
@@ -181,30 +182,31 @@
 
 
 <!-- === profile-top section start === -->
-<section class="profile-top myborder-bottom pb-20">
-  <div class="cover-photo">
+<section class="profile-top myborder-bottom  pb-20">
+  <div class="cover-photo" style="background-image: url('images/profile/cover-image-modal.png')">
     <!-- <img src="../images/profile/my_cover.png" alt="cover-photo" class="w-100 d-lg-none"> -->
-    <a href="#" class="btn edit-btn"><i class="far fa-pencil"></i></a>
   </div>
   <div class="container">
     <div class="d-flex justify-content-between align-items-center text-nowrap">
       <div class="left d-sm-flex align-items-center">
-        <div class="profile-photo">
-          <img src="images/profile/my-profile-pic.png" alt="profile-photo" class="img-fluid">
-          <a href="#" class="btn edit-btn"><i class="far fa-pencil"></i></a>
-        </div>
+        <div class="profile-photo"><img src="images/profile/other-profile-pic.png" alt="profile-photo" class="img-fluid"></div>
         <div class="text">
-          <h5 class="profile-name">Daniel James</h5>
-          <span class="profile-sub-name">@daniel.james</span>
+          <h5 class="profile-name">Judith Williamson</h5>
+          <span class="profile-sub-name">@judith.williamson</span>
         </div>
       </div>
       <div class="right d-flex align-items-center">
-        <p class="label">Invisible Browsing</p>
-        <div class="custom-control custom-switch">
-          <input type="checkbox" class="custom-control-input" id="invisible-browsing" checked>
-          <label class="custom-control-label" for="invisible-browsing"></label>
+        <a href="#" class="top-link" title="Copy Link to Profile" data-toggle="tooltip"><i class="far fa-clone"></i></a>
+        <a href="#" class="top-link ml-2" title="Bookmarks" data-toggle="tooltip"><i class="far fa-star"></i></a>
+        <div class="dropdown top-link">
+          <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another Action</a>
+          </div>
         </div>
-        <a href="#" class="top-link"><i class="far fa-clone"></i></a>
       </div>
     </div>
   </div>
@@ -227,13 +229,95 @@
         </div>
       </div>
 
-      <div class="right">
-        <a href="settings_my_profile.html" class="btn btn-rounded-outline"> <i class="far fa-pencil-alt"></i> Edit Profile</a>
+      <div class="right text-nowrap">
+        <a href="#" class="btn btn-rounded btn-height-fixed" data-toggle="modal" data-target=".subscribe-modal"> <i class="far fa-user-plus"></i> Subscribe for $9.99 </a>
+        <a href="#" class="btn btn-rounded-outline" data-toggle="collapse" data-target=".subscription-package"><i class="far fa-usd-square mr-1"></i> Packages <i class="far fa-chevron-down"></i></a>
       </div>
     </div>
   </div>
 </section>
 <!-- ===//end of Checkout section === -->
+
+<!-- ===//subscription-package section === -->
+<section class="subscription-package show collapse">
+  <div class="container pt-30 pb-20">
+    <div class="row">
+      <div class="col-lg-6 mb-lg-0 mb-3">
+        <div class="package-items d-flex align-items-center justify-content-between"> 
+          <div class="text">
+            <h4 class="package-name">Silver Membership</h4>
+            <h5 class="package-price">£20.00 <sub>/ 1 Month</sub></h5>
+          </div>
+          <a href="#" class="btn btn-rounded btn-height-fixed"> Subscribe at £20.00</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="package-items d-flex align-items-center justify-content-between"> 
+          <div class="text">
+            <h4 class="package-name">Gold Membership</h4>
+            <h5 class="package-price">£40.00 <sub>/ 1 Month</sub></h5>
+          </div>
+          <a href="#" class="btn btn-rounded btn-height-fixed"> Subscribe at £40.00</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===//end of subscription-package section === -->
+
+
+
+<!--  === subscribe modal start === -->
+<!-- Large modal -->
+<div class="modal fade subscribe-modal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="cover-img-box">
+        <img src="images/profile/cover-image-modal.png" alt="cover image" class="w-100">
+      </div>
+      <button type="button" class="btn close-btn" data-dismiss="modal"><i class="far fa-times"></i></button>
+      <div class="profile text-center">
+        <div class="profle-image"><img src="images/profile/other-profile-pic.png" alt="profile-image" class="img-fluid"></div>
+        <h5 class="profile-name">Judith Williamson</h5>
+        <h6 class="user-name">@judith.williamson</h6>
+        <a href="#" class="btn btn-rounded btn-height-fixed">Please Add a Card</a>
+      </div>
+
+      <div class="subscription-benefits">
+        <div class="subscription-benefits-inner">
+          <h3 class="heading">SUBSCRIPTION BENEFITS</h3>
+          <ul>
+            <li>
+              <i class="far fa-check-square"></i>
+              <p>Full Access to All Content</p>
+            </li>
+            <li>
+              <i class="far fa-paper-plane"></i>
+              <p>Direct Message to User</p>
+            </li>
+            <li>
+              <i class="far fa-play-circle"></i>
+              <p>Live Streaming Available</p>
+            </li>
+            <li>
+              <i class="fas fa-quote-left"></i>
+              <p>Posts Tagging Feature</p>
+            </li>
+            <li>
+              <i class="far fa-shield-check"></i>
+              <p>Encrypted Way Security</p>
+            </li>
+            <li>
+              <i class="far fa-unlock"></i>
+              <p>Unsubscribe anytime</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  ===// end of subscribe modal === -->
 
 
 <!-- ===//profile-statistics section === -->
@@ -242,7 +326,7 @@
     <!-- Nav pills -->
     <ul class="nav nav-pills nav-justified " role="tablist">
       <li class="nav-item">
-        <a class="nav-link active"  href="my-profile.html">
+        <a class="nav-link active" href="#">
           <h5>138</h5>
           <span>Post</span>
         </a>
@@ -255,20 +339,20 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">
-          <h5>6.5K</h5>
-          <span>Likes</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="my_profile_my_fans.html">
-          <h5>987</h5>
-          <span>My Fans</span>
+          <h5>44</h5>
+          <span>Videos</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">
-          <h5>87</h5>
-          <span>Following</span>
+          <h5>12</h5>
+          <span>Archived</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <h5>6.5K</h5>
+          <span>Likes</span>
         </a>
       </li>
     </ul>
@@ -318,12 +402,12 @@
               <div class="profile d-flex">
                 <div class="profile-img-box position-relative">
                   <a href="#">
-                    <img src="images/profile/my-profile-pic.png" alt="profile image" class="img-fluid">
+                    <img src="images/profile/other-profile-pic.png" alt="profile image" class="img-fluid">
                   </a>
                 </div>
                 <div class="text">
-                  <a href="#" class="profile-name"><h5>Daniel James</h5></a>
-                  <span class="profile-sub-name">@daniel.james</span>
+                  <a href="#" class="profile-name"><h5>Judith Williamson</h5></a>
+                  <span class="profile-sub-name">@judith.williamson</span>
                 </div>
               </div>
               <div class="d-flex justify-content-center">
@@ -343,7 +427,14 @@
             </div>
 
             <div class="post-image">
-            <a href="#" data-toggle="modal" data-target=".post-modal"> <img src="images/profile/post_image_1.png" alt="post-image" class="w-100"></a>
+             <div class="card text-center">
+               <div class="card-body mx-auto my-30">
+                 <img src="images/profile/profile_lock_watermark.png" alt="locked-image" class="img-fluid">
+               </div>
+               <div class="card-footer py-30">
+                 <a href="#" class="btn btn-rounded-outline btn-height-fixed">Subscribe to see the post</a>
+               </div>
+             </div>
             </div>
             <div class="date-time">Post on 17 May, 2020</div>
             <div class="post-title">My photos were published in ABC and  CBA magazines and I was part of LOCABA <a href="#">campaign@company.com</a> .</div>
@@ -366,12 +457,12 @@
               <div class="profile d-flex">
                 <div class="profile-img-box position-relative">
                   <a href="#">
-                    <img src="images/profile/my-profile-pic.png" alt="profile image" class="img-fluid">
+                    <img src="images/profile/other-profile-pic.png" alt="profile image" class="img-fluid">
                   </a>
                 </div>
                 <div class="text">
-                  <a href="#" class="profile-name"><h5>Daniel James</h5></a>
-                  <span class="profile-sub-name">@daniel.james</span>
+                  <a href="#" class="profile-name"><h5>Judith Williamson</h5></a>
+                  <span class="profile-sub-name">@judith.williamson</span>
                 </div>
               </div>
               <div class="d-flex justify-content-center">
@@ -391,7 +482,14 @@
             </div>
 
             <div class="post-image">
-            <a href="#" data-toggle="modal" data-target=".post-modal"> <img src="images/profile/post_image_2.png" alt="post-image" class="w-100"></a>
+              <div class="card text-center">
+                <div class="card-body mx-auto my-30">
+                  <img src="images/profile/profile_lock_watermark.png" alt="locked-image" class="img-fluid">
+                </div>
+                <div class="card-footer py-30">
+                  <a href="#" class="btn btn-rounded-outline btn-height-fixed">Subscribe to see the post</a>
+                </div>
+              </div>
             </div>
             <div class="date-time">Post on 17 May, 2020</div>
             <div class="post-title">My photos were published in ABC and  CBA magazines and I was part of LOCABA <a href="#">campaign@company.com</a> .</div>
@@ -570,6 +668,8 @@
   </div>
 </footer>
 <!-- ===//end of footer === -->
+ 
+
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.js"></script>

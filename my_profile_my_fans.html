@@ -183,13 +183,17 @@
 
 <!-- === profile-top section start === -->
 <section class="profile-top myborder-bottom pb-20">
-  <div class="cover-photo" style="background-image: url(images/profile/my_fans_cover.png);">
+  <div class="cover-photo">
     <!-- <img src="../images/profile/my_cover.png" alt="cover-photo" class="w-100 d-lg-none"> -->
+    <a href="#" class="btn edit-btn"><i class="far fa-pencil"></i></a>
   </div>
   <div class="container">
     <div class="d-flex justify-content-between align-items-center text-nowrap">
       <div class="left d-sm-flex align-items-center">
-        <div class="profile-photo"><img src="images/profile/my-fans-profile-pic.png" alt="profile-photo" class="img-fluid"></div>
+        <div class="profile-photo">
+          <img src="images/profile/my-profile-pic.png" alt="profile-photo" class="img-fluid">
+          <a href="#" class="btn edit-btn"><i class="far fa-pencil"></i></a>
+        </div>
         <div class="text">
           <h5 class="profile-name">Daniel James</h5>
           <span class="profile-sub-name">@daniel.james</span>
@@ -237,33 +241,33 @@
 <section class="profile-statistics myborder-bottom">
   <div class="container">
     <!-- Nav pills -->
-    <ul class="nav nav-pills nav-justified ">
+    <ul class="nav nav-pills nav-justified " role="tablist">
       <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="index.html">
+        <a class="nav-link"  href="my-profile.html">
           <h5>138</h5>
           <span>Post</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#">
+        <a class="nav-link" href="#">
           <h5>390</h5>
           <span>Photos</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#">
+        <a class="nav-link" href="#">
           <h5>6.5K</h5>
           <span>Likes</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" data-toggle="pill" href="my_profile_my_fans.html">
+        <a class="nav-link active" href="my_profile_my_fans.html">
           <h5>987</h5>
           <span>My Fans</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#">
+        <a class="nav-link" href="#">
           <h5>87</h5>
           <span>Following</span>
         </a>
@@ -304,9 +308,9 @@
       <div class="col-md-8 main-content">
         <div class="card border-radius-20">
 
-          <div class="card-header myShadow">
+          <div class="card-header myShadow-sm">
             <div class="d-sm-flex justify-content-between align-items-center">
-              <h2 class="sec-heading text-nowrap text-sm-left text-center mb-sm-0 mb-2">All Notifications</h2>
+              <h2 class="sec-heading text-nowrap text-sm-left text-center mb-sm-0 mb-2">All Fans (893)</h2>
               <div class="right-action w-100">
                 <div class=" d-flex align-items-center justify-content-sm-end justify-content-center">
                   <a href="#" class="btn circle-btn-white pr-0"><i class="far fa-chart-line"></i></a>
@@ -323,222 +327,229 @@
           <div class="card-body p-20">
            <ul>
             <li>
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="d-flex">
-                  <div class="img-box">
-                    <img src="images/home/post-profile-image.png" alt="profile image">
+              <a href="other_users_profile.html">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex">
+                    <div class="img-box">
+                      <img src="images/home/post-profile-image.png" alt="profile image">
+                    </div>
+                    <div class="text">
+                      <h4> <span>Alen Paml</span> commented on your<span> post </span></h4>
+                      <p class="date-time">May 19, 2020</p>
+                    </div>
                   </div>
-                  <div class="text">
-                    <h4> <span>Alen Paml</span> commented on your<span> post </span></h4>
-                    <p class="date-time">May 19, 2020</p>
-                  </div>
-                </div>
-                <div class="action d-flex align-items-center">
-                  <a href="#" class="btn btn-rounded-outline">Remove</a>
-                  <div class="dropdown">
-                    <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy link of this post</a>
-                      <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
-                      <a class="dropdown-item" href="#"><i class="far fa-ban pr-1"></i>Block User</a>
+                  <div class="action d-flex align-items-center">
+                    <a href="#" class="btn btn-rounded-outline">Remove</a>
+                    <div class="dropdown">
+                      <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><i class="far fa-clone pr-2"></i>Copy profile link</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-flag pr-2"></i>Restrict User</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-ban pr-2"></i>Block User</a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-             
+              </a>
             </li>
             <li>
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="d-flex">
-                  <div class="img-box">
-                    <img src="images/home/post-profile-image.png" alt="profile image">
+              <a href="other_users_profile.html">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex">
+                    <div class="img-box">
+                      <img src="images/home/post-profile-image.png" alt="profile image">
+                    </div>
+                    <div class="text">
+                      <h4> <span>Alen Paml</span> commented on your<span> post </span></h4>
+                      <p class="date-time">May 19, 2020</p>
+                    </div>
                   </div>
-                  <div class="text">
-                    <h4> <span>Alen Paml</span> commented on your<span> post </span></h4>
-                    <p class="date-time">May 19, 2020</p>
-                  </div>
-                </div>
-                <div class="action d-flex align-items-center">
-                  <a href="#" class="btn btn-rounded-outline">Remove</a>
-                  <div class="dropdown">
-                    <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy link of this post</a>
-                      <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
-                      <a class="dropdown-item" href="#"><i class="far fa-ban pr-1"></i>Block User</a>
+                  <div class="action d-flex align-items-center">
+                    <a href="#" class="btn btn-rounded-outline">Remove</a>
+                    <div class="dropdown">
+                      <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><i class="far fa-clone pr-2"></i>Copy profile link</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-flag pr-2"></i>Restrict User</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-ban pr-2"></i>Block User</a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-             
+              </a>
             </li>
             <li>
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="d-flex">
-                  <div class="img-box">
-                    <img src="images/home/post-profile-image.png" alt="profile image">
+              <a href="other_users_profile.html">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex">
+                    <div class="img-box">
+                      <img src="images/home/post-profile-image.png" alt="profile image">
+                    </div>
+                    <div class="text">
+                      <h4> <span>Alen Paml</span> commented on your<span> post </span></h4>
+                      <p class="date-time">May 19, 2020</p>
+                    </div>
                   </div>
-                  <div class="text">
-                    <h4> <span>Alen Paml</span> commented on your<span> post </span></h4>
-                    <p class="date-time">May 19, 2020</p>
-                  </div>
-                </div>
-                <div class="action d-flex align-items-center">
-                  <a href="#" class="btn btn-rounded-outline">Remove</a>
-                  <div class="dropdown">
-                    <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy link of this post</a>
-                      <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
-                      <a class="dropdown-item" href="#"><i class="far fa-ban pr-1"></i>Block User</a>
+                  <div class="action d-flex align-items-center">
+                    <a href="#" class="btn btn-rounded-outline">Remove</a>
+                    <div class="dropdown">
+                      <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><i class="far fa-clone pr-2"></i>Copy profile link</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-flag pr-2"></i>Restrict User</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-ban pr-2"></i>Block User</a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-             
+              </a>
             </li>
             <li>
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="d-flex">
-                  <div class="img-box">
-                    <img src="images/home/post-profile-image.png" alt="profile image">
+              <a href="other_users_profile.html">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex">
+                    <div class="img-box">
+                      <img src="images/home/post-profile-image.png" alt="profile image">
+                    </div>
+                    <div class="text">
+                      <h4> <span>Alen Paml</span> commented on your<span> post </span></h4>
+                      <p class="date-time">May 19, 2020</p>
+                    </div>
                   </div>
-                  <div class="text">
-                    <h4> <span>Alen Paml</span> commented on your<span> post </span></h4>
-                    <p class="date-time">May 19, 2020</p>
-                  </div>
-                </div>
-                <div class="action d-flex align-items-center">
-                  <a href="#" class="btn btn-rounded-outline">Remove</a>
-                  <div class="dropdown">
-                    <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy link of this post</a>
-                      <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
-                      <a class="dropdown-item" href="#"><i class="far fa-ban pr-1"></i>Block User</a>
+                  <div class="action d-flex align-items-center">
+                    <a href="#" class="btn btn-rounded-outline">Remove</a>
+                    <div class="dropdown">
+                      <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><i class="far fa-clone pr-2"></i>Copy profile link</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-flag pr-2"></i>Restrict User</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-ban pr-2"></i>Block User</a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-             
+              </a>
             </li>
             <li>
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="d-flex">
-                  <div class="img-box">
-                    <img src="images/home/post-profile-image.png" alt="profile image">
+              <a href="other_users_profile.html">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex">
+                    <div class="img-box">
+                      <img src="images/home/post-profile-image.png" alt="profile image">
+                    </div>
+                    <div class="text">
+                      <h4> <span>Alen Paml</span> commented on your<span> post </span></h4>
+                      <p class="date-time">May 19, 2020</p>
+                    </div>
                   </div>
-                  <div class="text">
-                    <h4> <span>Alen Paml</span> commented on your<span> post </span></h4>
-                    <p class="date-time">May 19, 2020</p>
-                  </div>
-                </div>
-                <div class="action d-flex align-items-center">
-                  <a href="#" class="btn btn-rounded-outline">Remove</a>
-                  <div class="dropdown">
-                    <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy link of this post</a>
-                      <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
-                      <a class="dropdown-item" href="#"><i class="far fa-ban pr-1"></i>Block User</a>
+                  <div class="action d-flex align-items-center">
+                    <a href="#" class="btn btn-rounded-outline">Remove</a>
+                    <div class="dropdown">
+                      <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><i class="far fa-clone pr-2"></i>Copy profile link</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-flag pr-2"></i>Restrict User</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-ban pr-2"></i>Block User</a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-             
+              </a>
             </li>
             <li>
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="d-flex">
-                  <div class="img-box">
-                    <img src="images/home/post-profile-image.png" alt="profile image">
+              <a href="other_users_profile.html">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex">
+                    <div class="img-box">
+                      <img src="images/home/post-profile-image.png" alt="profile image">
+                    </div>
+                    <div class="text">
+                      <h4> <span>Alen Paml</span> commented on your<span> post </span></h4>
+                      <p class="date-time">May 19, 2020</p>
+                    </div>
                   </div>
-                  <div class="text">
-                    <h4> <span>Alen Paml</span> commented on your<span> post </span></h4>
-                    <p class="date-time">May 19, 2020</p>
-                  </div>
-                </div>
-                <div class="action d-flex align-items-center">
-                  <a href="#" class="btn btn-rounded-outline">Remove</a>
-                  <div class="dropdown">
-                    <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy link of this post</a>
-                      <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
-                      <a class="dropdown-item" href="#"><i class="far fa-ban pr-1"></i>Block User</a>
+                  <div class="action d-flex align-items-center">
+                    <a href="#" class="btn btn-rounded-outline">Remove</a>
+                    <div class="dropdown">
+                      <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><i class="far fa-clone pr-2"></i>Copy profile link</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-flag pr-2"></i>Restrict User</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-ban pr-2"></i>Block User</a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-             
+              </a>
             </li>
             <li>
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="d-flex">
-                  <div class="img-box">
-                    <img src="images/home/post-profile-image.png" alt="profile image">
+              <a href="other_users_profile.html">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex">
+                    <div class="img-box">
+                      <img src="images/home/post-profile-image.png" alt="profile image">
+                    </div>
+                    <div class="text">
+                      <h4> <span>Alen Paml</span> commented on your<span> post </span></h4>
+                      <p class="date-time">May 19, 2020</p>
+                    </div>
                   </div>
-                  <div class="text">
-                    <h4> <span>Alen Paml</span> commented on your<span> post </span></h4>
-                    <p class="date-time">May 19, 2020</p>
-                  </div>
-                </div>
-                <div class="action d-flex align-items-center">
-                  <a href="#" class="btn btn-rounded-outline">Remove</a>
-                  <div class="dropdown">
-                    <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy link of this post</a>
-                      <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
-                      <a class="dropdown-item" href="#"><i class="far fa-ban pr-1"></i>Block User</a>
+                  <div class="action d-flex align-items-center">
+                    <a href="#" class="btn btn-rounded-outline">Remove</a>
+                    <div class="dropdown">
+                      <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><i class="far fa-clone pr-2"></i>Copy profile link</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-flag pr-2"></i>Restrict User</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-ban pr-2"></i>Block User</a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-             
+              </a>
             </li>
             <li>
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="d-flex">
-                  <div class="img-box">
-                    <img src="images/home/post-profile-image.png" alt="profile image">
+              <a href="other_users_profile.html">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex">
+                    <div class="img-box">
+                      <img src="images/home/post-profile-image.png" alt="profile image">
+                    </div>
+                    <div class="text">
+                      <h4> <span>Alen Paml</span> commented on your<span> post </span></h4>
+                      <p class="date-time">May 19, 2020</p>
+                    </div>
                   </div>
-                  <div class="text">
-                    <h4> <span>Alen Paml</span> commented on your<span> post </span></h4>
-                    <p class="date-time">May 19, 2020</p>
-                  </div>
-                </div>
-                <div class="action d-flex align-items-center">
-                  <a href="#" class="btn btn-rounded-outline">Remove</a>
-                  <div class="dropdown">
-                    <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy link of this post</a>
-                      <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
-                      <a class="dropdown-item" href="#"><i class="far fa-ban pr-1"></i>Block User</a>
+                  <div class="action d-flex align-items-center">
+                    <a href="#" class="btn btn-rounded-outline">Remove</a>
+                    <div class="dropdown">
+                      <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><i class="far fa-clone pr-2"></i>Copy profile link</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-flag pr-2"></i>Restrict User</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-ban pr-2"></i>Block User</a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-             
+              </a>
             </li>
-          
            </ul>
           </div>
         </div>

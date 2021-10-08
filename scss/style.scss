@@ -11,8 +11,8 @@
 
 
 /* === component css start === */
-@import 'navbar';
-@import 'footer';
+@import 'component/navbar';
+@import 'component/footer';
 @import 'component/wallet_topup';
 @import 'component/settings_my_profile';
 @import 'component/settings_my_account';
@@ -28,46 +28,19 @@
 @import 'wallet';
 @import 'notifications';
 @import 'helpSupport';
-@import 'new-post';
+@import 'new_post';
 @import 'my_contacts';
+@import 'profile-single';
+@import 'my-profile-my-fans';
 /* ===//end of pages css === */
 
 
-
-
-
-
-// /* === home css start === */
-// @import 'home';
-// /* ===//end of home css === */
-
-// /* === help&support css start === */
-// @import 'helpSupport';
-// /* ===//end of help&support css === */
-
-// /* === notifications css start === */
-// @import 'notifications';
-// /* ===//end of notifications css === */
 
 // /* === add-card-details css start === */
 // @import 'add-card-details';
 // /* ===//end of add-card-details css === */
 
-// /* === setting-my-account-acc css start === */
-// @import 'settings-my-account-acc';
-// /* ===//end of setting-my-account-acc css === */
 
-// /* === settings-my-account-profile css start === */
-// @import 'settings-my-account-profile';
-// /* ===//end of settings-my-account-profile css === */
-
-// /* === settings-my-account-security css start === */
-// @import 'settings-my-account-security';
-// /* ===//end of settings-my-account-security css === */
-
-// /* === wallet css start === */
-// @import 'wallet';
-// /* ===//end of wallet css === */
 
 // /* === profile-single css start === */
 // @import 'profile-single';
@@ -77,26 +50,9 @@
 // @import 'my-profile-my-fans';
 // /* ===//end of my-profile-my-fans css === */
 
-// /* === new-post css start === */
-// @import 'new-post';
-// /* ===//end of new-post css === */
 
-// /* === my-contacts-chat css start === */
-// @import 'my-contacts-chat';
-// /* ===//end of my-contacts-chat css === */
-
-// /* === live-streaming-modal css start === */
-// @import 'live-streaming-modal';
-// /* ===//end of live-streaming-modal css === */
-
-// /* === modal css start === */
-// @import 'modal';
-// /* ===//end ofmodal css === */
 
 // /* === coming-soon css start === */
 // @import 'coming-soon';
 // /* ===//end ofcoming-soon css === */
 
-// /* === footer css start === */
-// @import 'footer';
-// /* ===//end offooter css === */

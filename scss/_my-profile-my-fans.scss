@@ -54,6 +54,12 @@
             }
 
             .action {
+              .btn {
+                padding-top: 0;
+                padding-bottom: 0;
+                line-height: 30px;
+                min-height: 30px;
+              }
               .dropdown {
                 .btn {
                   font-size: 16px;

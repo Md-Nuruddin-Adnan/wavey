@@ -183,7 +183,7 @@
 
 <!-- === profile-top section start === -->
 <section class="profile-top myborder-bottom  pb-20">
-  <div class="cover-photo" style="background-image: url(images/profile/other_cover.png);">
+  <div class="cover-photo" style="background-image: url('images/profile/cover-image-modal.png')">
     <!-- <img src="../images/profile/my_cover.png" alt="cover-photo" class="w-100 d-lg-none"> -->
   </div>
   <div class="container">
@@ -191,13 +191,22 @@
       <div class="left d-sm-flex align-items-center">
         <div class="profile-photo"><img src="images/profile/other-profile-pic.png" alt="profile-photo" class="img-fluid"></div>
         <div class="text">
-          <h5 class="profile-name">Daniel James</h5>
-          <span class="profile-sub-name">@daniel.james</span>
+          <h5 class="profile-name">Judith Williamson</h5>
+          <span class="profile-sub-name">@judith.williamson</span>
         </div>
       </div>
       <div class="right d-flex align-items-center">
-        <a href="#" class="top-link"><i class="far fa-clone"></i></a>
-        <a href="#" class="top-link ml-2"><i class="far fa-star"></i></a>
+        <a href="#" class="top-link" title="Copy Link to Profile" data-toggle="tooltip"><i class="far fa-clone"></i></a>
+        <a href="#" class="top-link ml-2" title="Bookmarks" data-toggle="tooltip"><i class="far fa-star"></i></a>
+        <div class="dropdown top-link">
+          <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another Action</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -221,25 +230,57 @@
       </div>
 
       <div class="right text-nowrap">
-        <a href="#" class="btn btn-rounded"> <i class="far fa-user-plus"></i> Subscribe for $9.99 </a>
-        <a href="#" class="btn btn-rounded-outline" data-toggle="modal" data-target=".subscribe-modal"><i class="far fa-usd-square mr-1"></i> Packages <i class="far fa-chevron-down"></i></a>
+        <a href="#" class="btn btn-rounded btn-height-fixed" data-toggle="modal" data-target=".subscribe-modal"> <i class="far fa-user-plus"></i> Subscribe for $9.99 </a>
+        <a href="#" class="btn btn-rounded-outline" data-toggle="collapse" data-target=".subscription-package"><i class="far fa-usd-square mr-1"></i> Packages <i class="far fa-chevron-down"></i></a>
       </div>
     </div>
   </div>
 </section>
 <!-- ===//end of Checkout section === -->
 
+<!-- ===//subscription-package section === -->
+<section class="subscription-package collapse">
+  <div class="container pt-30 pb-20">
+    <div class="row">
+      <div class="col-lg-6 mb-lg-0 mb-3">
+        <div class="package-items d-flex align-items-center justify-content-between"> 
+          <div class="text">
+            <h4 class="package-name">Silver Membership</h4>
+            <h5 class="package-price">£20.00 <sub>/ 1 Month</sub></h5>
+          </div>
+          <a href="#" class="btn btn-rounded btn-height-fixed"> Subscribe at £20.00</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="package-items d-flex align-items-center justify-content-between"> 
+          <div class="text">
+            <h4 class="package-name">Gold Membership</h4>
+            <h5 class="package-price">£40.00 <sub>/ 1 Month</sub></h5>
+          </div>
+          <a href="#" class="btn btn-rounded btn-height-fixed"> Subscribe at £40.00</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===//end of subscription-package section === -->
+
+
+
 <!--  === subscribe modal start === -->
 <!-- Large modal -->
-<div class="modal fade subscribe-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade subscribe-modal">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <div class="cover-img-box"><img src="images/profile/cover-image-modal.png" alt="cover image" class="w-100"></div>
+      <div class="cover-img-box">
+        <img src="images/profile/cover-image-modal.png" alt="cover image" class="w-100">
+      </div>
+      <button type="button" class="btn close-btn" data-dismiss="modal"><i class="far fa-times"></i></button>
       <div class="profile text-center">
         <div class="profle-image"><img src="images/profile/other-profile-pic.png" alt="profile-image" class="img-fluid"></div>
         <h5 class="profile-name">Judith Williamson</h5>
         <h6 class="user-name">@judith.williamson</h6>
-        <a href="#" class="btn btn-rounded"> <i class="far fa-user-plus"></i> Subscribe for $9.99 </a>
+        <a href="#" class="btn btn-rounded btn-height-fixed">Please Add a Card</a>
       </div>
 
       <div class="subscription-benefits">
@@ -285,33 +326,33 @@
     <!-- Nav pills -->
     <ul class="nav nav-pills nav-justified " role="tablist">
       <li class="nav-item">
-        <a class="nav-link active" data-toggle="pill" href="#">
+        <a class="nav-link active" href="#">
           <h5>138</h5>
           <span>Post</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#">
+        <a class="nav-link" href="#">
           <h5>390</h5>
           <span>Photos</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#">
+        <a class="nav-link" href="#">
+          <h5>44</h5>
+          <span>Videos</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <h5>12</h5>
+          <span>Archived</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
           <h5>6.5K</h5>
           <span>Likes</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#">
-          <h5>987</h5>
-          <span>My Fans</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#">
-          <h5>87</h5>
-          <span>Following</span>
         </a>
       </li>
     </ul>
@@ -321,7 +362,7 @@
 
 
 <!-- === top-action section start === -->
-<section class="top-action text-nowrap my-30">
+<section class="top-action text-nowrap my-20">
   <div class="container">
     <div class="row">
       <div class="col-sm-6  text-sm-left text-center mb-sm-0 mb-30">
@@ -334,7 +375,7 @@
               <a href="#" class="btn circle-btn-white filter-btn"><i class="fas fa-sort-amount-down"></i></a>
             </div>
             <div class="search myShadow">
-              <input type="text" class="search__input" aria-label="search" placeholder="enter your search">
+              <input type="text" class="search__input" aria-label="search" placeholder="enter your search" required>
               <button type="submit" class="search__btn" aria-label="submit search"><i class="fas fa-search" ></i></button>
             </div>
             <div class="action ml-3">
@@ -349,7 +390,6 @@
 </section>
 <!-- ===//end of top-action section === -->
 
-
 <!-- === post-card section start === -->
 <section class="post-card-section">
   <div class="container">
@@ -363,30 +403,34 @@
                 <div class="profile-img-box position-relative">
                   <a href="#">
                     <img src="images/profile/other-profile-pic.png" alt="profile image" class="img-fluid">
-                    <i class="fas fa-circle online"></i>
                   </a>
                 </div>
                 <div class="text">
-                  <a href="#" class="profile-name"><h5>Natalia Raikova</h5></a>
-                  <span class="profile-sub-name">@natalia_raikova</span>
+                  <a href="#" class="profile-name"><h5>Judith Williamson</h5></a>
+                  <span class="profile-sub-name">@judith.williamson</span>
                 </div>
               </div>
-              <div class="dropdown">
-                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-ellipsis-v"></i>
-                </button>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy link of this post</a>
-                  <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="btn pin-btn"><i class="far fa-thumbtack"></i></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#"><i class="far fa-clone pr-2"></i>Copy link of this post</a>
+                    <a class="dropdown-item" href="#"><i class="far fa-thumbtack pr-2"></i>Pin to My Profile</a>
+                    <a class="dropdown-item" href="new_post_edit.html"><i class="fal fa-pencil pr-2"></i>Edit Post</a>
+                    <a class="dropdown-item" href="#"><i class="far fa-trash-alt pr-2"></i>Delete Post</a>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="post-image">
-            <a href="images/profile/post_image_3.png" class="venobox" data-gall="myGallery" data-overlay="#000"> <img src="images/profile/post_image_3.png" alt="post-image" class="w-100"></a>
+            <a href="#" data-toggle="modal" data-target=".post-modal"> <img src="images/profile/post_image_3.png" alt="post-image" class="w-100"></a>
             </div>
             <div class="date-time">Post on 17 May, 2020</div>
-            <div class="post-title" data-toggle="modal" data-target=".post-modal">My photos were published in ABC and  CBA magazines and I was part of LOCABA <a href="#">campaign@company.com</a> .</div>
+            <div class="post-title">My photos were published in ABC and  CBA magazines and I was part of LOCABA <a href="#">campaign@company.com</a> .</div>
 
             <div class="d-flex justify-content-between align-items-center post-footer">
               <div class="meta-data d-flex">
@@ -398,6 +442,7 @@
           </div>
         </div>
       </div>
+
       <div class="col-md-12 mb-30 grid-list-col">
         <div class="card post-card">
           <div class="card-body">
@@ -406,37 +451,41 @@
                 <div class="profile-img-box position-relative">
                   <a href="#">
                     <img src="images/profile/other-profile-pic.png" alt="profile image" class="img-fluid">
-                    <i class="fas fa-circle online"></i>
                   </a>
                 </div>
                 <div class="text">
-                  <a href="#" class="profile-name"><h5>Natalia Raikova</h5></a>
-                  <span class="profile-sub-name">@natalia_raikova</span>
+                  <a href="#" class="profile-name"><h5>Judith Williamson</h5></a>
+                  <span class="profile-sub-name">@judith.williamson</span>
                 </div>
               </div>
-              <div class="dropdown">
-                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-ellipsis-v"></i>
-                </button>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#"><i class="far fa-clone pr-1"></i>Copy link of this post</a>
-                  <a class="dropdown-item" href="#"><i class="far fa-flag pr-1"></i>Report</a>
+              <div class="d-flex justify-content-center">
+                <!-- <a href="#" class="btn pin-btn"><i class="far fa-thumbtack"></i></a> -->
+                <div class="dropdown">
+                  <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#"><i class="far fa-clone pr-2"></i>Copy link of this post</a>
+                    <a class="dropdown-item" href="#"><i class="far fa-thumbtack pr-2"></i>Pin to My Profile</a>
+                    <a class="dropdown-item" href="new_post_edit.html"><i class="fal fa-pencil pr-2"></i>Edit Post</a>
+                    <a class="dropdown-item" href="#"><i class="far fa-trash-alt pr-2"></i>Delete Post</a>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="post-image">
-            <a href="images/profile/post_image_4.png" class="venobox" data-gall="myGallery" data-overlay="#000"> <img src="images/profile/post_image_4.png" alt="post-image" class="w-100"></a>
+            <a href="#" data-toggle="modal" data-target=".post-modal"> <img src="images/profile/post_image_4.png" alt="post-image" class="w-100"></a>
             </div>
             <div class="date-time">Post on 17 May, 2020</div>
-            <div class="post-title" data-toggle="modal" data-target=".post-modal">My photos were published in ABC and  CBA magazines and I was part of LOCABA <a href="#">campaign@company.com</a> .</div>
+            <div class="post-title">My photos were published in ABC and  CBA magazines and I was part of LOCABA <a href="#">campaign@company.com</a> .</div>
 
             <div class="d-flex justify-content-between align-items-center post-footer">
               <div class="meta-data d-flex">
                 <div class="love"><a href="#"><i class="fas fa-heart"></i> <span> 2.2K </span></a></div>
                 <div class="comment"><a href="#"><i class="far fa-comment-alt-dots"></i><span>678</span></a></div>
               </div>
-              <a href="#" class="bookmark marked"> <i class="fas fa-bookmark"></i></a>
+              <a href="#" class="bookmark marked"> <i class="far fa-bookmark"></i></a>
             </div>
           </div>
         </div>
@@ -446,10 +495,14 @@
 </section>
 <!-- ===//end of post-card section === -->
 
+
 <!-- === post-modal section start === -->
 <div class="modal fade post-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
       <div class="post-image ">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -459,13 +512,19 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="images/home/post-modal.png" alt="First slide">
+              <a href="images/profile/post_image_1.png" class="venobox" data-gall="myGallery" data-overlay="#000" >
+                <img class="d-block w-100" src="images/profile/post_image_1.png" alt="First slide">
+              </a>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="images/home/post-modal.png" alt="Second slide">
+              <a href="images/profile/post_image_2.png" class="venobox" data-gall="myGallery" data-overlay="#000" >
+                <img class="d-block w-100" src="images/profile/post_image_2.png" alt="First slide">
+              </a>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="images/home/post-modal.png" alt="Third slide">
+              <a href="images/profile/post_image_1.png" class="venobox" data-gall="myGallery" data-overlay="#000" >
+                <img class="d-block w-100" src="images/profile/post_image_1.png" alt="First slide">
+              </a>
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -530,6 +589,7 @@
                   <div class="text">
                     <h6 class="user-name">Johnathan Caterman</h6>
                     <p class="message">Great Job!</p>
+                    <button class="btn pl-0 reply-btn">Reply</button>
                   </div>
                 </div>
                 <div class="right">
@@ -544,6 +604,7 @@
                   <div class="text">
                     <h6 class="user-name">Alicia Patnoy</h6>
                     <p class="message">I’m impressed!</p>
+                    <button class="btn pl-0 reply-btn">Reply</button>
                   </div>
                 </div>
                 <div class="right">
@@ -569,6 +630,7 @@
   </div>
 </div>
 <!-- ===//end of post-modal section === -->
+
 
 
 

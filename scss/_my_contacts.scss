@@ -241,6 +241,24 @@
         
         }
       }
+
+      &.search-box {
+        .input-group-text {
+          border: none;
+          background: transparent;
+          padding: 0;
+        }
+        .form-control {
+          border: none;
+          background: transparent;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        i {
+          color: #5C5C5C;
+        }
+      }
     }
 
     .card-body {
@@ -265,15 +283,12 @@
         border-radius: 10px;
       }
 
-      /* Handle on hover */
-      // &::-webkit-scrollbar-thumb:hover {
-      //   background: #555;
-      // }
 
       .card-body-inner {
         position: absolute;
         padding-right: 10px;
         height: 100%;
+        width: 80%;
         bottom: 0;
 
         .incoming {
@@ -436,6 +451,67 @@
               span {
                 color: $primary-color;
                 font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+
+      
+      .my-contacts-empty {
+        text-align: center;
+        h4 {
+          font-size: 18px;
+          color: rgba(#000000, 0.8);
+          padding: 15px 0;
+          font-weight: 600;
+        }
+        p {
+          font-size: 13px;
+          color: #333;
+        }
+      }
+
+      .after-search-items {
+        width: 95%;
+        border-radius: 20px;
+        overflow: hidden;
+        position: absolute;
+        top: 15px;
+        box-shadow: 0 5px 10px 0 #E7E9F2;
+        li{
+          padding: 7px .75rem;
+          &:hover {
+            background: #fff6f9;
+          }
+          a{
+            .img-box {
+              width: 40px;
+              img {
+                width: 40px;
+                height: 40px;
+                border: 2px solid #fff;
+                border-radius: 10px;
+                box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2);
+              }
+            }
+
+            .text {
+              width: 75%;
+              padding-left: 10px;
+              .user-name {
+                font-size: 14px;
+                font-weight: 600;
+                color: #333;
+                line-height: 1;
+              }
+
+              p {
+                font-size: 12px;
+                font-weight: 500;
+                color: rgba(#333, 0.5);
+                font-weight: 500;
+                margin: 3px 0 0 0;
               }
             }
           }
