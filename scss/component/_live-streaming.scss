@@ -162,6 +162,42 @@
                 font-size: 14px;
                 font-weight: 700;
               }
+
+              // Comment tab start
+              .nav-pills {
+                .nav-link {
+                  font-size: 14px;
+                  font-weight: 700;
+                  color: #000;
+                  opacity: 0.6;
+                  position: relative;
+                  display: block;
+                  padding: 1.2rem 1rem;
+                  background: transparent;
+
+                  &::before {
+                    content: '';
+                    width: 100px;
+                    height: 8px;
+                    border-radius: 10px;
+                    background: transparent;
+                    position: absolute;
+                    bottom: -4px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                  }
+
+                  &.active {
+                    opacity: 1;
+
+                    &::before {
+                      background: $primary-color;
+                    }
+                  }
+                }
+              }
+              // Comment tab end
+
             }
       
             .card-body {
@@ -239,6 +275,11 @@
                     border: 1px solid $primary-color-light;
                     padding: 10px;
                     border-radius: 10px;
+                    margin-bottom: 10px;
+
+                    &.accepted {
+                      border-color: #E3E3E3;
+                    }
       
                     .border-right {
                       border-right: 1px solid #ffcfe5 !important;
@@ -315,6 +356,8 @@
         }
     }
 
+
+
     // analytics section start
     .analytics {
         .card-title {
@@ -349,5 +392,230 @@
     }
     // analytics section end
       
+
+    // begin streaming start
+    .begin-streaming {
+      .top-header {
+        .card-title {
+          @include section-title;
+        }
+      }
+
+      .main-content {
+        header {
+          background-color: #F6FAFF;
+          .title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #3C4768;
+            margin-bottom: 5px;
+          }
+          p {
+            font-size: 12px;
+            font-weight: 500;
+            color: #A2A2A2;
+          }
+        }
+
+        .search-grpup {
+          .search-box {
+            position: relative;
+            border: 1px solid #E6E6E6;
+            background-color: #fff;
+            border-radius: 6px;
+            margin: 20px 0;
+            padding: 0 10px;
+  
+            .input-group-text {
+              border: none;
+              background: transparent;
+              padding: 0;
+              color: $primary-color;
+            }
+            .form-control {
+              border: none;
+              background: transparent;
+  
+              &:focus {
+                box-shadow: none;
+              }
+            }
+          }
+        }
+
+        .group-content {
+          text-align: center;
+          padding: 70px 0;
+          i {
+            font-size: 40px;
+            color: $primary-color;
+          }
+          p {
+            font-size: 13px;
+            line-height: 16px;
+            color: #3C4768;
+            font-weight: 600;
+            padding: 20px 0;
+          }
+          .btn {
+            font-weight: 700;
+            color: $primary-color;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    // begin streaming end
+
+
+    // crate-group-modal
+    #crate-group-modal {
+      .modal-title {
+        font-size: 14px;
+        font-weight: 700;
+        color: #3E4A6B;
+        text-transform: uppercase;
+      }
+      .close {
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: -5px;
+        right: 2px;
+        display: block;
+        line-height: 40px;
+        text-align: center;
+        padding: 0;
+        opacity: 1;
+        z-index: 1;
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      .custom-select {
+        height: calc(1.5em + 1.5rem + 2px);
+      }
+
+      .modal-footer {
+        .btn {
+          min-width: 100px;
+
+          &:disabled {
+            background: #dcdcdc;
+          }
+        }
+      }
+    }
+    // end of create-group-modal
+
+
+
+
+
+    // manage-group-modal
+    #manage-group-modal {
+      .modal-title {
+        font-size: 14px;
+        font-weight: 700;
+        color: #3E4A6B;
+        text-transform: uppercase;
+      }
+      .close {
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: -5px;
+        right: 2px;
+        display: block;
+        line-height: 40px;
+        text-align: center;
+        padding: 0;
+        opacity: 1;
+        z-index: 1;
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+
+      .modal-body {
+        background: #F5FAFF;
+        .search-grpup {
+          .search-box {
+            position: relative;
+            border: 1px solid #E6E6E6;
+            background-color: #fff;
+            border-radius: 6px;
+            padding: 0 10px;
+  
+            .input-group-text {
+              border: none;
+              background: transparent;
+              padding: 0;
+              color: $primary-color;
+            }
+            .form-control {
+              border: none;
+              background: transparent;
+  
+              &:focus {
+                box-shadow: none;
+              }
+            }
+          }
+        }
+
+        ul{
+          li {
+            border-radius: 8px;
+            box-shadow: 0 11px 22px 0 #E7E9F2;
+            padding: 10px;
+            margin: 10px 0;
+            background: #fff;
+
+            .group-info {
+              .avatar {
+                width: 65px;
+                height: 65px;
+                border: 1px solid #E5E5E5;
+                border-radius: 6px;
+                text-align: center;
+                display: grid;
+                place-items: center;
+                margin-right: 10px;
+              }
+              .text {
+                .group-name {
+                  font-size: 14px;
+                  font-weight: 700;
+                  color: #3E4A6B;
+                  padding-bottom: 5px;
+                }
+                .member-count {
+                  font-size: 14px;
+                  font-weight: 500;
+                  color: #3E4A6B;
+                  opacity: 0.7;
+                }
+              }
+            }
+          }
+        }
+
+      }
+
+
+
+      .modal-footer {
+        .btn {
+          min-width: 100px;
+
+          &:disabled {
+            background: #dcdcdc;
+          }
+        }
+      }
+    }
     
 }
