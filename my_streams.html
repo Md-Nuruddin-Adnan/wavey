@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wavey | My Streams</title>
+  <link rel='shortcut icon' href='images/logo.png' type='image/x-icon'>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="fonts/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/venobox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/responsive.css">
+  
+</head>
+<body id="live-streaming" >
+
+<!-- === dark-mode start === -->
+<button id="dark-mode-toggle" class="dark-mode-toggle btn">
+  <i class="fas fa-adjust"></i>
+</button>
+<script src="js/darkMode.js"></script>
+<!-- ===//end of dark-mode === -->
+
+<!-- === header section start === -->
+<header class="full-nav">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo/logo_white_sm.png" alt="logo" class="img-fluid white-logo">
+      <img src="images/logo/logo_color_sm.png" alt="logo" class="img-fluid color-logo">
+    </a>
+
+    <button class="btn side-menu-btn d-lg-none d-block"  onclick="openNav()">
+      <i class="fas fa-bars"></i>
+      <!-- <img src="images/home/user_profile_pic.png" alt="profile-image" class="img-fluid"> -->
+    </button>
+
+    <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-lg-auto mt-lg-0 mt-5">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><i class="fas fa-home-lg-alt"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-binoculars"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="new-post.html"><i class="fas fa-plus-square"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="my_contacts.html"><i class="fas fa-comments"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="wallet.html"><i class="fas fa-wallet"></i></a>
+        </li>
+      </ul>
+      <div>
+        <button class="pl-0 btn side-menu-btn" onclick="openNav()">
+          <img src="images/home/user_profile_pic.png" alt="profile-image" class="img-fluid">
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="side-nav">
+    <div class="top-bg"></div>
+    <div class="side-nav-inner">
+      <div class="heading">
+        <div class="d-flex justify-content-between align-items-center border-bottom p-2">
+          <div class="d-flex profile">
+            <div class="profile-image-box">
+              <img src="images/home/user_profile_pic.png" alt="profile-image" class="img-fluid profile-image">
+            </div>
+            <div>
+              <h5 class="user-name">Daniel James</h5>
+              <span class="user-sub-name">@daniel_James</span>
+            </div>
+          </div>
+
+          <div class="close-btn-box">
+            <button class="btn close-btn" onclick="closeNav()"><i class="fal fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <div class="statistics-full">
+          <div class="text-center">
+            <button class="btn static-btn" type="button" data-toggle="collapse" data-target="#statistics" aria-expanded="false" aria-controls="statistics">
+              Profile Statistics <span class="pl-1"><i class="fal fa-chevron-down"></i></span>
+            </button>
+          </div>
+
+          <div class="collapse show" id="statistics">
+            <div class="data-card m-2 text-nowrap text-center">
+              <div class="row fan-follow mx-0">
+                <div class="col-6 w-50 border-right">
+                  <div class="fan">
+                    <h5>987</h5>
+                    <span>Fans</span>
+                  </div>
+                </div>
+                <div class="col-6 w-50">
+                  <div class="following">
+                    <h5>87</h5>
+                    <span>Following</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row meta-data mx-0">
+                <div class="col-4 border-right">
+                  <h3>37.3k</h3>
+                  <span>Likes</span>
+                </div>
+                <div class="col-4 border-right">
+                  <h3>33</h3>
+                  <span>Photos</span>
+                </div>
+                <div class="col-4">
+                  <h3>87</h3>
+                  <span>Posts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="main-nav mt-3">
+        <ul>
+          <li>
+            <a href="#"><i class="fal fa-user-circle"></i> <span>My Profile</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fal fa-bookmark"></i> <span>Bookmarks</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fal fa-star"></i> <span>My Selection</span></a>
+          </li>
+          <li class="border-bottom">
+            <a href="#"><i class="fal fa-cog"></i> <span>Settings</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fal fa-credit-card"></i> <span>Card Details</span></a>
+          </li>
+          <li class="border-bottom">
+            <a href="#"><i class="fal fa-briefcase"></i> <span>Add Bank Details</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fal fa-phone-alt"></i> <span>Help & Support</span></a>
+          </li>
+          <li class="border-bottom">
+            <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fal fa-globe"></i> <span>Language (English)</span> <i class="fal fa-chevron-down arrow-icon"></i>
+                </button>
+                
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#"><i class="fal fa-paste"></i> <span>Logout</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- ===//end of header section === -->
+
+
+<!-- === my-streams section start === -->
+<section class="my-streams my-30">
+  <div class="container">
+    <div class="card">
+      <h2 class="card-header card-title py-20">My Streams</h2>
+      <div class="card-body">
+
+        <div class="row">
+          <div class="col-lg-1 col-sm-2 col-3 my-streaming">
+            <a href="#">
+              <div class="img text-center"><img src="images/home/you_live.png" alt="you-live" class="img-fluid my-live"></div>
+              <p class="text">My Streams</p>
+            </a>
+          </div>
+          <div class="col-lg-11 col-sm-10 col-9">
+            <div class="row streaming-slide text-center text-nowrap pr-3">
+              <div class="col-12">
+                <a href="#" data-toggle="modal" data-target=".live-streaming-modal" data-backdrop="static" data-keyboard="false">
+                  <div class="img"><img src="images/home/live_2.png" alt="live image" class="img-fluid"></div>
+                  <p class="text">Viena Gold</p>
+                </a>
+              </div>
+              <div class="col-12">
+                <a href="#" data-toggle="modal" data-target=".live-streaming-modal" data-backdrop="static" data-keyboard="false">
+                  <div class="img"><img src="images/home/live_3.png" alt="live image" class="img-fluid"></div>
+                  <p class="text">Amanda Tik...</p>
+                </a>
+              </div>
+              <div class="col-12">
+                <a href="#" data-toggle="modal" data-target=".live-streaming-modal" data-backdrop="static" data-keyboard="false">
+                  <div class="img"><img src="images/home/live_4.png" alt="live image" class="img-fluid"></div>
+                  <p class="text">Megrin Malk..</p>
+                </a>
+              </div>
+              <div class="col-12">
+                <a href="#" data-toggle="modal" data-target=".live-streaming-modal" data-backdrop="static" data-keyboard="false">
+                  <div class="img"><img src="images/home/live_5.png" alt="live image" class="img-fluid"></div>
+                  <p class="text">Helen Cran</p>
+                </a>
+              </div>
+              <div class="col-12">
+                <a href="#" data-toggle="modal" data-target=".live-streaming-modal" data-backdrop="static" data-keyboard="false">
+                  <div class="img"><img src="images/home/live_2.png" alt="live image" class="img-fluid"></div>
+                  <p class="text">Viena Gold</p>
+                </a>
+              </div>
+              <div class="col-12">
+                <a href="#" data-toggle="modal" data-target=".live-streaming-modal" data-backdrop="static" data-keyboard="false">
+                  <div class="img"><img src="images/home/live_3.png" alt="live image" class="img-fluid"></div>
+                  <p class="text">Amanda Tik...</p>
+                </a>
+              </div>
+              <div class="col-12">
+                <a href="#" data-toggle="modal" data-target=".live-streaming-modal" data-backdrop="static" data-keyboard="false">
+                  <div class="img"><img src="images/home/live_4.png" alt="live image" class="img-fluid"></div>
+                  <p class="text">Megrin Malk..</p>
+                </a>
+              </div>
+              <div class="col-12">
+                <a href="#" data-toggle="modal" data-target=".live-streaming-modal" data-backdrop="static" data-keyboard="false">
+                  <div class="img"><img src="images/home/live_5.png" alt="live image" class="img-fluid"></div>
+                  <p class="text">Helen Cran</p>
+                </a>
+              </div>
+              <div class="col-12">
+                <a href="#" data-toggle="modal" data-target=".live-streaming-modal" data-backdrop="static" data-keyboard="false">
+                  <div class="img"><img src="images/home/live_2.png" alt="live image" class="img-fluid"></div>
+                  <p class="text">Viena Gold</p>
+                </a>
+              </div>
+              <div class="col-12">
+                <a href="#" data-toggle="modal" data-target=".live-streaming-modal" data-backdrop="static" data-keyboard="false">
+                  <div class="img"><img src="images/home/live_3.png" alt="live image" class="img-fluid"></div>
+                  <p class="text">Amanda Tik...</p>
+                </a>
+              </div>
+              <div class="col-12">
+                <a href="#" data-toggle="modal" data-target=".live-streaming-modal" data-backdrop="static" data-keyboard="false">
+                  <div class="img"><img src="images/home/live_4.png" alt="live image" class="img-fluid"></div>
+                  <p class="text">Megrin Malk..</p>
+                </a>
+              </div>
+              <div class="col-12">
+                <a href="#" data-toggle="modal" data-target=".live-streaming-modal" data-backdrop="static" data-keyboard="false">
+                  <div class="img"><img src="images/home/live_5.png" alt="live image" class="img-fluid"></div>
+                  <p class="text">Helen Cran</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===//end of live-streaming section === -->
+
+
+
+<!-- === start-streaming section start === -->
+<section class="start-streaming mb-30">
+  <div class="container">
+    <div class="card border-radius-20 myShadow">
+      <div class="row">
+        <div class="col-lg-7 pr-lg-0 main-live mb-lg-0 mb-3">
+          <div class="card shadow-none overflow-hidden position-relative">
+            <div class="live-header">
+              <div class="d-flex">
+                <div class="img"><img src="images/home/suggestion_profile_1.png" alt="profile picture" class="img-fluid"></div>
+                <div class="text">
+                  <a href="#" class="user-name">Judith Williamson</a>
+                  <span class="live-button">LIVE</span>
+                  <span class="watching"><i class="far fa-user"></i> 378</span>
+                </div>
+              </div>
+            </div>
+            <div class="embed-content" style="background: url(images/home/live_streaming.png) no-repeat center center/cover;">
+              <iframe src="https://www.youtube.com/embed/sTANio_2E0Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 pl-lg-0 live-comments">
+          <div class="card overflow-hidden shadow-none">
+            <div class="card-header">
+              <h2>COMMENTS</h2>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_1.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Alen Palm</a>
+                       <p class="message">Biggest fan of your yoga classes ma'am!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#" class="love"><i class="fas fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_2.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Johnathan Caterman</a>
+                       <p class="message">Great Job!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#"><i class="far fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_3.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Alicia Patnoy</a>
+                       <p class="message">I’m impressed!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#"><i class="far fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_1.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Alen Palm</a>
+                       <p class="message">Biggest fan of your yoga classes ma'am!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#" class="love"><i class="fas fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_2.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Johnathan Caterman</a>
+                       <p class="message">Great Job!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#"><i class="far fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_3.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Alicia Patnoy</a>
+                       <p class="message">I’m impressed!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#"><i class="far fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_1.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Alen Palm</a>
+                       <p class="message">Biggest fan of your yoga classes ma'am!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#" class="love"><i class="fas fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_2.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Johnathan Caterman</a>
+                       <p class="message">Great Job!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#"><i class="far fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_3.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Alicia Patnoy</a>
+                       <p class="message">I’m impressed!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#"><i class="far fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_3.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Alicia Patnoy</a>
+                       <p class="message">I’m impressed!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#"><i class="far fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box request">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="left d-flex border-right">
+                      <div class="img"><img src="images/home/suggestion_profile_1.png" alt="profile-image" class="img-fluid"></div>
+                      <div class="text">
+                        <p>Pequest <a href="#" class="text-brand">Judith Williamson </a> to be there in video streaming</p>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <a href="#" class="btn text-brand">ACCEPT</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="card-footer">
+              <div class="d-flex justify-content-between align-items-center">
+                <input type="text" class="form-control" placeholder="Type a message...">
+                <div class="action d-flex">
+                  <button class="btn btn-sm"><i class="far fa-heart"></i></button>
+                  <button class="btn btn-sm"><i class="far fa-smile-beam"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===//end of start-streaming section === -->
+
+
+
+<!-- === Analytics section start === -->
+<section class="analytics mb-30">
+  <div class="container">
+    <div class="card">
+      <div class="card-header"><h2 class="card-title">Analytics</h2></div>
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col-lg-5">
+            <div class="text">
+              <div class="row">
+                <div class="col-6 mb-4">
+                  <h4 class="data text-brand">81,879</h4>
+                  <p>Total Views</p>
+                </div>
+                <div class="col-6 mb-4">
+                  <h4 class="data text-brand">£ 480</h4>
+                  <p>Earned</p>
+                </div>
+                <div class="col-6 mb-4">
+                  <h4 class="data">61,225</h4>
+                  <p>During Live Views</p>
+                </div>
+                <div class="col-6 mb-4">
+                  <h4 class="data">20,734</h4>
+                  <p>After Live Views</p>
+                </div>
+                <div class="col-6 mb-4">
+                  <h4 class="data">51,738</h4>
+                  <p>Likes</p>
+                </div>
+                <div class="col-6 mb-4">
+                  <h4 class="data">9820</h4>
+                  <p>Comments</p>
+                </div>
+                <div class="col-6 mb-4">
+                  <h4 class="data">728</h4>
+                  <p>Join Requests</p>
+                </div>
+                <div class="col-6 mb-4">
+                  <h4 class="data">14</h4>
+                  <p>Requests Accepted</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="graph">
+              <canvas id="analyticChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===//end of Analytics section === -->
+
+
+
+<!--===  live-streaming-modal start === -->
+<div class="modal fade live-streaming-modal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content  border-radius-20 border-0">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="row">
+        <div class="col-lg-7 pr-lg-0 main-live mb-lg-0 mb-3">
+          <div class="card shadow-none overflow-hidden position-relative">
+            <div class="live-header">
+              <div class="d-flex">
+                <div class="img"><img src="images/home/suggestion_profile_1.png" alt="profile picture" class="img-fluid"></div>
+                <div class="text">
+                  <a href="#" class="user-name">Judith Williamson</a>
+                  <span class="live-button">LIVE</span>
+                  <span class="watching"><i class="far fa-user"></i> 378</span>
+                </div>
+              </div>
+            </div>
+            <div class="embed-responsive embed-responsive-1by1" style="background: url(images/home/live_streaming.png) no-repeat center center/cover;">
+              <iframe src="https://www.youtube.com/embed/sTANio_2E0Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 pl-lg-0 live-comments">
+          <div class="card overflow-hidden shadow-none">
+            <div class="card-header">
+              <h2>COMMENTS</h2>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_1.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Alen Palm</a>
+                       <p class="message">Biggest fan of your yoga classes ma'am!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#" class="love"><i class="fas fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_2.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Johnathan Caterman</a>
+                       <p class="message">Great Job!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#"><i class="far fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_3.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Alicia Patnoy</a>
+                       <p class="message">I’m impressed!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#"><i class="far fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_1.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Alen Palm</a>
+                       <p class="message">Biggest fan of your yoga classes ma'am!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#" class="love"><i class="fas fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_2.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Johnathan Caterman</a>
+                       <p class="message">Great Job!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#"><i class="far fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_3.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Alicia Patnoy</a>
+                       <p class="message">I’m impressed!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#"><i class="far fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_1.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Alen Palm</a>
+                       <p class="message">Biggest fan of your yoga classes ma'am!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#" class="love"><i class="fas fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_2.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Johnathan Caterman</a>
+                       <p class="message">Great Job!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#"><i class="far fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_3.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Alicia Patnoy</a>
+                       <p class="message">I’m impressed!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#"><i class="far fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box">
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="left d-flex">
+                     <div class="img"><img src="images/home/suggestion_profile_3.png" alt="profile-image" class="img-fluid"></div>
+                     <div class="text">
+                       <a href="#" class="user-name">Alicia Patnoy</a>
+                       <p class="message">I’m impressed!</p>
+                     </div>
+                   </div>
+                   <div class="right">
+                     <a href="#"><i class="far fa-heart"></i></a>
+                   </div>
+                  </div>
+                </li>
+                <li class="message-box request">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="left d-flex border-right">
+                      <div class="img"><img src="images/home/suggestion_profile_1.png" alt="profile-image" class="img-fluid"></div>
+                      <div class="text">
+                        <p>Pequest <span>Judith Williamson </span> to be there in video streaming</p>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <a href="#" class="btn text-brand">REQUEST</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-footer">
+              <div class="d-flex justify-content-between align-items-center">
+                <input type="text" class="form-control" placeholder="Type a message...">
+                <div class="action d-flex">
+                  <button class="btn btn-sm"><i class="far fa-heart"></i></button>
+                  <button class="btn btn-sm"><i class="far fa-smile-beam"></i></button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--=== live-streaming-modal end ===-->
+
+
+<!-- === footer start === -->
+<footer class="page-footer">
+  <div class="container-fluid">
+    <div class="d-lg-flex justify-content-between align-items-center text-center">
+      <nav class="footer-nav">
+        <ul class="d-lg-flex text-nowrap">
+          <li><a href="#" class="footer-link">ABOUT</a></li>
+          <li><a href="#" class="footer-link">CREATE AD</a></li>
+          <li><a href="#" class="footer-link">CAREERS</a></li>
+          <li><a href="#" class="footer-link">PRIVACY POLICY</a></li>
+          <li><a href="#" class="footer-link">TERMS & CONDITIONS</a></li>
+          <li><a href="#" class="footer-link">HELP & SUPPORT</a></li>
+        </ul>
+      </nav>
+
+      <p class="copyright"><i class="far fa-copyright    "></i> 2020 WAVEY.VIP</p>
+    </div>
+  </div>
+</footer>
+<!-- ===//end of footer === -->
+
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/venobox.min.js"></script>
+  <script src="js/chart-min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    let ctx = document.getElementById('analyticChart').getContext('2d');
+    let myChart = new Chart(ctx, {
+        type: 'line',
+        data:{
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+    </script>
+     
+</body>
+</html>

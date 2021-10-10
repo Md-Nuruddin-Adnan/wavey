@@ -277,6 +277,10 @@ a, a:hover {
   place-items: center;
 }
 
+.border-radius-none {
+  border-radius: 0 !important;
+}
+
 /* === All common css start === */
 .grid-list-view {
   transition: all 0.2s linear;
@@ -2721,6 +2725,353 @@ a, a:hover {
 
 .dark-mode .live-streaming-modal .modal-content .live-comments .card .card-footer .action .btn i.currency {
   border: 1.5px solid #bdc9da;
+}
+
+#live-streaming .my-streams .card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+#live-streaming .my-streams .streaming-slide .col-12 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#live-streaming .my-streams .my-streaming .text {
+  font-weight: 700;
+  color: #db3364;
+  padding-top: 5px;
+}
+
+#live-streaming .my-streams img {
+  width: 100%;
+  border-radius: 50%;
+  text-align: center;
+  border: 3px solid #fff;
+  -webkit-box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2);
+          box-shadow: 3.009px 3.993px 6px 0px rgba(41, 65, 88, 0.2);
+}
+
+#live-streaming .my-streams img.my-live {
+  border-radius: 50%;
+  border-color: #db3364;
+  max-width: 60px;
+  margin-top: 15px;
+}
+
+#live-streaming .my-streams p {
+  font-size: 11px;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+
+#live-streaming .my-streams .next-arrow {
+  top: 38%;
+  right: 5px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#live-streaming .my-streams .prev-arrow {
+  display: none !important;
+}
+
+#live-streaming .start-streaming .top-header .card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+#live-streaming .start-streaming .top-header .btn-rounded {
+  line-height: 2;
+}
+
+@media (min-width: 991px) {
+  #live-streaming .start-streaming .main-live .card {
+    height: 70vh;
+  }
+}
+
+#live-streaming .start-streaming .main-live .card .live-header {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1;
+}
+
+#live-streaming .start-streaming .main-live .card .live-header .img {
+  width: 45px;
+  margin-right: 5px;
+}
+
+#live-streaming .start-streaming .main-live .card .live-header .img img {
+  width: 45px;
+  border-radius: 8px;
+  border: 3px solid #fff;
+}
+
+#live-streaming .start-streaming .main-live .card .live-header .text .user-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  display: block;
+  line-height: 1;
+}
+
+#live-streaming .start-streaming .main-live .card .live-header .text .live-button {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bd1b4a), to(#eb4072));
+  background-image: linear-gradient(to bottom, #bd1b4a, #eb4072);
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+#live-streaming .start-streaming .main-live .card .live-header .text .watching {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+#live-streaming .start-streaming .main-live .card .embed-content .single-column {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+}
+
+#live-streaming .start-streaming .main-live .card .embed-content .double-column {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+#live-streaming .start-streaming .main-live .card .embed-content img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#live-streaming .start-streaming .main-live .card .embed-content iframe {
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 991px) {
+  #live-streaming .start-streaming .main-live .card .embed-content {
+    height: 100%;
+  }
+}
+
+#live-streaming .start-streaming .live-comments .card {
+  position: relative;
+  height: 70vh;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-header h2 {
+  color: #3E4A6B;
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-body {
+  background-image: -webkit-gradient(linear, right top, left top, from(#f5faff), to(white));
+  background-image: linear-gradient(-90deg, #f5faff 0%, white 100%);
+  padding: 0;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-body ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: calc(100% - 80px);
+  overflow: auto;
+  padding: 20px;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+
+#live-streaming .start-streaming .live-comments .card .card-body ul::-webkit-scrollbar {
+  width: 4px;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-body ul::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-body ul::-webkit-scrollbar-thumb {
+  background: #d8d8d8;
+  border-radius: 10px;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-body ul li {
+  padding: 10px 0;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-body ul li .left .img {
+  width: 45px;
+  margin-right: 8px;
+  padding-top: 3px;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-body ul li .left .img img {
+  width: 45px;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-body ul li .left .text {
+  width: 100%;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-body ul li .left .text a.user-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #343a4c;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-body ul li .left .text p.message {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(52, 58, 76, 0.8);
+}
+
+#live-streaming .start-streaming .live-comments .card .card-body ul li .right a i {
+  font-size: 18px;
+  color: #bebebe;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-body ul li .right a.love i {
+  color: #db3364;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-body ul li.request {
+  border: 1px solid #eb4072;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-body ul li.request .border-right {
+  border-right: 1px solid #ffcfe5 !important;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-body ul li.request .text p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #343a4c;
+  line-height: 13px;
+  padding-top: 3px;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-body ul li.request .text p span {
+  font-weight: 600;
+  color: #db3364;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-body ul li.request .right .btn {
+  padding: 0;
+  padding-left: 10px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-footer input.form-control {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  border: none;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-footer input.form-control::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9ba4b0;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-footer input.form-control:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9ba4b0;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-footer input.form-control::-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9ba4b0;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-footer input.form-control::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9ba4b0;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-footer .action .btn i {
+  color: #bdc9da;
+  font-size: 20px;
+}
+
+#live-streaming .start-streaming .live-comments .card .card-footer .action .btn i.currency {
+  font-size: 11px;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #bdc9da;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+}
+
+#live-streaming .analytics .card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+#live-streaming .analytics .text .data {
+  font-size: 16px;
+  font-weight: 700;
+  color: #405669;
+  padding-bottom: 5px;
+}
+
+#live-streaming .analytics .text .data.text-brand {
+  font-size: 150%;
+  color: #db3364;
+}
+
+#live-streaming .analytics .text p {
+  font-size: 13px;
+  font-weight: 500;
+  color: #454545;
+  opacity: 0.7;
+}
+
+#live-streaming .analytics .graph {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  padding: 10px;
 }
 
 .subscribe-modal .modal-content {
