@@ -443,6 +443,55 @@
           }
         }
 
+
+        .after-search {
+          .after-search-items > a {
+            border-radius: 8px;
+            padding: 8px 20px;
+
+            .group-info {
+              .avatar {
+                width: 35px;
+                height: 35px;
+                border: 1px solid #E5E5E5;
+                border-radius: 4px;
+                text-align: center;
+                display: grid;
+                place-items: center;
+                margin-right: 10px;
+              }
+              .text {
+                .group-name {
+                  font-size: 13px;
+                  font-weight: 700;
+                  color: #3E4A6B;
+                }
+                .member-count {
+                  font-size: 12px;
+                  font-weight: 500;
+                  color: #3E4A6B;
+                  opacity: 0.7;
+                }
+              }
+            }
+
+            .action {
+              i {
+                color: #939393;
+              }
+            }
+
+            &:hover {
+              background: #FFF6F9;
+              .action {
+                i {
+                  color: $primary-color;
+                }
+              }
+            }
+          }
+        }
+
         .group-content {
           text-align: center;
           padding: 70px 0;

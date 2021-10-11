@@ -3170,6 +3170,48 @@ a, a:hover {
           box-shadow: none;
 }
 
+#live-streaming .begin-streaming .main-content .after-search .after-search-items > a {
+  border-radius: 8px;
+  padding: 8px 20px;
+}
+
+#live-streaming .begin-streaming .main-content .after-search .after-search-items > a .group-info .avatar {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-right: 10px;
+}
+
+#live-streaming .begin-streaming .main-content .after-search .after-search-items > a .group-info .text .group-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #3E4A6B;
+}
+
+#live-streaming .begin-streaming .main-content .after-search .after-search-items > a .group-info .text .member-count {
+  font-size: 12px;
+  font-weight: 500;
+  color: #3E4A6B;
+  opacity: 0.7;
+}
+
+#live-streaming .begin-streaming .main-content .after-search .after-search-items > a .action i {
+  color: #939393;
+}
+
+#live-streaming .begin-streaming .main-content .after-search .after-search-items > a:hover {
+  background: #FFF6F9;
+}
+
+#live-streaming .begin-streaming .main-content .after-search .after-search-items > a:hover .action i {
+  color: #db3364;
+}
+
 #live-streaming .begin-streaming .main-content .group-content {
   text-align: center;
   padding: 70px 0;

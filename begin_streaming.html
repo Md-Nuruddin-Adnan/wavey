@@ -203,11 +203,84 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1"><i class="far fa-search"></i></span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Search by Name…" oninput="">
+                    <input type="text" id="search-input-field" class="form-control" placeholder="Search by Name…" oninput="beginStreamingSearch()">
                   </div>
-                  <a href="#" class="btn" onclick="window.history.back()"> <i class="far fa-times"></i></a>
+                  <a href="#" class="btn" onclick="resetBeginStreamingSearch()"> <i class="far fa-times"></i></a>
                 </div>
               </div>
+
+              <!-- after search show -->
+              <ul class="after-search d-none">
+                <li class="after-search-items">
+                  <a href="#" class="d-flex align-items-center justify-content-between">
+                    <div class="group-info d-flex align-items-center">
+                      <div class="avatar"><img src="images/live_streaming/shape.png" alt="avatar" class="img-fluid"></div>
+                      <div class="text">
+                        <h4 class="group-name">Close Friends</h4>
+                        <p class="member-count">10 Members</p>
+                      </div>
+                    </div>
+                    <div class="action">
+                      <i class="far fa-minus-circle"></i>
+                    </div>
+                  </a>
+                </li>
+                <li class="after-search-items">
+                  <a href="#" class="d-flex align-items-center justify-content-between">
+                    <div class="group-info d-flex align-items-center">
+                      <div class="avatar"><img src="images/live_streaming/shape.png" alt="avatar" class="img-fluid"></div>
+                      <div class="text">
+                        <h4 class="group-name">Close Friends</h4>
+                        <p class="member-count">10 Members</p>
+                      </div>
+                    </div>
+                    <div class="action">
+                      <i class="far fa-minus-circle"></i>
+                    </div>
+                  </a>
+                </li>
+                <li class="after-search-items">
+                  <a href="#" class="d-flex align-items-center justify-content-between">
+                    <div class="group-info d-flex align-items-center">
+                      <div class="avatar"><img src="images/home/live_2.png" alt="avatar" class="img-fluid"></div>
+                      <div class="text">
+                        <h4 class="group-name">Johnathan Caterman</h4>
+                      </div>
+                    </div>
+                    <div class="action">
+                      <i class="far fa-minus-circle"></i>
+                    </div>
+                  </a>
+                </li>
+                <li class="after-search-items">
+                  <a href="#" class="d-flex align-items-center justify-content-between">
+                    <div class="group-info d-flex align-items-center">
+                      <div class="avatar"><img src="images/home/live_3.png" alt="avatar" class="img-fluid"></div>
+                      <div class="text">
+                        <h4 class="group-name">Alicia Patnoy</h4>
+                      </div>
+                    </div>
+                    <div class="action">
+                      <i class="far fa-minus-circle"></i>
+                    </div>
+                  </a>
+                </li>
+                <li class="after-search-items">
+                  <a href="#" class="d-flex align-items-center justify-content-between">
+                    <div class="group-info d-flex align-items-center">
+                      <div class="avatar"><img src="images/home/live_4.png" alt="avatar" class="img-fluid"></div>
+                      <div class="text">
+                        <h4 class="group-name">Christino Donald</h4>
+                      </div>
+                    </div>
+                    <div class="action">
+                      <i class="far fa-minus-circle"></i>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <!-- end of after search show -->
+
               <div class="group-content px-20">
                 <i class="far fa-users"></i>
                 <p>Pre-defined set of users can help you to select your target audience in seconds!</p>

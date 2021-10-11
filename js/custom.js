@@ -169,3 +169,18 @@ function showSearchItem(){
   $('.my_contacts .after-search-items').removeClass('d-none')
   $('.my_contacts .my-contacts-empty').addClass('d-none')
 }
+
+// show search item in my begin Streaming page
+function beginStreamingSearch(){
+  $('.begin-streaming .after-search').removeClass('d-none')
+  $('.begin-streaming .group-content').addClass('d-none')
+}
+
+// reset search item in my begin Streaming page
+function resetBeginStreamingSearch(){
+  $('.begin-streaming .after-search').addClass('d-none')
+  $('.begin-streaming .group-content').removeClass('d-none')
+  let inputField = document.getElementById('search-input-field')
+  inputField.value = ''
+
+}
