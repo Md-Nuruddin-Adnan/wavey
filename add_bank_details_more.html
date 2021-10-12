@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Wavey | Card Details</title>
+  <title>Wavey | Bank Details More Info</title>
   <link rel='shortcut icon' href='images/logo.png' type='image/x-icon'>
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="fonts/simple-line-icons/css/simple-line-icons.css">
@@ -14,8 +14,7 @@
   <link rel="stylesheet" href="css/venobox.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body id="add-card-details">
-
+<body id="bank_card_details">
 
 
 <!-- === dark-mode start === -->
@@ -28,7 +27,7 @@
 <!-- === header section start === -->
 <header class="full-nav">
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.html">
       <img src="images/logo/logo_white_sm.png" alt="logo" class="img-fluid white-logo">
       <img src="images/logo/logo_color_sm.png" alt="logo" class="img-fluid color-logo">
     </a>
@@ -45,16 +44,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav m-lg-auto mt-lg-0 mt-5">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html"><i class="fas fa-home-lg-alt"></i></a>
+          <a class="nav-link" href="index.html"><i class="fas fa-home-lg-alt"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="my-contacts-chat.html"><i class="fas fa-comments"></i></a>
+          <a class="nav-link" href="#"><i class="fas fa-binoculars"></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="new-post.html"><i class="fas fa-plus-square"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="notifications.html"><i class="fas fa-bell"></i></a>
+          <a class="nav-link" href="my_contacts.html"><i class="fas fa-comments"></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="wallet.html"><i class="fas fa-wallet"></i></a>
@@ -178,132 +177,143 @@
 <!-- ===//end of header section === -->
 
 
-
-<!-- === add-card-details section start === -->
-<section class="add-card-details my-40">
+<!-- === add_bank_card_details section start === -->
+<section class="my-40">
   <div class="container">
-    <div class="card">
-      <div class="card-header myShadow">
-        <h2>Add Card Details</h2>
-      </div>
-      <div class="card-body">
-        <form action="" class="form-default">
-          <h3 class="form-heading">BILLING INFORMATION</h3>
-
-          <div class="row myShadow">
-            <div class="col-md-8">
-              <div class="form-group">
-                <label for="">Street</label>
-                <input type="text" class="form-control" placeholder="306 N. Virginia St. Sanford">
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <label for="">Zip/Postal Code</label>
-                <input type="text" class="form-control" placeholder="23771">
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <label for="">Country</label>
-                <select class="custom-select">
-                  <option value="">United States</option>
-                  <option value="">England</option>
-                  <option value="">Bangladesh</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <label for="">State/Province</label>
-                <select class="custom-select">
-                  <option value="">Florida</option>
-                  <option value="">London</option>
-                  <option value="">Dhaka</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <label for="">City</label>
-                <select class="custom-select">
-                  <option value="">Tampa</option>
-                  <option value="">City-2</option>
-                  <option value="">City-3</option>
-                </select>
-              </div>
-            </div>
+    <div class="row">
+      <div class="col-lg-10 m-auto">
+        <div class="card">
+          <div class="card-header myShadow-sm">
+            <h2 class="card-heading">Add Bank Details</h2>
           </div>
-
-          <div class="row mt-40">
-            <div class="col-12">
-              <h3 class="form-heading">CARD INFORMATION</h3>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="">Name of the card</label>
-                <input type="text" class="form-control" placeholder="JUDITH ANES WILLIAMSON">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="">Card Number</label>
-                <input type="text" class="form-control" placeholder="9403 4637 2829 1910">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="row">
-                <div class="col-8">
-                  <div class="form-group">
-                    <label for="" class="text-nowrap">Expiration (MM/YYYY)</label>
-                    <div class="d-flex">
-                      <select class="custom-select">
-                        <option value="">01</option>
-                        <option value="">02</option>
-                        <option value="">03</option>
-                      </select>
-                      <select class="custom-select ml-20">
-                        <option value="">2001</option>
-                        <option value="">2002</option>
-                        <option value="">2003</option>
-                      </select>
+          <div class="card-body p-0">
+            <div class="add_bank_card_details">
+              <form class="form-default">
+                <div class="personal-information border-bottom myShadow-sm px-20 py-30">
+                  <h2 class="form-heading">PERSONAL INFORMATION</h2>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" class="form-control" placeholder="James">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control" placeholder="Matthew">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="form-group">
+                        <label>Street</label>
+                        <input type="text" class="form-control" placeholder="306 N. Virginia St. Sanford">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>ZIP / Postal Code</label>
+                        <input type="text" class="form-control" placeholder="32771">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Country</label>
+                        <select class="custom-select">
+                          <option selected>Select Country</option>
+                          <option>United States</option>
+                          <option>UK</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>State / Province</label>
+                        <select class="custom-select">
+                          <option selected>Florida</option>
+                          <option>State</option>
+                          <option>State</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>City</label>
+                        <select class="custom-select">
+                          <option>Select City</option>
+                          <option selected>Tampa</option>
+                          <option>City</option>
+                        </select>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-4 ">
-                  <div class="form-group">
-                    <label for="">CVC</label>
-                    <input type="text" class="form-control" placeholder="042">
+                <div class="photo-identity px-20 pt-30">
+                  <h2 class="form-heading">PHOTO OF YOUR IDENTITY PROOF</h2>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Document Type</label>
+                        <select class="custom-select">
+                          <option selected>Driving License</option>
+                          <option>Passport</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Front-Side of Document</label>
+                        <input type="file" id="front-side" class="form-control d-none">
+                        <label for="front-side">
+                          <img src="images/bank_card/front.png" alt="card-image" class="img-fluid">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Back-Side of Document</label>
+                        <input type="file" id="back-side" class="form-control d-none">
+                        <label for="back-side">
+                          <img src="images/bank_card/back.png" alt="card-image" class="img-fluid">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Photo of Holding your ID</label>
+                        <input type="file" id="holding" class="form-control d-none">
+                        <label for="holding">
+                          <img src="images/bank_card/photo_holding.png" alt="card-image" class="img-fluid">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="good-bade-example">
+                        <label>Good & Bad Example of Photo ID</label>
+                        <p>A good photo ID photo always clearly shows the ID, each and every details including your Photo and other information. This will help us get your KYC done really fast.</p>
+                       <a href="images/bank_card/good_example.png" class="btn pl-0 venobox" data-overlay="rgba(0,0,0, 0.7)">Good Example</a>
+                       <a href="images/bank_card/bad_example.png" class="btn venobox" data-overlay="rgba(0,0,0, 0.7)">Bad Example</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="">E-Mail Address</label>
-                <input type="text" class="form-control" placeholder="Judith.williamson@domain.com">
-              </div>
-            </div>
-          </div>
-          <div class="form-footer mt-20">
-            <div class="d-sm-flex justify-content-between">
-              <div class="form-group">
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-                  <label class="custom-control-label" for="customControlAutosizing"><span>Tick here to confirm that you are at least 18 years old and the age of majority in your place of residence</span></label>
+                <div class="text-right px-20 pb-30">
+                  <a href="#" class="btn btn-rounded-outline btn-height-fixed" onclick="window.history.back()">Previous</a>
+                  <a href="add_bank_details_bank_info.html"class="btn btn-rounded btn-height-fixed">Next</a>
                 </div>
-              </div>
-              <div class="form-btn">
-                <button type="submit" class="btn btn-rounded">Submit</button>
-              </div>
+              </form>
             </div>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>
 </section>
-<!-- ===//end of add-card-details section === -->
+<!-- ===//end of add_bank_card_details section === -->
 
 <!-- === footer start === -->
 <footer class="page-footer">

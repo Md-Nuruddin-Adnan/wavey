@@ -128,6 +128,10 @@ a, a:hover {
   padding-left: 30px;
 }
 
+.pt-2px {
+  padding-top: 2px;
+}
+
 .py-20 {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -808,6 +812,8 @@ a, a:hover {
   color: #3c4768;
   background-color: #f7fafe;
   border: 1px solid #dcdee2;
+  min-height: calc(1.5em + 1.5rem + 2px);
+  border-radius: 8px;
 }
 
 .form-default .custom-checkbox .custom-control-label::before {
@@ -4125,6 +4131,151 @@ a, a:hover {
   color: #fff;
 }
 
+#bank_card_details .card-heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  padding: 15px 0;
+}
+
+#bank_card_details .btn-rounded-outline,
+#bank_card_details .btn-rounded {
+  min-width: 120px;
+}
+
+#bank_card_details .btn-rounded.bg-gray {
+  background: #DCDCDC;
+}
+
+#bank_card_details .text-preline {
+  white-space: pre-line;
+}
+
+#bank_card_details .bank-card-listing-empty {
+  text-align: center;
+}
+
+#bank_card_details .bank-card-listing-empty .title {
+  font-size: 18px;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#bank_card_details .bank-card-listing-empty p {
+  font-size: 13px;
+  color: #333;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+#bank_card_details .bank-card-listing ul li {
+  padding: 20px 0;
+}
+
+#bank_card_details .bank-card-listing ul li .img {
+  width: 95px;
+  height: 60px;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 2px 2px 11px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 11px 0 rgba(0, 0, 0, 0.1);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-right: 20px;
+}
+
+#bank_card_details .bank-card-listing ul li .img img {
+  max-height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#bank_card_details .bank-card-listing ul li .text {
+  color: #000;
+}
+
+#bank_card_details .bank-card-listing ul li .text h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#bank_card_details .bank-card-listing ul li .text h4 {
+  font-size: 13px;
+  padding: 3px 0;
+}
+
+#bank_card_details .bank-card-listing ul li .text p {
+  font-size: 12px;
+  color: #929292;
+}
+
+#bank_card_details .bank-card-listing ul li .text p span {
+  color: #000000;
+  font-weight: 600;
+}
+
+#bank_card_details .bank-card-listing ul li .make-default-btn {
+  font-size: 14px;
+  font-weight: 700;
+  color: #929292;
+  font-style: italic;
+}
+
+#bank_card_details .add_bank_card_details label img {
+  border-radius: 7px;
+  border: 1px solid #DCDEE2;
+  max-height: 165px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+#bank_card_details .good-bade-example label {
+  font-weight: 500;
+}
+
+#bank_card_details .good-bade-example p {
+  font-size: 13px;
+  color: #3C4768;
+  line-height: 16px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+#bank_card_details .good-bade-example .btn {
+  font-size: 13px;
+  font-weight: 600;
+  color: #db3364;
+}
+
+#bank_card_details .bank-card-success {
+  text-align: center;
+  min-height: 60vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+#bank_card_details .bank-card-success i {
+  font-size: 55px;
+  color: #db3364;
+}
+
+#bank_card_details .bank-card-success .title {
+  font-size: 24px;
+  color: #000;
+}
+
+#bank_card_details .bank-card-success p {
+  font-size: 13px;
+  opacity: 0.8;
+  color: #333333;
+  line-height: 20px;
+}
+
 /* ===//end of component css === */
 /* === pages css start === */
 .transition, .full-nav .navbar-dark .navbar-nav .nav-link, .full-nav .side-nav .heading .close-btn, .full-nav .side-nav .heading .statistics-full .static-btn i, .full-nav .side-nav .main-nav button,
@@ -4838,6 +4989,7 @@ a, a:hover {
 #wallet .main-content .card-body .tab-full .tab-content ul {
   margin: 0 -20px;
   padding: 0 10px;
+  width: 100%;
 }
 
 #wallet .main-content .card-body .tab-full .tab-content ul li {

@@ -1,0 +1,160 @@
+#bank_card_details {
+  .card-heading {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    padding: 15px 0;
+  }
+
+  .btn-rounded-outline,
+  .btn-rounded {
+    min-width: 120px;
+  }
+
+  .btn-rounded.bg-gray {
+    background: #DCDCDC;
+  }
+
+  .text-preline {
+    white-space: pre-line;
+  }
+
+  // bank-card-listing-empty start
+  .bank-card-listing-empty {
+    text-align: center;
+
+    .title {
+      font-size: 18px;
+      color: #333;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 13px;
+      color: #333;
+      opacity: 0.8;
+      margin-bottom: 30px;
+    }
+  }
+  // bank-card-listing-empty end
+
+
+  // bank-card-listing start
+  .bank-card-listing {
+    ul {
+      li {
+        padding: 20px 0;
+        .img {
+          width: 95px;
+          height: 60px;
+          border-radius: 4px;
+          padding: 10px;
+          background-color: #FFFFFF;
+          box-shadow: 2px 2px 11px 0 rgba(0,0,0,0.1);
+          display: grid;
+          place-items: center;
+          margin-right: 20px;
+
+          img {
+              max-height: 40px;
+              object-fit: cover;
+          }
+        }
+
+        .text {
+          color: #000;
+          h3{
+              font-size: 14px;
+              font-weight: 600;
+          }
+          h4{
+              font-size: 13px;
+              padding: 3px 0;
+          }
+          p{
+              font-size: 12px;
+              color: #929292;
+              span {
+                color: #000000;
+                font-weight: 600;
+              }
+          }
+        }
+
+        .make-default-btn {
+          font-size: 14px;
+          font-weight: 700;
+          color: #929292;
+          font-style: italic;
+        }
+      }
+    }
+  }
+  // bank-card-listing end
+
+
+  // add_bank_card_details start
+  .add_bank_card_details {
+    label {
+      img {
+        border-radius: 7px;
+        border: 1px solid #DCDEE2;
+        max-height: 165px;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+  // add_bank_card_details end
+
+
+  // good-bade-example start
+  .good-bade-example {
+    label {
+      font-weight: 500;
+    }
+    p {
+      font-size: 13px;
+      color: #3C4768;
+      line-height: 16px;
+      opacity: 0.7;
+      margin-bottom: 10px;
+    }
+    .btn {
+      font-size: 13px;
+      font-weight: 600;
+      color: $primary-color;
+    }
+  }
+  // good-bade-example end
+
+
+  // bank-card-success start
+  .bank-card-success {
+    text-align: center;
+    min-height: 60vh;
+    display: grid;
+    place-items: center;
+    i {
+      font-size: 55px;
+      color: $primary-color;
+    }
+    .title {
+      font-size: 24px;
+      color: #000;
+    }
+    p {
+      font-size: 13px;
+      opacity: 0.8;
+      color: #333333;
+      line-height: 20px;
+    }
+  }
+  // bank-card-success end
+
+}
+
+
+
+//********** Dark mode css **********//
+//#####################################
