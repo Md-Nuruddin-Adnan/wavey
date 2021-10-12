@@ -1192,6 +1192,12 @@ a, a:hover {
   }
 }
 
+.full-nav .navbar .notification-link {
+  font-size: 27px;
+  color: #fff;
+  padding: 5px 30px;
+}
+
 .full-nav .navbar-dark .navbar-nav .nav-link {
   color: #fff;
   border: 1px solid #fff;
