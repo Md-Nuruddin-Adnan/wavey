@@ -1,3 +1,99 @@
-#create_new_campaign {
-    
+.create_new_campaign {
+    .card-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #333333;
+        margin-bottom: 5px;
+    }
+    .card-sub-title {
+        font-size: 14px;
+        font-weight: 600;
+        color: #3C4768;
+        span {
+            color: $primary-color;
+        }
+    }
+    .form-group {
+        span{
+            font-size: 12px;
+            font-weight: 400;
+            color: #8791A4;
+            display: block;
+            padding-top: 5px;
+        }
+        label {
+            cursor: pointer;
+            img {
+                border-radius: 7px;
+                border: 1px solid #DCDEE2;
+            }
+        }
+    }
+
+    .confirm-campaign {
+        border-radius: 10px;
+        .img {
+            img {
+                border-radius: 10px;
+            }
+        }
+        .text {
+            margin-bottom: 20px;
+            .created-by{
+                font-size: 12px;
+                font-weight: 700;
+                color: rgba(0,0,0,0.5);
+            }
+            .campaign-title{
+                font-size: 18px;
+                font-weight: 700;
+                color: #333;
+                padding: 10px 0;
+            }
+            .campaign-description{
+                font-size: 13px;
+                font-weight: 500;
+                color: rgba(0,0,0,0.7);
+                padding-bottom: 20px;
+            }
+        }
+
+        .data {
+            h4 {
+                font-size: 18px;
+                font-weight: 700;
+                color: #000;
+            }
+            p {
+                font-size: 13px;
+                font-weight: 500;
+                color: rgba(0,0,0,0.7);
+            }
+        }
+    }
+
+
+      // create_new_campaign_success start
+  .create_new_campaign_success {
+    text-align: center;
+    min-height: 60vh;
+    display: grid;
+    place-items: center;
+    i {
+      font-size: 55px;
+      color: $primary-color;
+    }
+    .title {
+      font-size: 24px;
+      color: #000;
+      white-space: pre-line;
+    }
+  }
+  // create_new_campaign_success end
+
+
+    .btn-rounded-outline,
+    .btn-rounded {
+        min-width: 100px
+    }
 }

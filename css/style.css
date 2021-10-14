@@ -4282,6 +4282,108 @@ a, a:hover {
   line-height: 20px;
 }
 
+.create_new_campaign .card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.create_new_campaign .card-sub-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3C4768;
+}
+
+.create_new_campaign .card-sub-title span {
+  color: #db3364;
+}
+
+.create_new_campaign .form-group span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #8791A4;
+  display: block;
+  padding-top: 5px;
+}
+
+.create_new_campaign .form-group label {
+  cursor: pointer;
+}
+
+.create_new_campaign .form-group label img {
+  border-radius: 7px;
+  border: 1px solid #DCDEE2;
+}
+
+.create_new_campaign .confirm-campaign {
+  border-radius: 10px;
+}
+
+.create_new_campaign .confirm-campaign .img img {
+  border-radius: 10px;
+}
+
+.create_new_campaign .confirm-campaign .text {
+  margin-bottom: 20px;
+}
+
+.create_new_campaign .confirm-campaign .text .created-by {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.create_new_campaign .confirm-campaign .text .campaign-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  padding: 10px 0;
+}
+
+.create_new_campaign .confirm-campaign .text .campaign-description {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 20px;
+}
+
+.create_new_campaign .confirm-campaign .data h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+
+.create_new_campaign .confirm-campaign .data p {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.create_new_campaign .create_new_campaign_success {
+  text-align: center;
+  min-height: 60vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.create_new_campaign .create_new_campaign_success i {
+  font-size: 55px;
+  color: #db3364;
+}
+
+.create_new_campaign .create_new_campaign_success .title {
+  font-size: 24px;
+  color: #000;
+  white-space: pre-line;
+}
+
+.create_new_campaign .btn-rounded-outline,
+.create_new_campaign .btn-rounded {
+  min-width: 100px;
+}
+
 /* ===//end of component css === */
 /* === pages css start === */
 .transition, .full-nav .navbar-dark .navbar-nav .nav-link, .full-nav .side-nav .heading .close-btn, .full-nav .side-nav .heading .statistics-full .static-btn i, .full-nav .side-nav .main-nav button,
@@ -6896,6 +6998,171 @@ a, a:hover {
 
 .dark-mode #my-profile-my-fans .main-content .card .card-body ul li .action .dropdown .dropdown-menu .dropdown-item i {
   color: #5c5c5c;
+}
+
+.my_campaign .card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.my_campaign .nav-pills .nav-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  opacity: 0.6;
+  position: relative;
+  display: block;
+  padding: 1.2rem 1rem;
+  background: transparent;
+}
+
+.my_campaign .nav-pills .nav-link::before {
+  content: '';
+  width: 100px;
+  height: 8px;
+  border-radius: 10px;
+  background: transparent;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.my_campaign .nav-pills .nav-link.active {
+  opacity: 1;
+}
+
+.my_campaign .nav-pills .nav-link.active::before {
+  background: #db3364;
+}
+
+.my_campaign .tab-content > .tab-pane {
+  display: none !important;
+}
+
+.my_campaign .tab-content > .tab-pane.active {
+  display: block !important;
+}
+
+.my_campaign .campaign-empty {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.my_campaign .campaign-empty .title {
+  font-size: 18px;
+  color: #000;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+.my_campaign .campaign-empty .description {
+  font-size: 13px;
+  color: #000;
+  opacity: 0.3;
+  padding-bottom: 30px;
+}
+
+.my_campaign .campaigns-items li {
+  padding: 20px 0;
+}
+
+.my_campaign .campaigns-items li .media img {
+  max-width: 100px;
+}
+
+@media (max-width: 450px) {
+  .my_campaign .campaigns-items li .media {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .my_campaign .campaigns-items li .media img {
+    max-width: initial;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.my_campaign .campaigns-items li .media .title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+
+.my_campaign .campaigns-items li .media .description {
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+  opacity: 0.8;
+  padding-bottom: 10px;
+}
+
+.my_campaign .campaigns-items li .media .created-at,
+.my_campaign .campaigns-items li .media .days-left {
+  font-size: 13px;
+  font-weight: 400;
+  color: #A2A2A2;
+}
+
+.my_campaign .campaigns-items li .media .days-left {
+  position: relative;
+}
+
+.my_campaign .campaigns-items li .media .days-left::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #A2A2A2;
+  left: -10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.my_campaign .campaigns-items li .earn {
+  font-size: 18px;
+  font-weight: 700;
+  color: #db3364;
+}
+
+.my_campaign .campaigns-items li .earn sub {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+}
+
+.my_campaign .campaigns-items li .progress {
+  height: 0.5rem;
+  border: 1px solid #EAEAEA;
+  margin: 5px 0;
+}
+
+.my_campaign .campaigns-items li .progress .progress-bar {
+  background-color: #db3364;
+}
+
+.my_campaign .campaigns-items li .goal {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.my_campaign .campaigns-items li .goal-percentage {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0C0C0C;
+  opacity: 0.8;
+}
+
+.my_campaign .campaigns-items li .dropdown .btn {
+  color: #BDC9DA;
 }
 
 /* ===//end of pages css === */

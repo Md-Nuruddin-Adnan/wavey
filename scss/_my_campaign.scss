@@ -1,0 +1,163 @@
+.my_campaign {
+    .card-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #333
+    }
+
+    .nav-pills {
+        .nav-link {
+            font-size: 14px;
+            font-weight: 700;
+            color: #000;
+            opacity: 0.6;
+            position: relative;
+            display: block;
+            padding: 1.2rem 1rem;
+            background: transparent;
+
+            &::before{
+                content: '';
+                width: 100px;
+                height: 8px;
+                border-radius: 10px;
+                background: transparent;
+                position: absolute;
+                bottom: -4px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &.active {
+                opacity: 1;
+
+                &::before {
+                    background: #db3364;
+                }
+            }
+        }
+    }
+
+    .tab-content > .tab-pane {
+        display: none !important;
+    }
+    .tab-content > .tab-pane.active {
+        display: block !important;
+    }
+
+    .campaign-empty {
+        text-align: center;
+        padding: 40px 0;
+
+        .title {
+            font-size: 18px;
+            color: #000;
+            padding-top: 30px;
+            padding-bottom: 5px;
+        }
+        .description {
+            font-size: 13px;
+            color: #000;
+            opacity: 0.3;
+            padding-bottom: 30px;
+        }
+    }
+
+    // campaigns-items start
+    .campaigns-items {
+        li {
+            padding: 20px 0;
+            .media {
+                img {
+                    max-width: 100px;
+                }
+
+                @media(max-width: 450px){
+                    flex-direction: column;
+
+                    img {
+                        max-width: initial;
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                }
+                .title {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #000;
+                }
+                .description {
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: #000;
+                    opacity: 0.8;
+                    padding-bottom: 10px;
+                }
+                .created-at, 
+                .days-left {
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: #A2A2A2;
+                }
+
+                .days-left {
+                    position: relative;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background: #A2A2A2;
+                        left: -10px;
+                        top: 50%;
+                        transform: translateY(-50%);
+
+                    }                    
+                }
+            }
+
+            .earn {
+                font-size: 18px;
+                font-weight: 700;
+                color: $primary-color;
+
+                sub {
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: rgba(0,0,0, 0.5);
+                    bottom: 0;
+                }
+            }
+
+            .progress {
+                height: 0.5rem;
+                border: 1px solid #EAEAEA;
+                margin: 5px 0;
+
+                .progress-bar {
+                    background-color: $primary-color;
+                }
+            }
+
+            .goal {
+                font-size: 14px;
+                font-weight: 500;
+                color: rgba(0,0,0, 0.5);
+            }
+            .goal-percentage {
+                font-size: 16px;
+                font-weight: 700;
+                color: #0C0C0C;
+                opacity: 0.8;
+            }
+
+            .dropdown {
+                .btn {
+                    color: #BDC9DA;
+                }
+            }
+        }
+    }
+    // campaigns-items end
+}
