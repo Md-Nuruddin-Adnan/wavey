@@ -1,0 +1,264 @@
+.discovery-campaign-tabs-more-info {
+    .card-header {
+        .post-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #333;
+            
+            a {
+                @extend .post-title;
+                padding-right: 10px;
+            }
+        }
+        
+        .top-link i{
+            width: 35px;
+            height: 35px;
+            color: #50657b;
+            border-radius: 50%;
+            border: 1.5px solid #b8c9de;
+            background: #fff;
+            text-align: center;
+            line-height: 35px;
+            font-size: 14px;
+            transition: all 0.2s linear;
+        }
+
+        .post-description {
+            font-size: 13px;
+            color: #000;
+            opacity: 0.7;
+        }
+    }
+
+    .data {
+        .earn {
+            font-size: 18px;
+            font-weight: 700;
+            color: $primary-color;
+
+            sub {
+                font-size: 12px;
+                font-weight: 500;
+                color: rgba(0,0,0, 0.5);
+                bottom: 0;
+            }
+        }
+
+        .progress {
+            height: 0.5rem;
+            border: 1px solid #EAEAEA;
+            margin: 5px 0;
+
+            .progress-bar {
+                background-color: $primary-color;
+            }
+        }
+
+        .goal {
+            font-size: 14px;
+            font-weight: 500;
+            color: rgba(0,0,0, 0.5);
+        }
+        .goal-percentage {
+            font-size: 16px;
+            font-weight: 700;
+            color: #0C0C0C;
+            opacity: 0.8;
+        }
+
+        .days-remaining {
+            font-size: 12px;
+            color: #000;
+        }
+    }
+
+    .author-profile {
+       .profile-image {
+           width: 45px;
+           height: 45px;
+           border-radius: 8px;
+           object-fit: cover;
+       }
+       .author-name {
+            font-size: 14px;
+            color: #333333;
+            font-weight: 700;
+        }
+       .author-sub-name {
+            font-size: 13px;
+            color: #333333;
+            opacity: 0.6;
+            line-height: 1;
+        }
+        .card-footer {
+            .days-remaining {
+                color: #000000;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .nav-pills {
+        .nav-link {
+            font-size: 14px;
+            font-weight: 700;
+            color: #000;
+            opacity: 0.6;
+            position: relative;
+            display: block;
+            padding: 1.2rem 1rem;
+            background: transparent;
+            text-transform: uppercase;
+
+            &::before{
+                content: '';
+                width: 100px;
+                height: 8px;
+                border-radius: 10px;
+                background: transparent;
+                position: absolute;
+                bottom: -4px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &.active {
+                opacity: 1;
+
+                &::before {
+                    background: #db3364;
+                }
+            }
+        }
+    }
+
+    .tab-content > .tab-pane {
+        display: none !important;
+    }
+    .tab-content > .tab-pane.active {
+        display: block !important;
+    }
+
+    .tab-content {
+        #campaign {
+            .title {
+                font-size: 18px;
+                font-weight: 700;
+                color: #3E4A6B;
+                margin-bottom: 20px;
+            }
+
+            .description {
+                font-size: 14px;
+                font-weight: 500;
+                color: #333333;
+                text-align: justify;
+                line-height: 22px;
+            }
+
+            .about_img {
+                float: right;
+                margin-left: 20px;
+                margin-bottom: 4px;
+
+                @media(max-width: 767px){
+                    float: none;
+                    margin-bottom: 20px;
+                    margin-left: 0;
+                    width: 100%;
+                }
+            }
+        }
+
+        #comments {
+            .alert {
+                background: #FFF6F9;
+                color: $primary-color;
+                font-size: 12px;
+                border: none;
+            }
+            ul {
+                li {
+                    padding: 10px 0;
+                    .media {
+                        .profile-image {
+                            width: 45px;
+                            height: 45px;
+                            border-radius: 8px;
+                            object-fit: cover;
+                        }
+                        .author-name {
+                             font-size: 14px;
+                             color: #333333;
+                             font-weight: 700;
+                         }
+                        .author-sub-name {
+                             font-size: 13px;
+                             color: #333333;
+                             opacity: 0.6;
+                             line-height: 1;
+                         }
+                    }
+        
+                    .message {
+                        font-size: 14px;
+                        color: #000000;
+                        opacity: 0.7;
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+            .load-more-btn {
+                font-size: 14px;
+                font-weight: 700;
+                color: $primary-color;
+                margin-top: 20px;
+            }
+            
+        }
+
+        #FAQ {
+            #accordion {
+                .card {
+                  border: 1px solid #f2f2f2;
+                  box-shadow: 0 11px 22px 0 rgba(231,233,242,0.34);
+            
+                  .btn {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: $primary-color;
+            
+                    i {
+                      transition: all 0.2s linear;
+                    }
+            
+                    &.collapsed {
+                      color: #333;
+            
+                      i {
+                        transform: rotate(180deg);
+                      }
+                    }
+                  }
+                  p {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: rgba(51, 51, 51, 0.8);
+                    padding-top: 10px;
+                  }
+                }
+              }
+        }
+    }
+
+}
+
+.discovery-campaign-footer {
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

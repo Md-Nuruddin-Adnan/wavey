@@ -256,6 +256,10 @@
   min-height: 40px;
   @extend .myTransition;
 
+  @media(max-width: 767px) {
+    min-height: auto;
+  }
+
   &:hover {
     color: #fff;
     background-image: linear-gradient(180deg, lighten($primary-color-dark, 10), $primary-color-light);
@@ -266,6 +270,13 @@
   line-height: 40px;
   padding-top: 0;
   padding-bottom: 0;
+
+  @media(max-width: 767px) {
+    line-height: 1.2;
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+  }
+
 }
 
 .btn-rounded-outline {
@@ -278,6 +289,10 @@
   border: 1px solid $primary-color-light;
   min-height: 40px;
   @extend .myTransition;
+
+  @media(max-width: 767px) {
+    min-height: auto;
+  }
 
   &:hover {
     color: #fff;

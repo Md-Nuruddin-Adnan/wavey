@@ -23,6 +23,12 @@
 @import 'component/modal';
 @import 'component/bank_card_details';
 @import 'component/create_new_campaign';
+@import 'component/discovery_header';
+@import 'component/discovery_creative_tabs';
+@import 'component/discovery_campaign_tabs';
+@import 'component/discovery_campaign_tabs_more_info';
+@import 'component/discovery_creative_modal';
+@import 'component/somethign_went_wrong';
 /* ===//end of component css === */
 
 /* === pages css start === */
@@ -36,6 +42,7 @@
 @import 'profile-single';
 @import 'my-profile-my-fans';
 @import 'my_campaign';
+@import 'bookmark';
 /* ===//end of pages css === */
 
 

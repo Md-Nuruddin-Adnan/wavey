@@ -17,12 +17,7 @@
 </head>
 <body id="live-streaming" >
 
-<!-- === dark-mode start === -->
-<button id="dark-mode-toggle" class="dark-mode-toggle btn">
-  <i class="fas fa-adjust"></i>
-</button>
-<script src="js/darkMode.js"></script>
-<!-- ===//end of dark-mode === -->
+
 
 <!-- === header section start === -->
 <header class="full-nav">
@@ -42,12 +37,12 @@
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav m-lg-auto mt-lg-0 mt-5">
+<ul class="navbar-nav m-lg-auto mt-lg-0 mt-5">
         <li class="nav-item">
           <a class="nav-link" href="index.html"><i class="fas fa-home-lg-alt"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-binoculars"></i></a>
+          <a class="nav-link" href="discovery_creative_tabs.html"><i class="fas fa-binoculars"></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="new_post.html"><i class="fas fa-plus-square"></i></a>
@@ -73,7 +68,7 @@
     <div class="side-nav-inner">
       <div class="heading">
         <div class="d-flex justify-content-between align-items-center border-bottom p-2">
-          <div class="d-flex profile">
+          <a href="my-profile.html" class="d-flex profile">
             <div class="profile-image-box">
               <img src="images/home/user_profile_pic.png" alt="profile-image" class="img-fluid profile-image">
             </div>
@@ -81,7 +76,7 @@
               <h5 class="user-name">Daniel James</h5>
               <span class="user-sub-name">@daniel_James</span>
             </div>
-          </div>
+          </a>
 
           <div class="close-btn-box">
             <button class="btn close-btn" onclick="closeNav()"><i class="fal fa-chevron-right"></i></button>
@@ -134,25 +129,31 @@
       <nav class="main-nav mt-3">
         <ul>
           <li>
-            <a href="#"><i class="fal fa-user-circle"></i> <span>My Profile</span></a>
+            <a href="my-profile.html"><i class="fal fa-user-circle"></i> <span>My Profile</span></a>
           </li>
           <li>
-            <a href="#"><i class="fal fa-bookmark"></i> <span>Bookmarks</span></a>
+            <a href="#"><i class="fal fa-gem"></i> <span>My Campaigns</span></a>
+          </li>
+          <li>
+            <a href="bookmark.html"><i class="fal fa-bookmark"></i> <span>Bookmarks</span></a>
           </li>
           <li>
             <a href="#"><i class="fal fa-star"></i> <span>My Selection</span></a>
           </li>
           <li class="border-bottom">
-            <a href="#"><i class="fal fa-cog"></i> <span>Settings</span></a>
-          </li>
-          <li>
-            <a href="#"><i class="fal fa-credit-card"></i> <span>Card Details</span></a>
+            <a href="settings_my_profile.html"><i class="fal fa-cog"></i> <span>Settings</span></a>
           </li>
           <li class="border-bottom">
-            <a href="#"><i class="fal fa-briefcase"></i> <span>Add Bank Details</span></a>
+            <a  id="dark-mode-toggle" class="dark-mode-toggle"><i class="fal fa-moon-stars"></i><span>Dark Appearance</span></a>
           </li>
           <li>
-            <a href="#"><i class="fal fa-phone-alt"></i> <span>Help & Support</span></a>
+            <a href="card_details.html"><i class="fal fa-credit-card"></i> <span>Card Details</span></a>
+          </li>
+          <li class="border-bottom">
+            <a href="add_bank_details.html"><i class="fal fa-briefcase"></i> <span>Add Bank Details</span></a>
+          </li>
+          <li>
+            <a href="help_support.html"><i class="fal fa-phone-alt"></i> <span>Help & Support</span></a>
           </li>
           <li class="border-bottom">
             <div class="dropdown">
@@ -416,6 +417,7 @@
 
 
 
+<script src="js/darkMode.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>

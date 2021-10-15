@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wavey | Dicovery Campaign Tabs</title>
+  <link rel='shortcut icon' href='images/logo.png' type='image/x-icon'>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="fonts/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/venobox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body id="dicsovery">
+
+
+
+<!-- === header section start === -->
+<header class="full-nav">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo/logo_white_sm.png" alt="logo" class="img-fluid white-logo">
+      <img src="images/logo/logo_color_sm.png" alt="logo" class="img-fluid color-logo">
+    </a>
+
+    <button class="btn side-menu-btn d-lg-none d-block"  onclick="openNav()">
+      <i class="fas fa-bars"></i>
+      <!-- <img src="images/home/user_profile_pic.png" alt="profile-image" class="img-fluid"> -->
+    </button>
+
+    <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav m-lg-auto mt-lg-0 mt-5">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><i class="fas fa-home-lg-alt"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="discovery_creative_tabs.html"><i class="fas fa-binoculars"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="new_post.html"><i class="fas fa-plus-square"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="my_contacts.html"><i class="fas fa-comments"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="wallet.html"><i class="fas fa-wallet"></i></a>
+        </li>
+      </ul>
+      <a class="nav-link notification-link" href="notifications.html"><i class="fas fa-bell"></i></a>
+      <div>
+        <button class="pl-0 btn side-menu-btn" onclick="openNav()">
+          <img src="images/home/user_profile_pic.png" alt="profile-image" class="img-fluid">
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="side-nav">
+    <div class="top-bg"></div>
+    <div class="side-nav-inner">
+      <div class="heading">
+        <div class="d-flex justify-content-between align-items-center border-bottom p-2">
+          <a href="my-profile.html" class="d-flex profile">
+            <div class="profile-image-box">
+              <img src="images/home/user_profile_pic.png" alt="profile-image" class="img-fluid profile-image">
+            </div>
+            <div>
+              <h5 class="user-name">Daniel James</h5>
+              <span class="user-sub-name">@daniel_James</span>
+            </div>
+          </a>
+
+          <div class="close-btn-box">
+            <button class="btn close-btn" onclick="closeNav()"><i class="fal fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <div class="statistics-full">
+          <div class="text-center">
+            <button class="btn static-btn" type="button" data-toggle="collapse" data-target="#statistics" aria-expanded="false" aria-controls="statistics">
+              Profile Statistics <span class="pl-1"><i class="fal fa-chevron-down"></i></span>
+            </button>
+          </div>
+
+          <div class="collapse show" id="statistics">
+            <div class="data-card m-2 text-nowrap text-center">
+              <div class="row fan-follow mx-0">
+                <div class="col-6 w-50 border-right">
+                  <div class="fan">
+                    <h5>987</h5>
+                    <span>Fans</span>
+                  </div>
+                </div>
+                <div class="col-6 w-50">
+                  <div class="following">
+                    <h5>87</h5>
+                    <span>Following</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row meta-data mx-0">
+                <div class="col-4 border-right">
+                  <h3>37.3k</h3>
+                  <span>Likes</span>
+                </div>
+                <div class="col-4 border-right">
+                  <h3>33</h3>
+                  <span>Photos</span>
+                </div>
+                <div class="col-4">
+                  <h3>87</h3>
+                  <span>Posts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="main-nav mt-3">
+        <ul>
+          <li>
+            <a href="my-profile.html"><i class="fal fa-user-circle"></i> <span>My Profile</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fal fa-gem"></i> <span>My Campaigns</span></a>
+          </li>
+          <li>
+            <a href="bookmark.html"><i class="fal fa-bookmark"></i> <span>Bookmarks</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fal fa-star"></i> <span>My Selection</span></a>
+          </li>
+          <li class="border-bottom">
+            <a href="settings_my_profile.html"><i class="fal fa-cog"></i> <span>Settings</span></a>
+          </li>
+          <li class="border-bottom">
+            <a  id="dark-mode-toggle" class="dark-mode-toggle"><i class="fal fa-moon-stars"></i><span>Dark Appearance</span></a>
+          </li>
+          <li>
+            <a href="card_details.html"><i class="fal fa-credit-card"></i> <span>Card Details</span></a>
+          </li>
+          <li class="border-bottom">
+            <a href="add_bank_details.html"><i class="fal fa-briefcase"></i> <span>Add Bank Details</span></a>
+          </li>
+          <li>
+            <a href="help_support.html"><i class="fal fa-phone-alt"></i> <span>Help & Support</span></a>
+          </li>
+          <li class="border-bottom">
+            <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fal fa-globe"></i> <span>Language (English)</span> <i class="fal fa-chevron-down arrow-icon"></i>
+                </button>
+                
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#"><i class="fal fa-paste"></i> <span>Logout</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- ===//end of header section === -->
+
+
+
+<!-- === discovery-header section start === -->
+<section class="discovery-header my-30">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 m-auto">
+        <div class="card myShadow">
+          <div class="card-header py-30 myShadow-sm d-flex align-items-center justify-content-between">
+            <div>
+              <h1 class="title">Discover</h1>
+              <p>Know what’s happening around the world at one tap!</p>
+            </div>
+            <a href="create_new_campaign_1.html" class="btn btn-rounded btn-height-fixed px-4">New Campaign</a>
+          </div>
+          <div class="card-body p-0">
+            <ul class="nav nav-pills nav-justified overflow-hidden" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link" href="discovery_creative_tabs.html">Creatives</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="discovery_campaign_tabs.html">Campaigns</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- === discovery-header section start === -->
+
+
+
+<!-- === discovery-campaign-tabs section start === -->
+<section class="discovery-campaign-tabs">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 m-auto">
+
+        <div class="featured-campaign mb-30">
+          <div class="featured-campaign-header d-sm-flex align-items-center justify-content-between">
+            <h2 class="heading-text text-nowrap mb-sm-0 mb-3 text-sm-left text-center">Featured Campaigns</h2>
+            <div class="d-flex align-items-center w-sm-75 w-100 justify-content-sm-end justify-content-center">
+              <div class="action myShadow d-flex align-items-center">
+                <a href="#" class="btn"><i class="far fa-sync-alt"></i></a>
+                <span>|</span>
+                <a href="#" class="btn pr-0"><i class="far fa-chevron-left"></i></a>
+                <a href="#" class="btn active"><i class="far fa-chevron-right"></i></a>
+              </div>
+              <div class="search myShadow">
+                <input type="text" class="search__input" aria-label="search" placeholder="enter your search" required>
+                <button type="submit" class="search__btn" aria-label="submit search"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8">
+            <a href="discovery_campaign_tabs_more_info.html" class="open-post-link">
+              <div class="card discovery-campaign-item-lg myShadow mb-30">
+                <div class="card-body p-3">
+                  <div class="img mb-3">
+                    <img src="images/campaign/campaign_confirm.png" alt="campaign" class="w-100">
+                  </div>
+                  <div class="text myborder-bottom">
+                    <h5 class="created-by">By Tomo & Team</h5>
+                    <h4 class="campaign-title">TOMO: Easy Connect Dog Gear</h4>
+                    <p class="campaign-description">A minimally designed, easy-to-connect, leash, collar, and harness set that makes adventuring with your furry friend a walk in the park.</p>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between data">
+                    <div class="goal">
+                      <h4 class="earn">£22,457 <sub>GBP Raised</sub></h4>
+                      <div class="position-relative">
+                        <div class="progress myShadow">
+                          <div class="progress-bar" role="progressbar" style="width: 52%" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="goal-percentage">52%</span>
+                      </div>
+                    </div>
+                    <div class="days-required text-right">
+                      <h4>22</h4>
+                      <p>days required! </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <div class="row">
+              <div class="col-lg-12 col-md-6">
+                <a href="#" class="open-post-link">
+                  <div class="card discovery-campaign-item myShadow mb-30">
+                    <div class="card-body p-3">
+                      <div class="img mb-3">
+                        <img src="images/discovery/discovery_campaign_1.png" alt="campaign" class="w-100">
+                      </div>
+                      <div class="text myborder-bottom">
+                        <h5 class="created-by">By Tomo & Team</h5>
+                        <h4 class="campaign-title">TOMO: Easy Connect Dog Gear</h4>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between data">
+                        <h4 class="earn">£22,457 <sub>GBP Raised</sub></h4>
+                        <div class="position-relative pr-30">
+                          <div class="progress myShadow">
+                            <div class="progress-bar" role="progressbar" style="width: 52%" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <span class="goal-percentage">52%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-12 col-md-6">
+                <a href="#" class="open-post-link">
+                  <div class="card discovery-campaign-item myShadow mb-30">
+                    <div class="card-body p-3">
+                      <div class="img mb-3">
+                        <img src="images/discovery/discovery_campaign_2.png" alt="campaign" class="w-100">
+                      </div>
+                      <div class="text myborder-bottom">
+                        <h5 class="created-by">By Tomo & Team</h5>
+                        <h4 class="campaign-title">TOMO: Easy Connect Dog Gear</h4>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between data">
+                        <h4 class="earn">£22,457 <sub>GBP Raised</sub></h4>
+                        <div class="position-relative pr-30">
+                          <div class="progress myShadow">
+                            <div class="progress-bar" role="progressbar" style="width: 52%" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <span class="goal-percentage">52%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a href="#" class="open-post-link">
+              <div class="card discovery-campaign-item myShadow mb-30">
+                <div class="card-body p-3">
+                  <div class="img mb-3">
+                    <img src="images/discovery/discovery_campaign_3.png" alt="campaign" class="w-100">
+                  </div>
+                  <div class="text myborder-bottom">
+                    <h5 class="created-by">By Tomo & Team</h5>
+                    <h4 class="campaign-title">TOMO: Easy Connect Dog Gear</h4>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between data">
+                    <h4 class="earn">£22,457 <sub>GBP Raised</sub></h4>
+                    <div class="position-relative pr-30">
+                      <div class="progress myShadow">
+                        <div class="progress-bar" role="progressbar" style="width: 52%" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <span class="goal-percentage">52%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a href="#" class="open-post-link">
+              <div class="card discovery-campaign-item myShadow mb-30">
+                <div class="card-body p-3">
+                  <div class="img mb-3">
+                    <img src="images/discovery/discovery_campaign_4.png" alt="campaign" class="w-100">
+                  </div>
+                  <div class="text myborder-bottom">
+                    <h5 class="created-by">By Tomo & Team</h5>
+                    <h4 class="campaign-title">TOMO: Easy Connect Dog Gear</h4>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between data">
+                    <h4 class="earn">£22,457 <sub>GBP Raised</sub></h4>
+                    <div class="position-relative pr-30">
+                      <div class="progress myShadow">
+                        <div class="progress-bar" role="progressbar" style="width: 52%" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <span class="goal-percentage">52%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a href="#" class="open-post-link">
+              <div class="card discovery-campaign-item myShadow mb-30">
+                <div class="card-body p-3">
+                  <div class="img mb-3">
+                    <img src="images/discovery/discovery_campaign_5.png" alt="campaign" class="w-100">
+                  </div>
+                  <div class="text myborder-bottom">
+                    <h5 class="created-by">By Tomo & Team</h5>
+                    <h4 class="campaign-title">TOMO: Easy Connect Dog Gear</h4>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between data">
+                    <h4 class="earn">£22,457 <sub>GBP Raised</sub></h4>
+                    <div class="position-relative pr-30">
+                      <div class="progress myShadow">
+                        <div class="progress-bar" role="progressbar" style="width: 52%" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <span class="goal-percentage">52%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a href="#" class="open-post-link">
+              <div class="card discovery-campaign-item myShadow mb-30">
+                <div class="card-body p-3">
+                  <div class="img mb-3">
+                    <img src="images/discovery/discovery_campaign_6.png" alt="campaign" class="w-100">
+                  </div>
+                  <div class="text myborder-bottom">
+                    <h5 class="created-by">By Tomo & Team</h5>
+                    <h4 class="campaign-title">TOMO: Easy Connect Dog Gear</h4>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between data">
+                    <h4 class="earn">£22,457 <sub>GBP Raised</sub></h4>
+                    <div class="position-relative pr-30">
+                      <div class="progress myShadow">
+                        <div class="progress-bar" role="progressbar" style="width: 52%" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <span class="goal-percentage">52%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a href="#" class="open-post-link">
+              <div class="card discovery-campaign-item myShadow mb-30">
+                <div class="card-body p-3">
+                  <div class="img mb-3">
+                    <img src="images/discovery/discovery_campaign_7.png" alt="campaign" class="w-100">
+                  </div>
+                  <div class="text myborder-bottom">
+                    <h5 class="created-by">By Tomo & Team</h5>
+                    <h4 class="campaign-title">TOMO: Easy Connect Dog Gear</h4>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between data">
+                    <h4 class="earn">£22,457 <sub>GBP Raised</sub></h4>
+                    <div class="position-relative pr-30">
+                      <div class="progress myShadow">
+                        <div class="progress-bar" role="progressbar" style="width: 52%" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <span class="goal-percentage">52%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a href="#" class="open-post-link">
+              <div class="card discovery-campaign-item myShadow mb-30">
+                <div class="card-body p-3">
+                  <div class="img mb-3">
+                    <img src="images/discovery/discovery_campaign_8.png" alt="campaign" class="w-100">
+                  </div>
+                  <div class="text myborder-bottom">
+                    <h5 class="created-by">By Tomo & Team</h5>
+                    <h4 class="campaign-title">TOMO: Easy Connect Dog Gear</h4>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between data">
+                    <h4 class="earn">£22,457 <sub>GBP Raised</sub></h4>
+                    <div class="position-relative pr-30">
+                      <div class="progress myShadow">
+                        <div class="progress-bar" role="progressbar" style="width: 52%" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <span class="goal-percentage">52%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===//end of discovery-campaign-tabs section === -->
+
+
+
+
+<!-- === footer start === -->
+<footer class="page-footer">
+  <div class="container-fluid">
+    <div class="d-lg-flex justify-content-between align-items-center text-center">
+      <nav class="footer-nav">
+        <ul class="d-lg-flex text-nowrap">
+          <li><a href="#" class="footer-link">ABOUT</a></li>
+          <li><a href="#" class="footer-link">CREATE AD</a></li>
+          <li><a href="#" class="footer-link">CAREERS</a></li>
+          <li><a href="#" class="footer-link">PRIVACY POLICY</a></li>
+          <li><a href="#" class="footer-link">TERMS & CONDITIONS</a></li>
+          <li><a href="#" class="footer-link">HELP & SUPPORT</a></li>
+        </ul>
+      </nav>
+
+      <p class="copyright"><i class="far fa-copyright    "></i> 2020 WAVEY.VIP</p>
+    </div>
+  </div>
+</footer>
+<!-- ===//end of footer === -->
+
+
+ 
+
+
+  <script src="js/darkMode.js"></script>
+    <script src="js/darkMode.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/venobox.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

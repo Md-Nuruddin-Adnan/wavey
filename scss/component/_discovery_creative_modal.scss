@@ -1,0 +1,182 @@
+.discovery-creative-modal {
+    .close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 1000;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        background: #fff;
+    }
+
+
+    // carousel start
+    .post-image {
+        height: 100%;
+        a,
+        div {
+            height: 100%;
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    // carousel end
+
+
+    .top-header {
+        .author-box {
+            .img {
+                width: 45px;
+                height: 45px;
+                border-radius: 8px;
+    
+                img {
+                    @extend .img;
+                    object-fit: cover;
+                }
+            }
+    
+            .text {
+                padding-left: 10px;
+                .user-name {
+                    font-size: 13px;
+                    font-weight: 700;
+                    color: #000;
+                }
+                .sub-name {
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #333;
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        .date-time {
+            opacity: 0.5;
+            color: #333333;
+            font-size: 14px;
+            padding: 10px 0;
+        }
+        .post-title {
+            color: #333333;
+            font-size: 14px;
+
+            a {
+                color: $primary-color;
+            }
+        }
+    }
+
+
+
+
+    .comments-list {
+        background-color: #F7FAFF;
+        height: 250px;
+        overflow: auto;
+        padding: 10px 20px;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #ffffff;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #d8d8d8;
+            border-radius: 10px;
+        }
+
+        .message-box {
+            padding: 10px 0;
+            img {
+                width: 35px;
+                height: 35px;
+                object-fit: cover;
+            }
+
+            .text {
+                margin-left: 10px;
+                margin-top: -5px;
+                .user-name {
+                    font-size: 13px;
+                    font-weight: 700;
+                    color: #343A4C;
+                }
+                .message {
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #343A4C;
+                    opacity: 0.8;
+                    line-height: 1.2;
+                }
+            }
+
+            .right {
+                a {
+                    color: #BEBEBE;
+                    &.love {
+                        color: $primary-color;
+                    }
+                }
+            }
+
+        }
+    }
+
+   
+    .bottom-footer {
+        .post-footer {
+            padding-bottom: 15px;
+            a {
+              color: rgba(51, 51, 51, 0.8);
+              font-size: 12px;
+              font-weight: 600;
+        
+              span {
+                padding: 0 15px 0 5px;
+              }
+            }
+            i {
+              font-size: 16px;
+              position: relative;
+              top: 2px;
+            }
+        
+            .love i {
+              color: #df4545; 
+            }
+            .comment i {
+              color: #686868;
+            }
+           
+            .bookmark i {
+              color: #bbc9dc;
+        
+              &:hover {
+                color: #686868;
+              }
+            }
+        
+            .bookmark.marked i {
+              color: rgba(51, 51, 51, 0.8);
+            }
+         }
+
+         .form-control {
+             border: none;
+         }
+    }
+
+}

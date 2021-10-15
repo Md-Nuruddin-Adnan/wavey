@@ -123,6 +123,14 @@ $('.suggestion-slide').slick({
   ]
 }); 
 
+// discovery-campaign-team-slide
+$('.discovery-campaign-team-slide').slick({
+  dots: false,
+  arrows: false,
+  slidesToShow: 2,
+  autoplay: true,
+})
+
 
 
 // grid view div 

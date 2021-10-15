@@ -113,6 +113,51 @@
 }
 
 
+// margin 120px
+.mb-120 {
+  margin-bottom: 120px;
+}
+
+
+// margin 80px
+.my-80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.mx-80 {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.m-80 {
+  margin: 80px;
+}
+.mb-80 {
+  margin-bottom: 80px;
+}
+.mt-80 {
+  margin-top: 80px;
+}
+
+
+// margin 60px
+.my-60 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.mx-60 {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.m-60 {
+  margin: 60px;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+.mt-60 {
+  margin-top: 60px;
+}
+
 // margin 40px
 .my-40 {
   margin-top: 40px;
@@ -207,3 +252,16 @@
   display: flex !important;
 }
 // Comment tab end
+
+
+// width
+.w-sm-75 {
+  @media (min-width: 576px){
+    width: 75% !important;
+  }
+}
+.w-md-50 {
+  @media (min-width: 768px){
+    width: 50% !important;
+  }
+}

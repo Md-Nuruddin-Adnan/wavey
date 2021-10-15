@@ -13,7 +13,6 @@ body.overlay {
   body.overlay {
     height: 100vh;
     overflow: hidden;
-    margin-right: 17px;
   }
 }
 
@@ -190,6 +189,54 @@ a, a:hover {
   }
 }
 
+.mb-120 {
+  margin-bottom: 120px;
+}
+
+.my-80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.mx-80 {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.m-80 {
+  margin: 80px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.my-60 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.mx-60 {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.m-60 {
+  margin: 60px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
 .my-40 {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -293,6 +340,18 @@ a, a:hover {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
+}
+
+@media (min-width: 576px) {
+  .w-sm-75 {
+    width: 75% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .w-md-50 {
+    width: 50% !important;
+  }
 }
 
 /* === All common css start === */
@@ -464,7 +523,7 @@ a, a:hover {
   font-weight: 500;
 }
 
-.post-card .post-title {
+.post-card .post-title, .post-card .discovery-campaign-tabs-more-info .card-header .post-title a, .discovery-campaign-tabs-more-info .card-header .post-title .post-card a {
   font-size: 14px;
   color: #333;
   font-weight: 600;
@@ -477,7 +536,7 @@ a, a:hover {
   line-height: 20px;
 }
 
-.post-card .post-title a {
+.post-card .post-title a, .post-card .discovery-campaign-tabs-more-info .card-header .post-title a a, .discovery-campaign-tabs-more-info .card-header .post-title .post-card a a {
   color: #db3364;
 }
 
@@ -547,6 +606,12 @@ a, a:hover {
   min-height: 40px;
 }
 
+@media (max-width: 767px) {
+  .btn-rounded {
+    min-height: auto;
+  }
+}
+
 .btn-rounded:hover {
   color: #fff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e12a5f), to(#eb4072));
@@ -559,6 +624,14 @@ a, a:hover {
   padding-bottom: 0;
 }
 
+@media (max-width: 767px) {
+  .btn-height-fixed {
+    line-height: 1.2;
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+  }
+}
+
 .btn-rounded-outline {
   border-radius: 25px;
   background: #fff;
@@ -568,6 +641,12 @@ a, a:hover {
   font-weight: 700;
   border: 1px solid #eb4072;
   min-height: 40px;
+}
+
+@media (max-width: 767px) {
+  .btn-rounded-outline {
+    min-height: auto;
+  }
 }
 
 .btn-rounded-outline:hover {
@@ -916,12 +995,12 @@ a, a:hover {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.dark-mode .post-card .post-title {
+.dark-mode .post-card .post-title, .dark-mode .post-card .discovery-campaign-tabs-more-info .card-header .post-title a, .discovery-campaign-tabs-more-info .card-header .post-title .dark-mode .post-card a {
   color: #fff;
   font-weight: 500;
 }
 
-.dark-mode .post-card .post-title a {
+.dark-mode .post-card .post-title a, .discovery-campaign-tabs-more-info .card-header .post-title .dark-mode .post-card a a {
   color: #db3364;
 }
 
@@ -1249,16 +1328,6 @@ a, a:hover {
   height: 100%;
 }
 
-.full-nav .side-nav .top-bg {
-  width: 300px;
-  height: 50px;
-  background: white;
-  top: -50px;
-  right: 0;
-  z-index: 887;
-  position: absolute;
-}
-
 @media (min-width: 991px) {
   .full-nav .side-nav {
     top: 100px;
@@ -1385,6 +1454,7 @@ a, a:hover {
   font-size: 15px;
   font-weight: 700;
   color: #444;
+  cursor: pointer;
 }
 
 .full-nav .side-nav .main-nav button i,
@@ -1719,7 +1789,7 @@ a, a:hover {
   border-radius: 50%;
 }
 
-.wallet_topup .choose-bank ul li .img {
+.wallet_topup .choose-bank ul li .img, .wallet_topup .choose-bank ul li .discovery-creative-modal .top-header .author-box .img img, .discovery-creative-modal .top-header .author-box .img .wallet_topup .choose-bank ul li img {
   width: 95px;
   height: 60px;
   border-radius: 4px;
@@ -1733,7 +1803,7 @@ a, a:hover {
   margin-right: 20px;
 }
 
-.wallet_topup .choose-bank ul li .img img {
+.wallet_topup .choose-bank ul li .img img, .wallet_topup .choose-bank ul li .discovery-creative-modal .top-header .author-box .img img img, .discovery-creative-modal .top-header .author-box .img .wallet_topup .choose-bank ul li img img {
   max-height: 40px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -2423,12 +2493,12 @@ a, a:hover {
   z-index: 1;
 }
 
-.live-streaming-modal .main-live .card .live-header .img {
+.live-streaming-modal .main-live .card .live-header .img, .live-streaming-modal .main-live .card .live-header .discovery-creative-modal .top-header .author-box .img img, .discovery-creative-modal .top-header .author-box .img .live-streaming-modal .main-live .card .live-header img {
   width: 45px;
   margin-right: 5px;
 }
 
-.live-streaming-modal .main-live .card .live-header .img img {
+.live-streaming-modal .main-live .card .live-header .img img, .discovery-creative-modal .top-header .author-box .img .live-streaming-modal .main-live .card .live-header img img {
   width: 45px;
   border-radius: 8px;
   border: 3px solid #fff;
@@ -2516,13 +2586,13 @@ a, a:hover {
   padding: 10px 0;
 }
 
-.live-streaming-modal .live-comments .card .card-body ul li .left .img {
+.live-streaming-modal .live-comments .card .card-body ul li .left .img, .live-streaming-modal .live-comments .card .card-body ul li .left .discovery-creative-modal .top-header .author-box .img img, .discovery-creative-modal .top-header .author-box .img .live-streaming-modal .live-comments .card .card-body ul li .left img {
   width: 45px;
   margin-right: 8px;
   padding-top: 3px;
 }
 
-.live-streaming-modal .live-comments .card .card-body ul li .left .img img {
+.live-streaming-modal .live-comments .card .card-body ul li .left .img img, .discovery-creative-modal .top-header .author-box .img .live-streaming-modal .live-comments .card .card-body ul li .left img img {
   width: 45px;
 }
 
@@ -2642,7 +2712,7 @@ a, a:hover {
   background: #3a4051;
 }
 
-.dark-mode .live-streaming-modal .modal-content .main-live .card .live-header .img img {
+.dark-mode .live-streaming-modal .modal-content .main-live .card .live-header .img img, .discovery-creative-modal .top-header .author-box .img .dark-mode .live-streaming-modal .modal-content .main-live .card .live-header img img {
   border: 3px solid #fff;
 }
 
@@ -2825,12 +2895,12 @@ a, a:hover {
   z-index: 1;
 }
 
-#live-streaming .start-streaming .main-live .card .live-header .img {
+#live-streaming .start-streaming .main-live .card .live-header .img, #live-streaming .start-streaming .main-live .card .live-header .discovery-creative-modal .top-header .author-box .img img, .discovery-creative-modal .top-header .author-box .img #live-streaming .start-streaming .main-live .card .live-header img {
   width: 45px;
   margin-right: 5px;
 }
 
-#live-streaming .start-streaming .main-live .card .live-header .img img {
+#live-streaming .start-streaming .main-live .card .live-header .img img, .discovery-creative-modal .top-header .author-box .img #live-streaming .start-streaming .main-live .card .live-header img img {
   width: 45px;
   border-radius: 8px;
   border: 3px solid #fff;
@@ -2977,13 +3047,13 @@ a, a:hover {
   padding: 10px 0;
 }
 
-#live-streaming .start-streaming .live-comments .card .card-body ul li .left .img {
+#live-streaming .start-streaming .live-comments .card .card-body ul li .left .img, #live-streaming .start-streaming .live-comments .card .card-body ul li .left .discovery-creative-modal .top-header .author-box .img img, .discovery-creative-modal .top-header .author-box .img #live-streaming .start-streaming .live-comments .card .card-body ul li .left img {
   width: 45px;
   margin-right: 8px;
   padding-top: 3px;
 }
 
-#live-streaming .start-streaming .live-comments .card .card-body ul li .left .img img {
+#live-streaming .start-streaming .live-comments .card .card-body ul li .left .img img, .discovery-creative-modal .top-header .author-box .img #live-streaming .start-streaming .live-comments .card .card-body ul li .left img img {
   width: 45px;
 }
 
@@ -3588,7 +3658,7 @@ a, a:hover {
   padding-top: 20px;
 }
 
-.post-modal .modal-content .post-title {
+.post-modal .modal-content .post-title, .post-modal .modal-content .discovery-campaign-tabs-more-info .card-header .post-title a, .discovery-campaign-tabs-more-info .card-header .post-title .post-modal .modal-content a {
   font-size: 14px;
   color: #333;
   font-weight: 600;
@@ -3596,7 +3666,7 @@ a, a:hover {
   line-height: 20px;
 }
 
-.post-modal .modal-content .post-title a {
+.post-modal .modal-content .post-title a, .discovery-campaign-tabs-more-info .card-header .post-title .post-modal .modal-content a a {
   color: #db3364;
 }
 
@@ -3704,12 +3774,12 @@ a, a:hover {
   margin-left: 35px;
 }
 
-.post-modal .modal-content .modal-comments .card-body ul li .left .img {
+.post-modal .modal-content .modal-comments .card-body ul li .left .img, .post-modal .modal-content .modal-comments .card-body ul li .left .discovery-creative-modal .top-header .author-box .img img, .discovery-creative-modal .top-header .author-box .img .post-modal .modal-content .modal-comments .card-body ul li .left img {
   width: 30px;
   margin-right: 8px;
 }
 
-.post-modal .modal-content .modal-comments .card-body ul li .left .img img {
+.post-modal .modal-content .modal-comments .card-body ul li .left .img img, .discovery-creative-modal .top-header .author-box .img .post-modal .modal-content .modal-comments .card-body ul li .left img img {
   width: 30px;
 }
 
@@ -3972,11 +4042,11 @@ a, a:hover {
   opacity: 0.8;
 }
 
-.dark-mode .post-modal .modal-content .post-title {
+.dark-mode .post-modal .modal-content .post-title, .dark-mode .post-modal .modal-content .discovery-campaign-tabs-more-info .card-header .post-title a, .discovery-campaign-tabs-more-info .card-header .post-title .dark-mode .post-modal .modal-content a {
   color: #fff;
 }
 
-.dark-mode .post-modal .modal-content .post-title a {
+.dark-mode .post-modal .modal-content .post-title a, .discovery-campaign-tabs-more-info .card-header .post-title .dark-mode .post-modal .modal-content a a {
   color: #db3364;
 }
 
@@ -4179,7 +4249,7 @@ a, a:hover {
   padding: 20px 0;
 }
 
-#bank_card_details .bank-card-listing ul li .img {
+#bank_card_details .bank-card-listing ul li .img, #bank_card_details .bank-card-listing ul li .discovery-creative-modal .top-header .author-box .img img, .discovery-creative-modal .top-header .author-box .img #bank_card_details .bank-card-listing ul li img {
   width: 95px;
   height: 60px;
   border-radius: 4px;
@@ -4193,7 +4263,7 @@ a, a:hover {
   margin-right: 20px;
 }
 
-#bank_card_details .bank-card-listing ul li .img img {
+#bank_card_details .bank-card-listing ul li .img img, .discovery-creative-modal .top-header .author-box .img #bank_card_details .bank-card-listing ul li img img {
   max-height: 40px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -4320,7 +4390,7 @@ a, a:hover {
   border-radius: 10px;
 }
 
-.create_new_campaign .confirm-campaign .img img {
+.create_new_campaign .confirm-campaign .img img, .create_new_campaign .confirm-campaign .discovery-creative-modal .top-header .author-box .img img img, .discovery-creative-modal .top-header .author-box .img .create_new_campaign .confirm-campaign img img {
   border-radius: 10px;
 }
 
@@ -4382,6 +4452,801 @@ a, a:hover {
 .create_new_campaign .btn-rounded-outline,
 .create_new_campaign .btn-rounded {
   min-width: 100px;
+}
+
+.discovery-header .card-header .title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.discovery-header .card-header p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #A2A2A2;
+}
+
+.discovery-header .nav-pills .nav-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  opacity: 0.6;
+  position: relative;
+  display: block;
+  padding: 1.2rem 1rem;
+  background: transparent;
+  text-transform: uppercase;
+}
+
+.discovery-header .nav-pills .nav-link::before {
+  content: '';
+  width: 100px;
+  height: 8px;
+  border-radius: 10px;
+  background: transparent;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.discovery-header .nav-pills .nav-link.active {
+  opacity: 1;
+}
+
+.discovery-header .nav-pills .nav-link.active::before {
+  background: #db3364;
+}
+
+.dark-mode .discovery-header .card-header .title {
+  color: #fff;
+}
+
+.dark-mode .discovery-header .nav-pills .nav-link {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .discovery-creative-tabs {
+    padding: 0 10px;
+  }
+  .discovery-creative-tabs .col-8,
+  .discovery-creative-tabs .col-4,
+  .discovery-creative-tabs .col-md-4,
+  .discovery-creative-tabs .col-6 {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+}
+
+.discovery-creative-tabs .open-post-link {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .discovery-creative-tabs .open-post-link {
+    margin-bottom: 15px;
+  }
+}
+
+.discovery-creative-tabs .open-post-link img {
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767px) {
+  .discovery-creative-tabs .open-post-link img {
+    border-radius: 10px;
+  }
+}
+
+.discovery-creative-tabs .open-post-link .clone-icon {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  z-index: 1;
+  color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+}
+
+.discovery-campaign-tabs .featured-campaign .featured-campaign-header .heading-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  opacity: .8;
+  text-transform: uppercase;
+}
+
+.discovery-campaign-tabs .featured-campaign .featured-campaign-header .action {
+  background: #fff;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.discovery-campaign-tabs .featured-campaign .featured-campaign-header .action .btn {
+  color: #BDC9DA;
+  padding: 10px 15px;
+}
+
+.discovery-campaign-tabs .featured-campaign .featured-campaign-header .action .btn.active, .discovery-campaign-tabs .featured-campaign .featured-campaign-header .action .btn:hover {
+  color: #db3364;
+}
+
+.discovery-campaign-tabs .featured-campaign .featured-campaign-header .action .span {
+  color: #BDC9DA;
+}
+
+.discovery-campaign-item {
+  border-radius: 10px;
+}
+
+.discovery-campaign-item .img img, .discovery-campaign-item .discovery-creative-modal .top-header .author-box .img img img, .discovery-creative-modal .top-header .author-box .img .discovery-campaign-item img img {
+  border-radius: 10px;
+}
+
+.discovery-campaign-item .text {
+  margin-bottom: 15px;
+}
+
+.discovery-campaign-item .text .created-by {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.discovery-campaign-item .text .campaign-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #333;
+  padding: 5px 0 10px 0;
+}
+
+.discovery-campaign-item .data .earn {
+  font-size: 13px;
+  font-weight: 700;
+  color: #db3364;
+}
+
+.discovery-campaign-item .data .earn sub {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+}
+
+.discovery-campaign-item .data .progress {
+  width: 40px;
+  height: 0.5rem;
+  border: 1px solid #EAEAEA;
+  margin: 5px 0;
+}
+
+.discovery-campaign-item .data .progress .progress-bar {
+  background-color: #db3364;
+}
+
+.discovery-campaign-item .data .goal-percentage {
+  font-size: 12px;
+  font-weight: 700;
+  color: #0C0C0C;
+  opacity: 0.8;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.discovery-campaign-item-lg {
+  border-radius: 10px;
+}
+
+.discovery-campaign-item-lg .img img, .discovery-campaign-item-lg .discovery-creative-modal .top-header .author-box .img img img, .discovery-creative-modal .top-header .author-box .img .discovery-campaign-item-lg img img {
+  border-radius: 10px;
+}
+
+.discovery-campaign-item-lg .text {
+  margin-bottom: 20px;
+}
+
+.discovery-campaign-item-lg .text .created-by {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.discovery-campaign-item-lg .text .campaign-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  padding: 10px 0;
+}
+
+.discovery-campaign-item-lg .text .campaign-description {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 20px;
+}
+
+.discovery-campaign-item-lg .data h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+
+.discovery-campaign-item-lg .data p {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.discovery-campaign-item-lg .data .earn {
+  color: #db3364;
+}
+
+.discovery-campaign-item-lg .data .earn sub {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+}
+
+.discovery-campaign-item-lg .data .progress {
+  height: 0.5rem;
+  border: 1px solid #EAEAEA;
+  margin: 5px 0;
+}
+
+.discovery-campaign-item-lg .data .progress .progress-bar {
+  background-color: #db3364;
+}
+
+.discovery-campaign-item-lg .data .goal-percentage {
+  font-size: 12px;
+  font-weight: 700;
+  color: #0C0C0C;
+  opacity: 0.8;
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.dark-mode .discovery-campaign-tabs .featured-campaign .featured-campaign-header .heading-text {
+  color: #fff;
+}
+
+.dark-mode .discovery-campaign-tabs .featured-campaign .featured-campaign-header .action {
+  background: #3a4051;
+}
+
+.dark-mode .discovery-campaign-item .text {
+  margin-bottom: 15px;
+}
+
+.dark-mode .discovery-campaign-item .text .created-by {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.dark-mode .discovery-campaign-item .text .campaign-title {
+  color: #fff;
+}
+
+.dark-mode .discovery-campaign-item .data .earn sub {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.dark-mode .discovery-campaign-item .data .progress {
+  border: 1px solid #EAEAEA;
+}
+
+.dark-mode .discovery-campaign-item .data .progress .progress-bar {
+  background-color: #db3364;
+}
+
+.dark-mode .discovery-campaign-item .data .goal-percentage {
+  color: #fff;
+}
+
+.dark-mode .discovery-campaign-item-lg .text {
+  margin-bottom: 20px;
+}
+
+.dark-mode .discovery-campaign-item-lg .text .created-by {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.dark-mode .discovery-campaign-item-lg .text .campaign-title {
+  color: #fff;
+}
+
+.dark-mode .discovery-campaign-item-lg .text .campaign-description {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dark-mode .discovery-campaign-item-lg .data h4 {
+  color: #fff;
+}
+
+.dark-mode .discovery-campaign-item-lg .data p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dark-mode .discovery-campaign-item-lg .data .earn sub {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.dark-mode .discovery-campaign-item-lg .data .progress {
+  border: 1px solid #EAEAEA;
+}
+
+.dark-mode .discovery-campaign-item-lg .data .progress .progress-bar {
+  background-color: #db3364;
+}
+
+.dark-mode .discovery-campaign-item-lg .data .goal-percentage {
+  color: #fff;
+}
+
+.discovery-campaign-tabs-more-info .card-header .post-title, .discovery-campaign-tabs-more-info .card-header .post-title a {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+}
+
+.discovery-campaign-tabs-more-info .card-header .post-title a {
+  padding-right: 10px;
+}
+
+.discovery-campaign-tabs-more-info .card-header .top-link i {
+  width: 35px;
+  height: 35px;
+  color: #50657b;
+  border-radius: 50%;
+  border: 1.5px solid #b8c9de;
+  background: #fff;
+  text-align: center;
+  line-height: 35px;
+  font-size: 14px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.discovery-campaign-tabs-more-info .card-header .post-description {
+  font-size: 13px;
+  color: #000;
+  opacity: 0.7;
+}
+
+.discovery-campaign-tabs-more-info .data .earn {
+  font-size: 18px;
+  font-weight: 700;
+  color: #db3364;
+}
+
+.discovery-campaign-tabs-more-info .data .earn sub {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+}
+
+.discovery-campaign-tabs-more-info .data .progress {
+  height: 0.5rem;
+  border: 1px solid #EAEAEA;
+  margin: 5px 0;
+}
+
+.discovery-campaign-tabs-more-info .data .progress .progress-bar {
+  background-color: #db3364;
+}
+
+.discovery-campaign-tabs-more-info .data .goal {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.discovery-campaign-tabs-more-info .data .goal-percentage {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0C0C0C;
+  opacity: 0.8;
+}
+
+.discovery-campaign-tabs-more-info .data .days-remaining {
+  font-size: 12px;
+  color: #000;
+}
+
+.discovery-campaign-tabs-more-info .author-profile .profile-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.discovery-campaign-tabs-more-info .author-profile .author-name {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 700;
+}
+
+.discovery-campaign-tabs-more-info .author-profile .author-sub-name {
+  font-size: 13px;
+  color: #333333;
+  opacity: 0.6;
+  line-height: 1;
+}
+
+.discovery-campaign-tabs-more-info .author-profile .card-footer .days-remaining {
+  color: #000000;
+  font-size: 14px;
+}
+
+.discovery-campaign-tabs-more-info .nav-pills .nav-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  opacity: 0.6;
+  position: relative;
+  display: block;
+  padding: 1.2rem 1rem;
+  background: transparent;
+  text-transform: uppercase;
+}
+
+.discovery-campaign-tabs-more-info .nav-pills .nav-link::before {
+  content: '';
+  width: 100px;
+  height: 8px;
+  border-radius: 10px;
+  background: transparent;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.discovery-campaign-tabs-more-info .nav-pills .nav-link.active {
+  opacity: 1;
+}
+
+.discovery-campaign-tabs-more-info .nav-pills .nav-link.active::before {
+  background: #db3364;
+}
+
+.discovery-campaign-tabs-more-info .tab-content > .tab-pane {
+  display: none !important;
+}
+
+.discovery-campaign-tabs-more-info .tab-content > .tab-pane.active {
+  display: block !important;
+}
+
+.discovery-campaign-tabs-more-info .tab-content #campaign .title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3E4A6B;
+  margin-bottom: 20px;
+}
+
+.discovery-campaign-tabs-more-info .tab-content #campaign .description {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  text-align: justify;
+  line-height: 22px;
+}
+
+.discovery-campaign-tabs-more-info .tab-content #campaign .about_img {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 767px) {
+  .discovery-campaign-tabs-more-info .tab-content #campaign .about_img {
+    float: none;
+    margin-bottom: 20px;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.discovery-campaign-tabs-more-info .tab-content #comments .alert {
+  background: #FFF6F9;
+  color: #db3364;
+  font-size: 12px;
+  border: none;
+}
+
+.discovery-campaign-tabs-more-info .tab-content #comments ul li {
+  padding: 10px 0;
+}
+
+.discovery-campaign-tabs-more-info .tab-content #comments ul li .media .profile-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.discovery-campaign-tabs-more-info .tab-content #comments ul li .media .author-name {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 700;
+}
+
+.discovery-campaign-tabs-more-info .tab-content #comments ul li .media .author-sub-name {
+  font-size: 13px;
+  color: #333333;
+  opacity: 0.6;
+  line-height: 1;
+}
+
+.discovery-campaign-tabs-more-info .tab-content #comments ul li .message {
+  font-size: 14px;
+  color: #000000;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+
+.discovery-campaign-tabs-more-info .tab-content #comments .load-more-btn {
+  font-size: 14px;
+  font-weight: 700;
+  color: #db3364;
+  margin-top: 20px;
+}
+
+.discovery-campaign-tabs-more-info .tab-content #FAQ #accordion .card {
+  border: 1px solid #f2f2f2;
+  -webkit-box-shadow: 0 11px 22px 0 rgba(231, 233, 242, 0.34);
+          box-shadow: 0 11px 22px 0 rgba(231, 233, 242, 0.34);
+}
+
+.discovery-campaign-tabs-more-info .tab-content #FAQ #accordion .card .btn {
+  font-size: 14px;
+  font-weight: 700;
+  color: #db3364;
+}
+
+.discovery-campaign-tabs-more-info .tab-content #FAQ #accordion .card .btn i {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.discovery-campaign-tabs-more-info .tab-content #FAQ #accordion .card .btn.collapsed {
+  color: #333;
+}
+
+.discovery-campaign-tabs-more-info .tab-content #FAQ #accordion .card .btn.collapsed i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.discovery-campaign-tabs-more-info .tab-content #FAQ #accordion .card p {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 0.8);
+  padding-top: 10px;
+}
+
+.discovery-campaign-footer {
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.discovery-creative-modal .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 1000;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.discovery-creative-modal .post-image {
+  height: 100%;
+}
+
+.discovery-creative-modal .post-image a,
+.discovery-creative-modal .post-image div {
+  height: 100%;
+}
+
+.discovery-creative-modal .post-image a img,
+.discovery-creative-modal .post-image div img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.discovery-creative-modal .top-header .author-box .img, .discovery-creative-modal .top-header .author-box .img img {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+}
+
+.discovery-creative-modal .top-header .author-box .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.discovery-creative-modal .top-header .author-box .text {
+  padding-left: 10px;
+}
+
+.discovery-creative-modal .top-header .author-box .text .user-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #000;
+}
+
+.discovery-creative-modal .top-header .author-box .text .sub-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+  opacity: 0.5;
+}
+
+.discovery-creative-modal .top-header .date-time {
+  opacity: 0.5;
+  color: #333333;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.discovery-creative-modal .top-header .post-title, .discovery-creative-modal .top-header .discovery-campaign-tabs-more-info .card-header .post-title a, .discovery-campaign-tabs-more-info .card-header .post-title .discovery-creative-modal .top-header a {
+  color: #333333;
+  font-size: 14px;
+}
+
+.discovery-creative-modal .top-header .post-title a, .discovery-campaign-tabs-more-info .card-header .post-title .discovery-creative-modal .top-header a a {
+  color: #db3364;
+}
+
+.discovery-creative-modal .comments-list {
+  background-color: #F7FAFF;
+  height: 250px;
+  overflow: auto;
+  padding: 10px 20px;
+  /* Track */
+  /* Handle */
+}
+
+.discovery-creative-modal .comments-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.discovery-creative-modal .comments-list::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.discovery-creative-modal .comments-list::-webkit-scrollbar-thumb {
+  background: #d8d8d8;
+  border-radius: 10px;
+}
+
+.discovery-creative-modal .comments-list .message-box {
+  padding: 10px 0;
+}
+
+.discovery-creative-modal .comments-list .message-box img {
+  width: 35px;
+  height: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.discovery-creative-modal .comments-list .message-box .text {
+  margin-left: 10px;
+  margin-top: -5px;
+}
+
+.discovery-creative-modal .comments-list .message-box .text .user-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #343A4C;
+}
+
+.discovery-creative-modal .comments-list .message-box .text .message {
+  font-size: 12px;
+  font-weight: 500;
+  color: #343A4C;
+  opacity: 0.8;
+  line-height: 1.2;
+}
+
+.discovery-creative-modal .comments-list .message-box .right a {
+  color: #BEBEBE;
+}
+
+.discovery-creative-modal .comments-list .message-box .right a.love {
+  color: #db3364;
+}
+
+.discovery-creative-modal .bottom-footer .post-footer {
+  padding-bottom: 15px;
+}
+
+.discovery-creative-modal .bottom-footer .post-footer a {
+  color: rgba(51, 51, 51, 0.8);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.discovery-creative-modal .bottom-footer .post-footer a span {
+  padding: 0 15px 0 5px;
+}
+
+.discovery-creative-modal .bottom-footer .post-footer i {
+  font-size: 16px;
+  position: relative;
+  top: 2px;
+}
+
+.discovery-creative-modal .bottom-footer .post-footer .love i {
+  color: #df4545;
+}
+
+.discovery-creative-modal .bottom-footer .post-footer .comment i {
+  color: #686868;
+}
+
+.discovery-creative-modal .bottom-footer .post-footer .bookmark i {
+  color: #bbc9dc;
+}
+
+.discovery-creative-modal .bottom-footer .post-footer .bookmark i:hover {
+  color: #686868;
+}
+
+.discovery-creative-modal .bottom-footer .post-footer .bookmark.marked i {
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.discovery-creative-modal .bottom-footer .form-control {
+  border: none;
+}
+
+.somethign-went-wrong {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 60vh;
+}
+
+.somethign-went-wrong .wrong-description {
+  font-size: 13px;
+  color: #333333;
+  opacity: 0.8;
+  margin: 10px 0 20px 0;
+}
+
+.dark-mode .somethign-went-wrong .wrong-title,
+.dark-mode .somethign-went-wrong .wrong-description {
+  color: #fff;
 }
 
 /* ===//end of component css === */
@@ -6087,11 +6952,11 @@ a, a:hover {
   margin-bottom: 10px;
 }
 
-#my_contacts .chat-box .card-body .card-body-inner .incoming .notice-box .img {
+#my_contacts .chat-box .card-body .card-body-inner .incoming .notice-box .img, #my_contacts .chat-box .card-body .card-body-inner .incoming .notice-box .discovery-creative-modal .top-header .author-box .img img, .discovery-creative-modal .top-header .author-box .img #my_contacts .chat-box .card-body .card-body-inner .incoming .notice-box img {
   width: 35px;
 }
 
-#my_contacts .chat-box .card-body .card-body-inner .incoming .notice-box .img img {
+#my_contacts .chat-box .card-body .card-body-inner .incoming .notice-box .img img, .discovery-creative-modal .top-header .author-box .img #my_contacts .chat-box .card-body .card-body-inner .incoming .notice-box img img {
   width: 100%;
   border: 1px solid #fff;
   border-radius: 5px;
@@ -6460,7 +7325,7 @@ a, a:hover {
   border: 1px solid #db3364;
 }
 
-#my_contacts.dark-mode .chat-box .card-body .card-body-inner .incoming .notice-box .img img {
+#my_contacts.dark-mode .chat-box .card-body .card-body-inner .incoming .notice-box .img img, .discovery-creative-modal .top-header .author-box .img #my_contacts.dark-mode .chat-box .card-body .card-body-inner .incoming .notice-box img img {
   border: 1px solid #fff;
 }
 
@@ -7162,6 +8027,115 @@ a, a:hover {
 }
 
 .my_campaign .campaigns-items li .dropdown .btn {
+  color: #BDC9DA;
+}
+
+.bookmark .bookmark-header .title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.bookmark .bookmark-header p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #A2A2A2;
+}
+
+.bookmark .nav-pills .nav-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  opacity: 0.6;
+  position: relative;
+  display: block;
+  padding: 1.2rem 1rem;
+  background: transparent;
+  text-transform: uppercase;
+}
+
+.bookmark .nav-pills .nav-link::before {
+  content: '';
+  width: 100px;
+  height: 8px;
+  border-radius: 10px;
+  background: transparent;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.bookmark .nav-pills .nav-link.active {
+  opacity: 1;
+}
+
+.bookmark .nav-pills .nav-link.active::before {
+  background: #db3364;
+}
+
+.bookmark .tab-content > .tab-pane {
+  display: none !important;
+}
+
+.bookmark .tab-content > .tab-pane.active {
+  display: block !important;
+}
+
+.bookmark .bookmarks-item .img, .bookmark .bookmarks-item .discovery-creative-modal .top-header .author-box .img img, .discovery-creative-modal .top-header .author-box .img .bookmark .bookmarks-item img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.bookmark .bookmarks-item .img img, .bookmark .bookmarks-item .discovery-creative-modal .top-header .author-box .img img img, .discovery-creative-modal .top-header .author-box .img .bookmark .bookmarks-item img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.bookmark .bookmarks-item .card-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #3E4A6B;
+  margin-bottom: 5px;
+}
+
+.bookmark .bookmarks-item .card-data {
+  font-size: 13px;
+  color: #3E4A6B;
+}
+
+.bookmark .bookmarks-item .dropdown .btn {
+  color: #BDC9DA;
+}
+
+.dark-mode .bookmark .bookmark-header .title {
+  color: #fff;
+}
+
+.dark-mode .bookmark .bookmark-header p {
+  color: #A2A2A2;
+}
+
+.dark-mode .bookmark .nav-pills .nav-link {
+  color: #fff;
+}
+
+.dark-mode .bookmark .bookmarks-item .card-title {
+  color: #fff;
+}
+
+.dark-mode .bookmark .bookmarks-item .card-data {
+  color: #fff;
+}
+
+.dark-mode .bookmark .bookmarks-item .dropdown .btn {
   color: #BDC9DA;
 }
 

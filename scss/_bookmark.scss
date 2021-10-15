@@ -1,0 +1,129 @@
+.bookmark {
+    .bookmark-header {
+        .title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #333333;
+        }
+        p {
+            font-size: 13px;
+            font-weight: 400;
+            color: #A2A2A2;
+        }
+    }
+    .nav-pills {
+        .nav-link {
+            font-size: 14px;
+            font-weight: 700;
+            color: #000;
+            opacity: 0.6;
+            position: relative;
+            display: block;
+            padding: 1.2rem 1rem;
+            background: transparent;
+            text-transform: uppercase;
+
+            &::before{
+                content: '';
+                width: 100px;
+                height: 8px;
+                border-radius: 10px;
+                background: transparent;
+                position: absolute;
+                bottom: -4px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &.active {
+                opacity: 1;
+
+                &::before {
+                    background: #db3364;
+                }
+            }
+        }
+    }
+
+    .tab-content > .tab-pane {
+        display: none !important;
+    }
+    .tab-content > .tab-pane.active {
+        display: block !important;
+    }
+
+    .bookmarks-item {
+        .img {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 5px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+
+        .card-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #3E4A6B;
+            margin-bottom: 5px;
+        }
+        .card-data {
+            font-size: 13px;
+            color: #3E4A6B;
+        }
+
+        .dropdown {
+            .btn {
+                color: #BDC9DA;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+// ######## dark mode ########
+.dark-mode {
+    .bookmark {
+        .bookmark-header {
+            .title {
+                color: #fff;
+            }
+            p {
+                color: #A2A2A2;
+            }
+        }
+        .nav-pills {
+            .nav-link {
+                color: #fff;
+            }
+        }
+    
+        .bookmarks-item {
+    
+            .card-title {
+                color: #fff;
+            }
+            .card-data {
+                color: #fff;
+            }
+    
+            .dropdown {
+                .btn {
+                    color: #BDC9DA;
+                }
+            }
+        }
+    
+    }
+    
+    
+}

@@ -1,0 +1,67 @@
+.discovery-header {
+    .card-header {
+        .title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #333333;
+        }
+        p {
+            font-size: 13px;
+            font-weight: 400;
+            color: #A2A2A2;
+        }
+    }
+    .nav-pills {
+        .nav-link {
+            font-size: 14px;
+            font-weight: 700;
+            color: #000;
+            opacity: 0.6;
+            position: relative;
+            display: block;
+            padding: 1.2rem 1rem;
+            background: transparent;
+            text-transform: uppercase;
+
+            &::before{
+                content: '';
+                width: 100px;
+                height: 8px;
+                border-radius: 10px;
+                background: transparent;
+                position: absolute;
+                bottom: -4px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &.active {
+                opacity: 1;
+
+                &::before {
+                    background: #db3364;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+// ########## dark mode ########
+.dark-mode {
+    .discovery-header {
+        .card-header {
+            .title {
+                color: #fff;
+            }
+        }
+        .nav-pills {
+            .nav-link {
+                color: #fff;
+            }
+        }
+    
+    }
+}

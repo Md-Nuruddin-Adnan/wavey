@@ -1,0 +1,21 @@
+.somethign-went-wrong{
+    text-align: center;
+    display: grid;
+    place-items: center;
+    min-height: 60vh;
+    .wrong-description {
+        font-size: 13px;
+        color: #333333;
+        opacity: 0.8;
+        margin: 10px 0 20px 0;
+    }
+}
+
+
+// ######### dark mode ######33
+.dark-mode .somethign-went-wrong{
+    .wrong-title,
+    .wrong-description {
+        color: #fff;
+    }
+}
