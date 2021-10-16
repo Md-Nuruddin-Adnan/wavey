@@ -18,11 +18,9 @@
 
 
 
-
-
 <!-- === header section start === -->
 <header class="full-nav">
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark d-lg-flex d-none">
     <a class="navbar-brand" href="index.html">
       <img src="images/logo/logo_white_sm.png" alt="logo" class="img-fluid white-logo">
       <img src="images/logo/logo_color_sm.png" alt="logo" class="img-fluid color-logo">
@@ -30,7 +28,6 @@
 
     <button class="btn side-menu-btn d-lg-none d-block"  onclick="openNav()">
       <i class="fas fa-bars"></i>
-      <!-- <img src="images/home/user_profile_pic.png" alt="profile-image" class="img-fluid"> -->
     </button>
 
     <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +35,7 @@
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-<ul class="navbar-nav m-lg-auto mt-lg-0 mt-5">
+      <ul class="navbar-nav m-lg-auto mt-lg-0 mt-5">
         <li class="nav-item">
           <a class="nav-link" href="index.html"><i class="fas fa-home-lg-alt"></i></a>
         </li>
@@ -63,7 +60,6 @@
       </div>
     </div>
   </nav>
-
   <div class="side-nav">
     <div class="top-bg"></div>
     <div class="side-nav-inner">
@@ -176,6 +172,25 @@
       </nav>
     </div>
   </div>
+
+  <!-- === mobile navbar ===-->
+  <div class="mobile-nav d-lg-none d-block">
+    <div class="mobile-nav-main fixed-top myShadow-sm">
+      <div class="container">
+        <div class="navbar px-0">
+          <h3 class="text">Home</h3>
+          <div class="d-flex align-items-center">
+            <a class="nav-link notification-link" href="notifications.html"><i class="fas fa-bell"></i></a>
+            <button class="pl-0 btn side-menu-btn" onclick="openNav()">
+              <img src="images/home/user_profile_pic.png" alt="profile-image" class="img-fluid profile-image">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-height-adjust"></div>
+  </div>
+  <!-- ===//end of mobile navbar ===-->
 </header>
 <!-- ===//end of header section === -->
 
@@ -564,7 +579,7 @@
 
 <!-- === footer start === -->
 <footer class="page-footer">
-  <div class="container-fluid">
+  <div class="container-fluid d-lg-block d-none">
     <div class="d-lg-flex justify-content-between align-items-center text-center">
       <nav class="footer-nav">
         <ul class="d-lg-flex text-nowrap">
@@ -580,6 +595,32 @@
       <p class="copyright"><i class="far fa-copyright    "></i> 2020 WAVEY.VIP</p>
     </div>
   </div>
+  <!-- === mobile footer ===-->
+  <div class="mobile-footer d-lg-none d-block">
+    <div class="mobile-footer-main fixed-bottom myShadow-sm">
+      <div class="container">
+        <ul class="navbar">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="fas fa-home-lg-alt"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="discovery_creative_tabs.html"><i class="fas fa-binoculars"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="new_post.html"><i class="fas fa-plus-square"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="my_contacts.html"><i class="fas fa-comments"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="wallet.html"><i class="fas fa-wallet"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content-height-adjust"></div>
+  </div>
+  <!-- ===//end of mobile footer ===-->
 </footer>
 <!-- ===//end of footer === -->
  

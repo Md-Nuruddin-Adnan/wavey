@@ -1,3 +1,44 @@
 .mobile-nav {
-    background: #fff;
+    .mobile-nav-main {
+        background: #fff;
+
+        .navbar {
+            background-image: none !important;
+        }
+        .text {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .nav-link {
+            color: #BBC9DC;
+            font-size: 20px;
+        }
+
+        .profile-image {
+            width: 45px;
+            height: 45px;
+            border: 1px solid rgba(#fff, 0.1);
+            border-radius: 12px;
+            object-fit: cover;
+            margin-left: 10px;
+        }
+    }
+    .content-height-adjust {
+        width: 100%;
+        height: 75px;
+    }
+}
+
+
+
+// ################### Dark mode #################
+.dark-mode {
+    .mobile-nav {
+        .mobile-nav-main {
+            background: $card-bg-dark;
+            .text {
+                color: #fff
+            }
+        }
+    }
 }

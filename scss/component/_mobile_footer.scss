@@ -1,0 +1,29 @@
+.mobile-footer {
+    .mobile-footer-main {
+        background: #fff;
+
+        .nav-link {
+            color: #BBC9DC;
+            font-size: 25px;
+            padding: .5rem;
+
+            &.active {
+                color: $primary-color;
+            }
+        }
+    }
+    .content-height-adjust {
+        width: 100%;
+        height: 70px;
+    }
+}
+
+
+// ################### Dark mode #################
+.dark-mode {
+    .mobile-footer {
+        .mobile-footer-main {
+            background: $card-bg-dark;
+        }
+    }
+}
