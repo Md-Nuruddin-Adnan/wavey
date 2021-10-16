@@ -118,9 +118,9 @@
             .derection-arrow {
                 position: absolute;
                 top: 50%;
-                left: 50%;
+                right: -20px;
                 z-index: 1;
-                transform: translate(-50%, -50%);
+                transform: translateY(-50%);
                 width: 40px;
                 height: 40px;
                 background: #fff;
@@ -130,8 +130,9 @@
                 line-height: 40px;
 
                 @media(max-width: 767px){
-                    top: 55%;
-                    transform: translate(-50%, -50%) rotate(90deg);
+                    top: calc(100% - 20px);
+                    left: 50%;
+                    transform: translateX(-50%) rotate(90deg);
                 }
             }
            .card {
@@ -209,6 +210,79 @@
         }
         .btn {
             padding: 10px 15px;
+        }
+    }
+}
+
+
+
+
+
+// ########## dark mode ########
+.dark-mode { 
+    .wallet_topup {
+    
+        .amount {
+            .input-field {
+                input::placeholder,
+                input {
+                    background: transparent;
+                }
+            }
+    
+            h3 {
+                color: #fff;
+            }
+            p {
+                color: #fff;
+            }
+        }
+    
+        .choose-bank {
+            .heading{
+                .title {
+                    color: #fff;
+                }
+                .sub-title {
+                    color: #fff;
+                }
+            }
+    
+            ul {
+                li {
+                    padding: 20px;
+                    &.active {
+                        background-color: $body-bg-dark;
+                    }
+    
+                    .text {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    
+        .confirm-top-up {
+            .confirm-top-up-row {
+               .card {
+                    &.bank-info {
+                        color: #fff;
+                    }
+    
+                    &.wallet-info {
+                        color: #fff;
+                    }
+               }
+            }
+        }
+    
+        .success-failure {
+            .title {
+                color: #fff;
+            }
+            p {
+                color: #fff;
+            }
         }
     }
 }

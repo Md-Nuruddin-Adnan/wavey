@@ -20,7 +20,7 @@
 
 <!-- === header section start === -->
 <header class="full-nav">
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark d-lg-flex d-none">
     <a class="navbar-brand" href="index.html">
       <img src="images/logo/logo_white_sm.png" alt="logo" class="img-fluid white-logo">
       <img src="images/logo/logo_color_sm.png" alt="logo" class="img-fluid color-logo">
@@ -38,7 +38,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav m-lg-auto mt-lg-0 mt-5">
         <li class="nav-item">
-          <a class="nav-link" href="index.html"><i class="fas fa-home-lg-alt"></i></a>
+          <a class="nav-link active" href="index.html"><i class="fas fa-home-lg-alt"></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="discovery_creative_tabs.html"><i class="fas fa-binoculars"></i></a>
@@ -61,7 +61,6 @@
       </div>
     </div>
   </nav>
-
   <div class="side-nav">
     <div class="top-bg"></div>
     <div class="side-nav-inner">
@@ -178,6 +177,26 @@
 <!-- ===//end of header section === -->
 
 
+
+<!-- === mobile navbar ===-->
+<div cass="mobile-nav d-lg-none d-block">
+  <div class="mobile-nav-main">
+    <div class="container">
+      <div class="navbar">
+        <h3 class="text">Home</h3>
+        <div class="d-flex align-items-center">
+          <a class="nav-link notification-link" href="notifications.html"><i class="fas fa-bell"></i></a>
+          <button class="pl-0 btn side-menu-btn" onclick="openNav()">
+            <img src="images/home/user_profile_pic.png" alt="profile-image" class="img-fluid">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ===//end of mobile navbar ===-->
+
+
 <!-- === top-action section start === -->
 <section class="top-action text-nowrap my-40">
   <div class="container">
@@ -214,7 +233,7 @@
 
         <div class="row">
           <div class="col-lg-1 col-sm-2 col-3 my-streaming">
-            <a href="#">
+            <a href="my_streams.html">
               <div class="img text-center"><img src="images/home/you_live.png" alt="you-live" class="img-fluid my-live"></div>
               <p class="text">My Streams</p>
             </a>

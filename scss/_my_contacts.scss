@@ -699,6 +699,15 @@
         
         }
       }
+
+      &.search-box {
+        .form-control {
+          color: #fff;
+        }
+        i {
+          color: #ffffff;
+        }
+      }
     }
 
     .card-body {
@@ -804,6 +813,36 @@
   
               span {
                 color: $primary-color;
+              }
+            }
+          }
+        }
+      }
+
+      .my-contacts-empty {
+        h4 {
+          color: rgba(#fff, 0.8);
+        }
+        p {
+          color: #fff;
+        }
+      }
+
+      .after-search-items {
+        box-shadow: 0 5px 10px 0 #242424;
+        li{
+          &:hover {
+            background: $body-bg-dark;
+          }
+          a{
+
+            .text {
+              .user-name {
+                color: #fff;
+              }
+
+              p {
+                color: rgba(#fff, 0.5);
               }
             }
           }

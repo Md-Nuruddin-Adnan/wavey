@@ -262,3 +262,123 @@
     bottom: 0;
     left: 0;
 }
+
+
+
+
+
+
+
+// ########## dark mode ########
+.dark-mode { 
+    .discovery-campaign-tabs-more-info {
+        .card-header {
+            .post-title {
+                color: #fff;
+            }
+            
+            .top-link i{
+                color: #fff;
+                background: $card-bg-dark;
+            }
+    
+            .post-description {
+                color: #fff;
+            }
+        }
+    
+        .data {
+            .earn {
+                sub {
+                    color: rgba(255,255,255, 0.5);
+                }
+            }
+    
+            .goal {
+                color: rgba(255,255,255, 0.5);
+            }
+            .goal-percentage {
+                color: #fff;
+            }
+    
+            .days-remaining {
+                color: #fff;
+            }
+        }
+    
+        .author-profile {
+           .author-name {
+                color: #fff;
+            }
+           .author-sub-name {
+                color: #fff;
+            }
+            .card-footer {
+                .days-remaining {
+                    color: #fff;
+                }
+            }
+        }
+    
+        .nav-pills {
+            .nav-link {
+                color: #fff;
+            }
+        }
+    
+        .tab-content {
+            #campaign {
+                .title {
+                    color: #fff;
+                }
+    
+                .description {
+                    color: #fff;
+                }
+            }
+    
+            #comments {
+                ul {
+                    li {
+                        padding: 10px 0;
+                        .media {
+                            .author-name {
+                                 color: #fff;
+                             }
+                            .author-sub-name {
+                                 color: #fff;
+                             }
+                        }
+            
+                        .message {
+                            color: #fff;
+                        }
+                    }
+                }
+                
+            }
+    
+            #FAQ {
+                #accordion {
+                    .card {
+                      box-shadow: 0 11px 22px 0 rgba(15, 15, 15, 0.34);
+                      .btn {
+                        &.collapsed {
+                            color: #fff;
+                        }
+                      }
+                      p {
+                        color: rgba(255, 255, 255, 0.8);
+                      }
+                    }
+                  }
+            }
+        }
+    
+    }
+    
+    .discovery-campaign-footer {
+        background: $card-bg-dark;
+    }
+    
+}

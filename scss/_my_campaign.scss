@@ -161,3 +161,63 @@
     }
     // campaigns-items end
 }
+
+
+
+
+
+
+
+// ########## dark mode ########
+.dark-mode { 
+    .my_campaign {
+        .card-title {
+            color: #fff
+        }
+    
+        .nav-pills {
+            .nav-link {
+                color: #fff;
+            }
+        }
+    
+        .campaign-empty {
+            .title {
+                color: #fff;
+            }
+            .description {
+                color: #fff;
+            }
+        }
+    
+        // campaigns-items start
+        .campaigns-items {
+            li {
+                .media {
+                    .title {
+                        color: #fff;
+                    }
+                    .description {
+                        color: #fff;
+                    }
+                }
+    
+                .earn {
+                    sub {
+                        color: rgba(255,255,255, 0.5);
+                    }
+                }
+    
+                .goal {
+                    color: rgba(255,255,255, 0.5);
+                }
+                .goal-percentage {
+                    color: #fff;
+                }
+            }
+        }
+        // campaigns-items end
+    }
+    
+    
+}

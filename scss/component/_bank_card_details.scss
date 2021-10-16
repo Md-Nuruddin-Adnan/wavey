@@ -158,3 +158,70 @@
 
 //********** Dark mode css **********//
 //#####################################
+#bank_card_details.dark-mode {
+  .card-heading {
+    color: #fff;
+  }
+
+  // bank-card-listing-empty start
+  .bank-card-listing-empty {
+
+    .title {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+  // bank-card-listing-empty end
+
+
+  // bank-card-listing start
+  .bank-card-listing {
+    ul {
+      li {
+
+        .text {
+          color: #fff;
+          p{
+              color: #fff;
+              span {
+                color: #fff;
+              }
+          }
+        }
+
+        .action  {
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  // bank-card-listing end
+
+
+
+
+  // good-bade-example start
+  .good-bade-example {
+    p {
+      color: #fff;
+    }
+  }
+  // good-bade-example end
+
+
+  // bank-card-success start
+  .bank-card-success {
+    .title {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+  // bank-card-success end
+
+}

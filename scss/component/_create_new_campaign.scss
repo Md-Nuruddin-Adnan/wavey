@@ -97,3 +97,56 @@
         min-width: 100px
     }
 }
+
+
+
+
+
+
+
+
+// ########## dark mode ########
+.dark-mode {
+    .create_new_campaign {
+        .card-title {
+            color: #fff;
+        }
+        .card-sub-title {
+            color: #8791A4;
+        }
+    
+        .confirm-campaign {
+            .text {
+                .created-by{
+                    color: rgba(255,255,255,0.5);
+                }
+                .campaign-title{
+                    color: #fff;
+                }
+                .campaign-description{
+                    color: rgba(255,255,255,0.7);
+                }
+            }
+    
+            .data {
+                h4 {
+                    color: #fff;
+                }
+                p {
+                    color: rgba(255,255,255,0.7);
+                }
+            }
+        }
+    
+    
+          // create_new_campaign_success start
+      .create_new_campaign_success {
+        .title {
+          color: #fff;
+        }
+      }
+      // create_new_campaign_success end
+    
+    }
+    
+ }

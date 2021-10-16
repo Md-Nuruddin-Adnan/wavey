@@ -668,3 +668,216 @@
     }
     
 }
+
+
+
+
+
+
+
+// ########## dark mode ########
+#live-streaming.dark-mode {
+    @mixin section-title {
+        color: #fff ;
+    }
+    .card-title {
+      color: #fff!important;
+    }
+    .my-streams {
+        p {
+          color: #fff;
+        }
+     }
+
+
+
+    //  start steaming
+    .start-streaming{
+      
+        .live-comments {
+          .card {
+            .card-header {
+              h2 {
+                color: #fff;
+              }
+
+              // Comment tab start
+              .nav-pills {
+                .nav-link {
+                  color: #fff;
+                }
+              }
+              // Comment tab end
+
+            }
+      
+            .card-body {
+              background-image: linear-gradient(-90deg, #3a4051 0%, #3a4051 100%);
+      
+              ul {
+                li {
+                  .left {
+      
+                    .text {
+                      a.user-name {
+                        color: #fff;
+                      }
+                      p.message {
+                        color: rgba(255, 255, 255, 0.8);
+                      }
+                    }
+                  }
+      
+                  &.request {
+      
+                    .text {
+                      p {
+                        color: #fff;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+    }
+
+
+
+    // analytics section start
+    .analytics {
+        .card-title {
+            @include section-title;
+        }
+        .text {
+            .data {
+                color: #fff;
+            }
+            p {
+                color: #fff;
+            }
+        }
+    }
+    // analytics section end
+      
+
+    // begin streaming start
+    .begin-streaming {
+      .top-header {
+        .card-title {
+         color: #fff;
+        }
+      }
+
+      .main-content {
+        header {
+          background-color: $card-bg-dark;
+          .title {
+            color: #fff;
+          }
+          p {
+            color: #fff;
+          }
+        }
+
+        .search-grpup {
+          .search-box {
+            border: 1px solid #E6E6E6;
+            background-color: #fff;
+          }
+        }
+
+
+        .after-search {
+          .after-search-items > a {
+
+            .group-info {
+              .text {
+                .group-name {
+                  color: #fff;
+                }
+                .member-count {
+                  color: #fff;
+                }
+              }
+            }
+
+            .action {
+              i {
+                color: #939393;
+              }
+            }
+
+            &:hover {
+              background: $body-bg-dark;
+              .action {
+                i {
+                  color: $primary-color;
+                }
+              }
+            }
+          }
+        }
+
+        .group-content {
+          p {
+            color: #fff;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    // begin streaming end
+
+
+    // crate-group-modal
+    #crate-group-modal {
+      .modal-content {
+        background: $card-bg-dark;
+      }
+      .modal-title {
+        color: #fff;
+      }
+    }
+    // end of create-group-modal
+
+
+
+
+
+    // manage-group-modal
+    #manage-group-modal {
+      .modal-content {
+        background: $card-bg-dark;
+      }
+      .modal-title {
+        color: #fff;
+      }
+
+
+      .modal-body {
+        background: $card-bg-dark;
+
+        ul{
+          li {
+            box-shadow: 0 11px 22px 0 $body-bg-dark;
+          }
+        }
+
+      }
+
+
+
+      .modal-footer {
+        .btn {
+          min-width: 100px;
+
+          &:disabled {
+            background: #dcdcdc;
+          }
+        }
+      }
+    }
+    
+}

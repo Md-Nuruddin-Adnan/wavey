@@ -29,7 +29,7 @@
     background-image: -ms-linear-gradient(to bottom, $primary-color-dark  , $primary-color-light);
 
     @media(min-width: 991px){
-      height: 100px;
+      height: 90px;
     }
 
     .notification-link {
@@ -42,13 +42,13 @@
 
   .navbar-dark .navbar-nav .nav-link {
     color: #fff;
-    border: 1px solid #fff;
+    border: 1px solid rgba(#fff, 0.5);
     border-radius: 15px;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     text-align: center;
     margin: 10px;
-    font-size: 27px;
+    font-size: 24px;
     @extend .transition;
 
     &.active,
@@ -105,8 +105,8 @@
     // }
 
     @media (min-width: 991px){
-      top: 100px;
-      height: calc(100% - 100px);
+      top: 90px;
+      height: calc(100% - 90px);
       z-index: 888;
     }
 

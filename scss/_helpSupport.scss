@@ -86,16 +86,13 @@
 //#####################################
 #help_and_support.dark-mode .main-content {
   .card-header {
-    -webkit-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
-    -moz-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
-    -ms-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
-    -o-box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
     box-shadow: 0px 0px 22px 0px rgba(42, 42, 42, 1);
   }
 
   #accordion {
     .card {
       border: 1px solid $border-color-dark;
+      box-shadow: 0 11px 22px 0 rgba(0, 0, 0, 0.4);
 
       .btn {
         color: $primary-color;
@@ -114,8 +111,9 @@
   }
   
   .card-footer {
-    .border {
+    .footer-content {
       border: 1px solid #f8cdde;
+      box-shadow: 0 11px 22px 0 rgba(0, 0, 0, 0.4);
 
       .icon {
         color: #db3364;

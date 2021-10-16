@@ -245,3 +245,61 @@
     border-radius: 50%;
   }
 }
+
+
+
+
+
+
+
+
+// ################### Dark mode ###################
+.dark-mode #login-register {
+
+  // main form cssf start
+  .form-wrapper {
+
+    h1.heading {
+      color: #fff;
+    }
+
+    h2.form-title {
+      color: #fff;
+    }
+
+    .form-group label {
+      color: #fff;
+
+      span {
+        color: #ed6912;
+      }
+    }
+    .form-control::placeholder {
+      color: #fff;
+    }
+
+    p {
+      color: #fff;
+    }
+
+    .login-option {
+      li {
+        padding: 0 7px;
+
+        a {
+          width: 50px;
+          height: 50px;
+          display: block;
+        }
+
+        img {
+          box-shadow: none;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+    
+  }
+}

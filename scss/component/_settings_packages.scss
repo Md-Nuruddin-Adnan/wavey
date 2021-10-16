@@ -157,3 +157,98 @@
       
     }
 }
+
+
+
+
+
+
+
+
+// ############### Dark mode #################
+#settings_packages.dark-mode {
+    .main-content {
+        .card-header {
+            box-shadow: 0px 35px 22px 0px $body-bg-dark;
+
+            p {
+                color: #b4c2d4;
+            }
+        }
+
+        .package-intro {
+            h3 {
+                color: #fff;
+            }
+            p {
+                color: #fff;
+            }
+        }
+
+        .package-form {
+            ul {
+                li {
+                    .custom-control-label {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .package-item {
+            .text {
+                .tier {
+                    color: #fff;
+                }
+                .package-price {
+                    color: #fff;
+                }
+            }
+
+            .action {
+                a {
+                    color: #fff;
+                }
+            }
+
+            .package-features-list {
+                li {
+                    color: #fff;
+                }
+            }
+        }
+
+        .card-footer {
+            .title {
+                color: #fff;
+            }
+            p{
+                color: #fff;
+            }
+        }
+
+
+        // package success
+        .settings-packages-success {
+            .title {
+                color: #fff;
+            }
+            p {
+                color: #fff;
+            }
+        }
+
+
+        // package btn
+
+        .btn-rounded-outline.disabled {
+            color: #DCDCDC;
+            border-color: #DCDCDC;
+        }
+        .btn-rounded.disabled {
+            color: #fff;
+            background: #DCDCDC;
+        }
+      
+    }
+}

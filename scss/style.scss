@@ -12,6 +12,7 @@
 
 /* === component css start === */
 @import 'component/navbar';
+@import 'component/mobile_nav';
 @import 'component/footer';
 @import 'component/wallet_topup';
 @import 'component/settings_my_profile';
@@ -32,6 +33,7 @@
 /* ===//end of component css === */
 
 /* === pages css start === */
+@import 'coming-soon';
 @import 'login-register';
 @import 'home';
 @import 'wallet';
