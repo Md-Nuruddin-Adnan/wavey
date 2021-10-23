@@ -2737,6 +2737,8 @@ a, a:hover {
 .live-streaming-modal .live-comments .card .card-header h2 {
   color: #3e4a6b !important;
   padding: 15px 0;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .live-streaming-modal .live-comments .card .card-body {
