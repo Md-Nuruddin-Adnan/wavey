@@ -202,19 +202,70 @@
 <!-- === top-action section start === -->
 <section class="top-action text-nowrap my-40">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-6  text-sm-left text-center mb-sm-0 mb-30">
+    <div class="row top-action-row">
+      <div class="col-6 top-action-text-col">
         <h1>Welcome, Daniel </h1>
         <p>Checkout stories from your followings</p>
       </div>
-      <div class="col-sm-6">
+      <div class="col-6 top-action-search-col">
         <form>
-          <div class="d-flex align-items-center justify-content-sm-end justify-content-center">
-            <div class="search myShadow">
-              <input type="text" class="search__input" aria-label="search" placeholder="enter your search" required>
+          <div class="d-flex align-items-center justify-content-end">
+            <div class="search myShadow" onfocusin="searchResponsiveSupport()" onfocusout="searchResponsiveUnSupport()">
               <button type="submit" class="search__btn" aria-label="submit search"><i class="fas fa-search" ></i></button>
+              <input type="text" class="search__input" aria-label="search" placeholder="enter your search" required>
+              <a href="#" class="btn search__reset-btn" onclick="document.activeElement.blur();"> <i class="far fa-times"></i></a>
+
+              <ul class="search__after myShadow border-top">
+                <li class="search__items">
+                  <a href="#">
+                    <div class="media">
+                      <img src="images/home/live_2.png" alt="avatar" class="img-fluid avatar mr-2">
+                      <div class="text">
+                        <h4 class="user-name">Andrew Mazzuri</h4>
+                        <p class="user-title">@the_only_guy</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="search__items">
+                  <a href="#">
+                    <div class="media">
+                      <img src="images/home/live_3.png" alt="avatar" class="img-fluid avatar mr-2">
+                      <div class="text">
+                        <h4 class="user-name">Andrena Musaci</h4>
+                        <p class="user-title">@love_colors</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="search__items">
+                  <a href="#">
+                    <div class="media">
+                      <img src="images/home/live_4.png" alt="avatar" class="img-fluid avatar mr-2">
+                      <div class="text">
+                        <h4 class="user-name">Andrena Karenson</h4>
+                        <p class="user-title">@little_girl_only</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="search__items">
+                  <a href="#">
+                    <div class="media">
+                      <img src="images/home/live_5.png" alt="avatar" class="img-fluid avatar mr-2">
+                      <div class="text">
+                        <h4 class="user-name">Andrena Karenson</h4>
+                        <p class="user-title">@little_girl_only</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="text-center border-top pt-3">
+                  <a href="#" class="btn text-brand"><strong>View All</strong></a>
+                </li>
+              </ul>
             </div>
-            <div class="action ml-3">
+            <div class="action ml-3 d-md-block d-none">
               <button type="button" class="btn pr-1 active grid-btn"  onclick="gridView()" data-toggle="tooltip" data-placement="bottom" title="Grid View"><i class="fas fa-th-large grid"></i></button>
               <button type="button" class="btn pl-0 list-btn" onclick="listView()" data-toggle="tooltip" data-placement="bottom" title="List View"><i class="fas fa-bars list"></i></button>
             </div>

@@ -7,10 +7,42 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
-//======== scroll off when side menu open
+//======== search responsive support
+let searchResponsiveSupport = ()=>{
+  function myFunction(x) {
+    if (x.matches) { // If media query matches
+      document.querySelector('.top-action-text-col').style.display = 'none';
+      document.querySelector('.top-action-search-col').classList.add('col-12');
+      document.querySelector('.top-action-search-col').classList.remove('col-6');
+    } else {
+      document.querySelector('.top-action-text-col').style.display = 'block';
+      document.querySelector('.top-action-search-col').classList.add('col-6');
+      document.querySelector('.top-action-search-col').classList.remove('col-12');
+    }
+  }
+  
+  let x = window.matchMedia("(max-width: 767px)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction) // Attach listener function on state changes
+}
+
+// remove search response support
+let searchResponsiveUnSupport = ()=>{
+  function myFunction(x) {
+    if (x.matches) { // If media query matches
+      document.querySelector('.top-action-text-col').style.display = 'block';
+      document.querySelector('.top-action-search-col').classList.add('col-6');
+      document.querySelector('.top-action-search-col').classList.remove('col-12');
+    }
+  }
+  
+  let x = window.matchMedia("(max-width: 767px)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction) // Attach listener function on state changes
+}
 
 
-//========= end of scroll off when side menu open
+//========= end of search responsive support
 
 
 

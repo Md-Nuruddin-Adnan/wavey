@@ -347,12 +347,87 @@
 
 
 // search
+// .search {
+//   display: flex;
+//   border-radius: 100vh;
+//   border: 1px solid transparent;
+//   width: 45px;
+//   position: relative;
+//   transition: width 450ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+//   overflow: hidden;
+//   background: #fff;
+
+//   .search__btn i{
+//     color: $primary-color;
+//   }
+
+//   &__input {
+//     flex-grow: 1;
+//     border: none;
+//     background: #fff;
+//     padding: 0 0.5rem;
+//     font-size: 1rem;
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     bottom: 0;
+//     left: 10px;
+//     opacity: 0;
+//     font-size: 16px;
+//     width: calc(100% - 60px);
+//     cursor: pointer;
+
+//     &:focus {
+//       outline: none;
+//     }
+//   }
+
+//   &__btn {
+//     font-size: 20px;
+//     background: #fff;
+//     border: none;
+//     cursor: pointer;
+//     border-radius: 100vh;
+//     height: 45px;
+//     width: 45px;
+//     margin-left: auto;
+//     transition: background 150ms ease-in-out;
+//     padding-top: 3px;
+
+//     &:focus {
+//       outline: none;
+//     }
+//   }
+
+//   &:focus-within {
+//     width: 100%;
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+
+//     .search__input {
+//       opacity: 1;
+//       cursor: initial;
+//     }
+
+//     .search__btn {
+//       background: #fff;
+//       color: $primary-color;
+
+//       &:hover,
+//       &:focus {
+//         outline: 0;
+//         // transform: rotate(1turn);
+//         // box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+//       }
+//     }
+//   }
+// }
+
+
 .search {
   display: flex;
+  align-items: center;
   border-radius: 100vh;
   border: 1px solid transparent;
-  // height: 60px;
-  // padding: 3px;
   width: 45px;
   position: relative;
   transition: width 450ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
@@ -366,17 +441,17 @@
   &__input {
     flex-grow: 1;
     border: none;
-    background: #fff;
+    background: transparent;
     padding: 0 0.5rem;
     font-size: 1rem;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     bottom: 0;
-    left: 10px;
+    left: 40px;
     opacity: 0;
     font-size: 16px;
-    width: calc(100% - 60px);
+    width: calc(100% - 70px);
     cursor: pointer;
 
     &:focus {
@@ -392,7 +467,7 @@
     border-radius: 100vh;
     height: 45px;
     width: 45px;
-    margin-left: auto;
+    // margin-left: auto;
     transition: background 150ms ease-in-out;
     padding-top: 3px;
 
@@ -401,9 +476,68 @@
     }
   }
 
+  &__reset-btn {
+    margin-left: auto;
+    display: none;
+     i {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #BDC9DA;
+      color: #fff;
+      font-size: 10px;
+      line-height: 15px;
+     }
+  }
+
+  &__after {
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    padding: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    .search__items {
+      border-bottom: 1px solid rgba(#BDC9DA, 0.2);
+      
+      a {
+        padding: 10px 0;
+        display: block;
+      }
+
+      img {
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+        border: 1px solid #fff;
+      }
+      .user-name {
+        font-size: 13px;
+        font-weight: 600;
+        color: #333;
+        line-height: 20px;
+      }
+      .user-title {
+        font-size: 11px !important;
+        color: #333 !important;
+        opacity: 0.6 !important;
+      }
+    }
+  }
+
+
   &:focus-within {
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    // border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: visible;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 
     .search__input {
       opacity: 1;
@@ -421,8 +555,16 @@
         // box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
       }
     }
+
+
+    .search__reset-btn {
+      display: block;
+    }
   }
+
+
 }
+// end of search
 
 
 // aside-widget-default css
@@ -787,13 +929,26 @@
   }
 
   &__input {
-    background: $card-bg-dark;
+    background: transparent;
     color: $white-color;
   }
 
   &__btn {
     background: $card-bg-dark;
     transition: background 150ms ease-in-out;
+  }
+
+  &__after {
+    background: $card-bg-dark;
+
+    .search__items {
+      .user-name {
+        color: #fff;
+      }
+      .user-title {
+        color: #fff !important;
+      }
+    }
   }
 
   &:focus-within {
